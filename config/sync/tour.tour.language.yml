@@ -1,0 +1,55 @@
+uuid: 92f38050-6701-4ad3-a8e9-739fe70a96da
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
+id: language
+label: Jazyk
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.collection
+tips:
+  language-overview:
+    id: language-overview
+    plugin: text
+    label: Jazyky
+    weight: 1
+    body: '<p>Stránka "Jazyky" vám umožňuje pridať, upraviť, odstrániť a zoradiť jazyky na stránke.</p>'
+  language-add:
+    id: language-add
+    plugin: text
+    label: 'Pridanie jazykov'
+    weight: 2
+    selector: .button-action
+    body: '<p>To add more languages to your site, click the "Add language" button.</p><p>Added languages will be displayed in the language list and can then be edited or deleted.</p>'
+  language-reorder:
+    id: language-reorder
+    plugin: text
+    label: 'Reordering languages'
+    weight: 3
+    selector: .draggable
+    body: '<p>To reorder the languages on your site, use the drag icons next to each language.</p><p>The order shown here is the display order for language lists on the site such as in the language switcher blocks provided by the Interface Translation and Content Translation modules.</p><p>When you are done with reordering the languages, click the "Save configuration" button for the changes to take effect.</p>'
+  language-default:
+    id: language-default
+    plugin: text
+    label: 'Set a language as default'
+    weight: 4
+    selector: .js-form-item-site-default-language
+    body: '<p>You can change the default language of the site by choosing one of your configured languages as default. The site will use the default language in situations where no choice is made but a language should be set, for example as the language of the displayed interface.</p>'
+  language-operations:
+    id: language-operations
+    plugin: text
+    label: 'Modifying languages'
+    weight: 5
+    selector: .dropbutton-wrapper
+    body: '<p>Operácie umožňujúce editovanie a odstránenie vašich jazykov.</p><p>Môžete zmeniť názov a smer jazyka.</p><p>Odstránené jazyky môžu byť neskôr pridané späť. Odstránenie jazyka odstrání všetky preklady rozhrania s týmto jazykom a obsah vytvorený v tomto jazyku bude mať priradený neutrálny jazyk. Predvolený jazyk nemôže byť odstránený.</p>'
+  language-continue:
+    id: language-continue
+    plugin: text
+    label: 'Continuing on'
+    weight: 6
+    body: '<p>Now that you have an overview of the "Languages" page, you can continue by:<ul><li><a href="[site:url]admin/config/regional/language/add">Adding a language</a></li><li>Reordering languages</li><li>Editing a language</li><li>Deleting a language</li></ul></p>'

@@ -1,0 +1,22 @@
+uuid: 36c09449-c75c-46c8-99b4-81812c3ccf65
+langcode: sk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: olivero_powered
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Beží na Drupale'
+  label_display: '0'
+  provider: system
+visibility: {  }
