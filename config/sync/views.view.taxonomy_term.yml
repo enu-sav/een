@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: YKgw0f77GEmCu6_6Om9Mbig0mON9JdfVuMxTtd0WQaI
 id: taxonomy_term
-label: 'Termín taxonómie'
+label: 'Taxonomy term'
 module: taxonomy
 description: 'Obsah patriaci k určitému termínu taxonómie.'
 tag: default
@@ -20,7 +20,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Predvolené
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:

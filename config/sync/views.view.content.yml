@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Obsah
+label: Content
 module: node
 description: 'Vyhľadať a spravovať obsah'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Predvolené
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: Obsah
+      title: Content
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Obsah
+        title: Content
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Obsah
+        title: Content
         description: 'Nájsť a spravovať obsah.'
         weight: -10
         menu_name: admin
