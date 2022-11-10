@@ -1,5 +1,5 @@
-uuid: 9a70bab7-8dfc-4f4f-8052-6caf008010af
-langcode: sk
+uuid: 5bf2ca53-ce30-42ad-ad10-5962a5c44fe2
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,8 +12,8 @@ id: node.article.field_tags
 field_name: field_tags
 entity_type: node
 bundle: article
-label: Značky
-description: 'Zadajte zoznam oddelený čiarkou. Napríklad: Amsterdam, Mexico City, "Cleveland, Ohio"'
+label: Tags
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
 required: false
 translatable: true
 default_value: {  }

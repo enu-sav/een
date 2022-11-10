@@ -1,14 +1,14 @@
-uuid: 7d0feeef-8481-4a36-8f09-b9f5d7174d8f
-langcode: sk
+uuid: 0b7e1dc7-485e-4a3f-9340-c81bda2c6e01
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
 id: feedback
-label: 'Spätná väzba'
+label: 'Website feedback'
 recipients:
   - sykora@improve.sk
 reply: ''
 weight: 0
-message: 'Vaša správa bola odoslaná.'
+message: 'Your message has been sent.'
 redirect: ''

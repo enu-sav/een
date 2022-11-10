@@ -1,11 +1,11 @@
-uuid: 4a6076a1-481e-4d46-88da-dbe53d845c40
-langcode: sk
+uuid: d65391b8-8365-415f-a47d-8afd036b51db
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: eNX6lLCKDaY83nCMh20My---y03KbiFlv802DKCCpvg
 id: und
-label: Neurčené
+label: 'Not specified'
 direction: ltr
 weight: 2
 locked: true

@@ -1,5 +1,5 @@
-uuid: 2d414bcc-cf0b-4ccb-88b3-541ed74b7efe
-langcode: sk
+uuid: 1a7428de-763f-4dd5-bd0c-223aec9431f2
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 module: taxonomy
-description: 'Obsah patriaci k určitému termínu taxonómie.'
+description: 'Content belonging to a certain taxonomy term.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -37,22 +37,22 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Položiek na stránku'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Všetko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: 'Zobraziť od'
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Použiť
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -102,7 +102,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Všetko
+            title: All
           title_enable: true
           title: '{{ arguments.tid }}'
           default_argument_type: fixed
@@ -261,7 +261,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: 'Kanál správ'
+    display_title: Feed
     display_plugin: feed
     position: 2
     display_options:
@@ -299,7 +299,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Stránka
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

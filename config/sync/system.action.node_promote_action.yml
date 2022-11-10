@@ -1,5 +1,5 @@
-uuid: 61b17e45-7569-47b7-80ee-e19c20c62ac0
-langcode: sk
+uuid: 76a1c969-228f-44df-8aa1-cd06cb600a89
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
 id: node_promote_action
-label: 'Propagovať obsah na hlavnej stránke'
+label: 'Promote content to front page'
 type: node
 plugin: node_promote_action
 configuration: {  }

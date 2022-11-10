@@ -1,5 +1,5 @@
-uuid: d10bb77e-5b6a-49a6-8e58-2b8d2507ecde
-langcode: sk
+uuid: 4b10ee1b-9c4f-4fb5-a669-751d4c5635c3
+langcode: en
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: 'Používateľské menu'
+  label: 'User account menu'
   label_display: '0'
   provider: system
   level: 1

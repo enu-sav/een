@@ -1,5 +1,5 @@
-uuid: 545f0495-0b30-4188-ba5c-180b25cffce1
-langcode: sk
+uuid: 22694905-577e-4c1e-8261-fc26d93fe020
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: DaGeEDJMcbbQtgV96AuPeZ-0irMc_Oa6Zzh2U3Kmul8
 id: files
-label: Súbory
+label: Files
 module: file
 description: 'Find and manage files.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Súbory
+      title: Files
       fields:
         fid:
           id: fid
@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: Názov
+          label: Name
           exclude: false
           alter:
             alter_text: false
@@ -129,7 +129,7 @@ display:
           entity_type: file
           entity_field: filemime
           plugin_id: field
-          label: 'MIME typ'
+          label: 'MIME type'
           exclude: false
           alter:
             alter_text: false
@@ -181,7 +181,7 @@ display:
           entity_type: file
           entity_field: filesize
           plugin_id: field
-          label: Veľkosť
+          label: Size
           exclude: false
           alter:
             alter_text: false
@@ -233,7 +233,7 @@ display:
           entity_type: file
           entity_field: status
           plugin_id: field
-          label: Stav
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -277,8 +277,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Dočasne
-            format_custom_true: Natrvalo
+            format_custom_false: Temporary
+            format_custom_true: Permanent
         created:
           id: created
           table: file_managed
@@ -289,7 +289,7 @@ display:
           entity_type: file
           entity_field: created
           plugin_id: field
-          label: 'Dátum nahrania'
+          label: 'Upload date'
           exclude: false
           alter:
             alter_text: false
@@ -345,7 +345,7 @@ display:
           entity_type: file
           entity_field: changed
           plugin_id: field
-          label: 'Dátum zmeny'
+          label: 'Changed date'
           exclude: false
           alter:
             alter_text: false
@@ -399,7 +399,7 @@ display:
           group_type: sum
           admin_label: ''
           plugin_id: numeric
-          label: 'Použité v'
+          label: 'Used in'
           exclude: false
           alter:
             alter_text: false
@@ -449,33 +449,36 @@ display:
           prefix: ''
           suffix: ''
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 50
           total_pages: 0
           id: 0
           tags:
-            next: Ďalej
-            previous: '‹ Predchádzajúci'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Položiek na stránku'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Všetko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: 'Zobraziť od'
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
           submit_button: Filter
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -490,7 +493,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'Žiadne súbory nie sú dostupné.'
+          content: 'No files available.'
       sorts: {  }
       arguments: {  }
       filters:
@@ -510,7 +513,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'Názov súboru'
+            label: Filename
             description: ''
             use_operator: false
             operator: filename_op
@@ -552,7 +555,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME typ'
+            label: 'MIME type'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -594,7 +597,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: Stav
+            label: Status
             description: ''
             use_operator: false
             operator: status_op
@@ -756,7 +759,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: Súbory
+        title: Files
         description: ''
         weight: 0
         menu_name: admin
@@ -786,7 +789,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_label
-          label: Entita
+          label: Entity
           exclude: false
           alter:
             alter_text: false
@@ -836,7 +839,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: 'Typ entity'
+          label: 'Entity type'
           exclude: false
           alter:
             alter_text: false
@@ -991,16 +994,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: Ďalej
-            previous: '‹ Predchádzajúci'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
-            items_per_page_label: 'Položiek na stránku'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Všetko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: 'Zobraziť od'
+            offset_label: Offset
       empty: {  }
       arguments:
         fid:
@@ -1017,7 +1020,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Všetko
+            title: All
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

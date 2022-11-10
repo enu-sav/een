@@ -1,10 +1,10 @@
-uuid: 498fc9a7-ed9c-406c-814d-f8968e0450cc
-langcode: sk
+uuid: 5a1b69ab-82f1-40b2-afb7-c07c4186c4a5
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
-name: 'Obyčajný text'
+name: 'Plain text'
 format: plain_text
 weight: 10
 filters:

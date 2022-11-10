@@ -1,5 +1,5 @@
-uuid: 3828a136-9be3-4ab1-b582-86ffe597f1d4
-langcode: sk
+uuid: 61535450-4913-484e-aec2-279bac54bcb6
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: vcDd9H0uIlyOQGoVAJuD3ADMnQeRR_X3B-ojyb8Cbnc
 id: language-add
-label: 'Pridanie jazykov'
+label: 'Adding languages'
 module: language
 routes:
   -
@@ -16,13 +16,13 @@ tips:
   language-add-overview:
     id: language-add-overview
     plugin: text
-    label: 'Pridanie jazykov'
+    label: 'Adding languages'
     weight: 1
-    body: '<p>Táto stránka vám umožňuje pridať bežný jazyk na vašu stránku.</p><p>Pokiaľ vami želaný jazyk nie je dostupný, môžete pridať vlastný jazyk.</p>'
+    body: '<p>This page provides the ability to add common languages to your site.</p><p>If the desired language is not available, you can add a custom language.</p>'
   language-add-choose:
     id: language-add-choose
     plugin: text
-    label: 'Vyberte jazyk'
+    label: 'Select language'
     weight: 2
     selector: '#edit-predefined-langcode'
     body: '<p>Choose a language from the list, or choose "Custom language..." at the end of the list.</p><p>Click the "Add language" button when you are done choosing your language.</p><p>When adding a custom language, you will get an additional form where you can provide the name, code, and direction of the language.</p>'

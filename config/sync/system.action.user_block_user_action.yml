@@ -1,5 +1,5 @@
-uuid: 22c71490-388d-4c8d-ab9f-560fa5755fb4
-langcode: sk
+uuid: 11a16c1d-5d18-4e21-baf0-f9dc65bedd9c
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: DyypzTfThX10FFQw-399qPfEbLLyrhXgQrKPVsmAoJ4
 id: user_block_user_action
-label: 'Zablokovať vybraných používateľov'
+label: 'Block the selected user(s)'
 type: user
 plugin: user_block_user_action
 configuration: {  }

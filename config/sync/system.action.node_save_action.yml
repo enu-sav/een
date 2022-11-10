@@ -1,5 +1,5 @@
-uuid: 3714bb08-4bc6-455d-a3ca-2e447415af85
-langcode: sk
+uuid: c7606709-646e-4e9b-bea4-8df42afbb295
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: LhdsoZPL_pFas2fjaAWue4zvrQ_tEVofLYtcNec-JGM
 id: node_save_action
-label: 'Uložiť obsah'
+label: 'Save content'
 type: node
 plugin: 'entity:save_action:node'
 configuration: {  }

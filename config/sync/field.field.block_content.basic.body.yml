@@ -1,5 +1,5 @@
-uuid: 2b647589-8fae-4fe2-a27d-08f1b340a5d8
-langcode: sk
+uuid: 0c6ce1ad-34ee-4e62-9b07-7358053a7f7d
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: block_content.basic.body
 field_name: body
 entity_type: block_content
 bundle: basic
-label: Text
+label: Body
 description: ''
 required: false
 translatable: true

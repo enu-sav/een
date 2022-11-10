@@ -1,5 +1,5 @@
-uuid: 01d93077-4656-4122-a4c1-daa77da5d82f
-langcode: sk
+uuid: 68c1d983-7f68-45e8-9bd1-72102ecd8524
+langcode: en
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
 id: node.full
-label: 'Celý obsah'
+label: 'Full content'
 targetEntityType: node
 cache: true

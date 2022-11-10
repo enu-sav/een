@@ -1,5 +1,5 @@
-uuid: 1ad4a3e8-43d1-457a-b030-e729e388b105
-langcode: sk
+uuid: 098698d9-6ae2-4673-8590-54a0f2773c33
+langcode: en
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: S_NN2ubd_NovTfgzbHVlZMmIJJQS-3h9h3inzbaFUMY
 id: comments_recent
-label: 'Nedávne komentáre'
+label: 'Recent comments'
 module: views
 description: 'Recent comments.'
 tag: default
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Nedávne komentáre'
+      title: 'Recent comments'
       fields:
         subject:
           id: subject
@@ -132,7 +132,7 @@ display:
           type: timestamp_ago
           settings:
             future_format: '@interval hence'
-            past_format: 'pred @interval'
+            past_format: '@interval ago'
             granularity: 2
       pager:
         type: some
@@ -158,7 +158,7 @@ display:
           plugin_id: text_custom
           label: ''
           empty: true
-          content: 'Žiadne komentáre nie sú dostupné.'
+          content: 'No comments available.'
           tokenize: false
       sorts:
         created:
@@ -252,12 +252,12 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Blok
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Nedávne komentáre'
+      block_description: 'Recent comments'
       block_category: 'Lists (Views)'
       allow:
         items_per_page: true

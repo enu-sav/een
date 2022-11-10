@@ -1,6 +1,6 @@
-uuid: 816359b4-3fa1-4e43-9f40-f987fcf714ca
-langcode: sk
-status: true
+uuid: 0314d4b9-6df7-41a2-81ea-2cd85e721edd
+langcode: en
+status: false
 dependencies:
   module:
     - user
@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Kto je online'
+      title: 'Who''s online'
       fields:
         name:
           id: name
@@ -64,13 +64,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Použiť
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -142,8 +142,8 @@ display:
           exposed: false
           expose:
             operator_id: access_op
-            label: 'Posledný prístup'
-            description: 'Používateľ sa považuje za online v tomto čase od posledného zobrazenia stránky.'
+            label: 'Last access'
+            description: 'A user is considered online for this long after they have last viewed a page.'
             use_operator: false
             operator: access_op
             operator_limit_selection: false
@@ -210,13 +210,13 @@ display:
       tags: {  }
   who_s_online_block:
     id: who_s_online_block
-    display_title: 'Kto je online'
+    display_title: 'Who''s online'
     display_plugin: block
     position: 1
     display_options:
       display_description: 'A list of users that are currently logged in.'
       display_extenders: {  }
-      block_description: 'Kto je online'
+      block_description: 'Who''s online'
     cache_metadata:
       max-age: -1
       contexts:

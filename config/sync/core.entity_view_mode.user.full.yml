@@ -1,5 +1,5 @@
-uuid: 1f1e37f2-a8ef-4916-a0ca-2f9935d30ed7
-langcode: sk
+uuid: 6788cccd-9704-47c2-bbdc-e81f58a12f61
+langcode: en
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
 id: user.full
-label: 'Používateľský účet'
+label: 'User account'
 targetEntityType: user
 cache: true

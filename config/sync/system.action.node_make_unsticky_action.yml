@@ -1,5 +1,5 @@
-uuid: 175139a2-8e2d-4bf5-9eff-89a8478788e9
-langcode: sk
+uuid: d92fe378-05e1-4b7d-934a-7292a98264f9
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
 id: node_make_unsticky_action
-label: 'Zrušiť prilepenie obsahu'
+label: 'Make content unsticky'
 type: node
 plugin: node_make_unsticky_action
 configuration: {  }

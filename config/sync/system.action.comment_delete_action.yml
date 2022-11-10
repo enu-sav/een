@@ -1,5 +1,5 @@
-uuid: 3e3bd2c9-023e-4396-b5a3-b11e9a8e859b
-langcode: sk
+uuid: 7b95400b-43c3-4edb-a7cc-3f93b63ca09f
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: vpBH8OmL4sdesCdeZLsW8KOutB5gkbreWJbfjhfFKaQ
 id: comment_delete_action
-label: 'Odstrániť komentár'
+label: 'Delete comment'
 type: comment
 plugin: 'entity:delete_action:comment'
 configuration: {  }

@@ -1,11 +1,11 @@
-uuid: 6fb9ecd5-888f-48a4-b45c-01ac53dee63c
-langcode: sk
+uuid: 1a625bc8-ec83-4869-b070-f288caaa486f
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: cCiWdBHgLwj5omG35lsKc4LkW4MBdmcctkVop4ol5x0
 name: thumbnail
-label: 'Náhľad (100x100)'
+label: 'Thumbnail (100×100)'
 effects:
   1cfec298-8620-4749-b100-ccb6c4500779:
     uuid: 1cfec298-8620-4749-b100-ccb6c4500779

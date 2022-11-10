@@ -1,6 +1,5 @@
 _core:
   default_config_hash: UvSCt3S_NldJPFzvhSNOy9vWoPPFhmsmTC12vtVss9s
-langcode: sk
 favicon:
   use_default: true
 features:
@@ -13,7 +12,7 @@ logo:
 third_party_settings:
   shortcut:
     module_link: true
-preset_accent_color: orange
+preset_accent_color: neutral
 preset_focus_color: gin
 enable_darkmode: '0'
 classic_toolbar: horizontal

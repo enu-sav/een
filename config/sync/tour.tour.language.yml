@@ -1,5 +1,5 @@
-uuid: 92f38050-6701-4ad3-a8e9-739fe70a96da
-langcode: sk
+uuid: 234c5dea-b77c-494c-9020-fee110e92215
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
 id: language
-label: Jazyk
+label: Language
 module: language
 routes:
   -
@@ -16,13 +16,13 @@ tips:
   language-overview:
     id: language-overview
     plugin: text
-    label: Jazyky
+    label: Languages
     weight: 1
-    body: '<p>Stránka "Jazyky" vám umožňuje pridať, upraviť, odstrániť a zoradiť jazyky na stránke.</p>'
+    body: '<p>The "Languages" page allows you to add, edit, delete, and reorder languages for the site.</p>'
   language-add:
     id: language-add
     plugin: text
-    label: 'Pridanie jazykov'
+    label: 'Adding languages'
     weight: 2
     selector: .button-action
     body: '<p>To add more languages to your site, click the "Add language" button.</p><p>Added languages will be displayed in the language list and can then be edited or deleted.</p>'
@@ -46,7 +46,7 @@ tips:
     label: 'Modifying languages'
     weight: 5
     selector: .dropbutton-wrapper
-    body: '<p>Operácie umožňujúce editovanie a odstránenie vašich jazykov.</p><p>Môžete zmeniť názov a smer jazyka.</p><p>Odstránené jazyky môžu byť neskôr pridané späť. Odstránenie jazyka odstrání všetky preklady rozhrania s týmto jazykom a obsah vytvorený v tomto jazyku bude mať priradený neutrálny jazyk. Predvolený jazyk nemôže byť odstránený.</p>'
+    body: '<p>Operations are provided for editing and deleting your languages.</p><p>You can edit the name and the direction of the language.</p><p>Deleted languages can be added back at a later time. Deleting a language will remove all interface translations associated with it, and content in this language will be set to be language neutral. Note that you cannot delete the default language of the site.</p>'
   language-continue:
     id: language-continue
     plugin: text

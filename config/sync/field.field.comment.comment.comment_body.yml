@@ -1,5 +1,5 @@
-uuid: 729d714f-0f94-42d7-80ea-c72af6bf75b7
-langcode: sk
+uuid: b7d06afa-1cef-4b36-a905-18f9bbff3934
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: comment.comment.comment_body
 field_name: comment_body
 entity_type: comment
 bundle: comment
-label: Komentár
+label: Comment
 description: ''
 required: true
 translatable: true

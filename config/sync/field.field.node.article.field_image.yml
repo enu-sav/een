@@ -1,5 +1,5 @@
-uuid: 4ba39cc8-1809-4b1a-b6be-cef5ebc65ec0
-langcode: sk
+uuid: c1c9bf0b-41ae-47d6-9f0f-5dd900d40d57
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: Obrázok
+label: Image
 description: ''
 required: false
 translatable: true

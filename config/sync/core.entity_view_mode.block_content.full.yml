@@ -1,5 +1,5 @@
-uuid: 20abf843-548e-4356-885d-4f35edf2c1ba
-langcode: sk
+uuid: 8aba814a-993c-480a-962e-9827f64212ce
+langcode: en
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: 4tedlMuvQjDOdvHdw86_e-2Rt78aR7TGFMfOK8Ejppg
 id: block_content.full
-label: Plný
+label: Full
 targetEntityType: block_content
 cache: true

@@ -1,5 +1,5 @@
-uuid: f99eae7a-1cdc-4a63-bc8c-6ebbb77430b1
-langcode: sk
+uuid: 42a982b6-b2a9-4691-beac-5f0a331ec8fb
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YqZN5rc7XDQcFcInc8wkzuaHJmC5YvirhTmDcrarT6M
 id: content_recent
-label: 'Najnovší obsah'
+label: 'Recent content'
 module: node
 description: 'Recent content.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Najnovší obsah'
+      title: 'Recent content'
       fields:
         title:
           id: title
@@ -131,13 +131,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Použiť
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -155,7 +155,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Žiaden obsah nie je dostupný.'
+          content: 'No content available.'
           tokenize: false
       sorts:
         changed:
@@ -290,7 +290,7 @@ display:
           required: true
       use_more: false
       use_more_always: false
-      use_more_text: Viac
+      use_more_text: More
       link_display: '0'
       link_url: ''
       header: {  }
@@ -307,7 +307,7 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Blok
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:

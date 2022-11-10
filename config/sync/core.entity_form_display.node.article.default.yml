@@ -1,5 +1,5 @@
-uuid: 87fbe772-2914-42b7-ac8f-4406e647ac11
-langcode: sk
+uuid: 8aea9cb0-8def-4a00-bd88-729cf50f535a
+langcode: en
 status: true
 dependencies:
   config:
@@ -80,6 +80,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

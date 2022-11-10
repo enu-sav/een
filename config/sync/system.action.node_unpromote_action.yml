@@ -1,5 +1,5 @@
-uuid: faca1ed2-2e55-4f23-9609-9dfb9f6112be
-langcode: sk
+uuid: 15cd0b6e-1585-4b0d-85f8-c9255782fe01
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
 id: node_unpromote_action
-label: 'Odstrániť obsah z hlavnej stránky'
+label: 'Remove content from front page'
 type: node
 plugin: node_unpromote_action
 configuration: {  }

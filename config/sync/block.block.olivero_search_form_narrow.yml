@@ -1,5 +1,5 @@
-uuid: ec6ff790-9275-4154-b7bd-7e795e43ca9f
-langcode: sk
+uuid: 6b660e34-bb93-47ff-a18d-30641f0574b3
+langcode: en
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Vyhľadávací formulár (úzky)'
+  label: 'Search form (narrow)'
   label_display: '0'
   provider: search
   page_id: ''

@@ -1,10 +1,10 @@
-uuid: aa33d2b1-e3ec-4024-a008-e197bf944fdc
-langcode: sk
+uuid: 898a59aa-8911-4d76-b51d-79aea726b61d
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
-name: Značky
+name: Tags
 vid: tags
-description: 'Použite značky na zoskupenie článkov do kategórií podľa podobných tém.'
+description: 'Use tags to group articles on similar topics into categories.'
 weight: 0

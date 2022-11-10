@@ -1,10 +1,10 @@
-uuid: 40cde8fa-37ba-4c50-98b0-b7275593471c
-langcode: sk
+uuid: b4d59bf4-9dba-4efd-969c-82d2ab4a9bc6
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
 id: comment
-label: 'Predvolené komentáre'
+label: 'Default comments'
 target_entity_type_id: node
-description: 'Povoliť komentovanie obsahu'
+description: 'Allows commenting on content'

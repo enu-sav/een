@@ -1,5 +1,5 @@
-uuid: d28bfc1b-6d03-4e09-8f74-8df861418b54
-langcode: sk
+uuid: 0d980481-9b12-4444-b3ad-eab575f919b8
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: user.user.user_picture
 field_name: user_picture
 entity_type: user
 bundle: user
-label: Obrázok
+label: Picture
 description: 'Your virtual face or picture.'
 required: false
 translatable: true

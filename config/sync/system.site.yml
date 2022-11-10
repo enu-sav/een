@@ -1,7 +1,7 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
-langcode: sk
-uuid: e88d1bdd-2fa5-4120-8284-be545fe028c7
+langcode: en
+uuid: 3f222c2f-de2b-4c3d-8b9d-5025a7f9ddcd
 name: 'Encyclopedia European Network'
 mail: sykora@improve.sk
 slogan: ''
@@ -11,4 +11,4 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: sk
+default_langcode: en

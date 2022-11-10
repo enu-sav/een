@@ -1,5 +1,5 @@
-uuid: 62f71897-db58-495e-9fe2-ddab1055bcfc
-langcode: sk
+uuid: 58c9b314-0a24-4751-826c-ab6ac4cd3c27
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
 id: locale
-label: Preklad
+label: Translation
 module: locale
 routes:
   -
@@ -16,20 +16,20 @@ tips:
   locale-overview:
     id: locale-overview
     plugin: text
-    label: 'Preklad používateľského rozhrania'
+    label: 'User interface translation'
     weight: 1
     body: 'This page allows you to translate the user interface or modify existing translations. If you have installed your site initially in English, you must first add another language on the <a href="[site:url]admin/config/regional/language">Languages page</a>, in order to use this page.'
   locale-language:
     id: locale-language
     plugin: text
-    label: 'Jazyk prekladu'
+    label: 'Translation language'
     weight: 2
     selector: '#edit-langcode'
     body: 'Choose the language you want to translate.'
   locale-search:
     id: locale-search
     plugin: text
-    label: Vyhľadávanie
+    label: Search
     weight: 3
     selector: '#edit-string'
     body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
@@ -43,14 +43,14 @@ tips:
   locale-submit:
     id: locale-submit
     plugin: text
-    label: 'Použiť vaše vyhľadávacie kritériá'
+    label: 'Apply your search criteria'
     weight: 5
     selector: '#edit-submit'
     body: 'To apply your search criteria, click on the <em>Filter</em> button.'
   locale-translate:
     id: locale-translate
     plugin: text
-    label: Preložiť
+    label: Translate
     weight: 6
     selector: .js-form-type-textarea
     body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'
