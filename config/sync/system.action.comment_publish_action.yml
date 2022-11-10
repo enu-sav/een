@@ -1,0 +1,13 @@
+uuid: c9a441db-b2e5-4e37-9aac-6b8fcf5e082f
+langcode: sk
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
+id: comment_publish_action
+label: 'Zverejniť komentár'
+type: comment
+plugin: 'entity:publish_action:comment'
+configuration: {  }
