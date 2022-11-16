@@ -31,6 +31,7 @@
         "drupal/metatag": "^1.22",
         "drupal/mimemail": "^1.0@alpha",
         "drupal/pathauto": "^1.11",
+        "drupal/phpmailer_smtp": "^2.1",
         "drupal/recreate_block_content": "^2.1",
         "drupal/reroute_email": "^2.1",
         "drupal/simple_sitemap": "^4.1",
