@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.etherpad_document
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
@@ -31,15 +32,18 @@ permissions:
   - 'access tour'
   - 'administer url aliases'
   - 'create article content'
+  - 'create etherpad_document content'
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'
   - 'delete own article content'
+  - 'delete own etherpad_document content'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own article content'
   - 'edit own comments'
+  - 'edit own etherpad_document content'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'

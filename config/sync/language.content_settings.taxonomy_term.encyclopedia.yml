@@ -1,0 +1,11 @@
+uuid: e06df58c-d440-42bb-ad73-47b120d097eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.encyclopedia
+id: taxonomy_term.encyclopedia
+target_entity_type_id: taxonomy_term
+target_bundle: encyclopedia
+default_langcode: site_default
+language_alterable: false

@@ -9,5 +9,5 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - een@encyklopedianetwork.eu
+    - sykora@improve.sk
   threshold: all

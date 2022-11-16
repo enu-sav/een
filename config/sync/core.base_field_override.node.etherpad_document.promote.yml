@@ -1,0 +1,22 @@
+uuid: a693e0d1-4a42-4604-a87b-e499d30d0878
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.etherpad_document
+id: node.etherpad_document.promote
+field_name: promote
+entity_type: node
+bundle: etherpad_document
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

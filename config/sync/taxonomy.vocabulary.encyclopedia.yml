@@ -1,0 +1,8 @@
+uuid: f231dfb3-dd84-4410-bfc7-229b90b95bfc
+langcode: en
+status: true
+dependencies: {  }
+name: Encyclopedia
+vid: encyclopedia
+description: ''
+weight: 0

@@ -1,0 +1,23 @@
+uuid: bdde943a-1310-402d-808e-a24c9936606d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etherpad_url
+    - node.type.etherpad_document
+  module:
+    - link
+id: node.etherpad_document.field_etherpad_url
+field_name: field_etherpad_url
+entity_type: node
+bundle: etherpad_document
+label: 'URL of the Etherpad document to be edited'
+description: 'Etherpad URL. Create a document in Etherpad (address will be specified later) and copy here its URL.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

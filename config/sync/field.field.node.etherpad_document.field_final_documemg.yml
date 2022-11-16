@@ -1,0 +1,27 @@
+uuid: cbb53d2c-5926-4585-b1bb-15fe548b330d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_final_documemg
+    - node.type.etherpad_document
+  module:
+    - file
+id: node.etherpad_document.field_final_documemg
+field_name: field_final_documemg
+entity_type: node
+bundle: etherpad_document
+label: 'Final document'
+description: 'Final version of the document based of the content of the Etherpad pad. May contain additional formatting.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'odt docx'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

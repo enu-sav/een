@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.etherpad_document
   module:
     - comment
     - contact
     - filter
+    - node
     - search
     - system
 _core:
@@ -24,3 +26,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view etherpad_document revisions'

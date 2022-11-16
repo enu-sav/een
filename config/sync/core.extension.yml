@@ -30,9 +30,11 @@ module:
   language: 0
   link: 0
   locale: 0
+  mailsystem: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  mimemail: 0
   mysql: 0
   node: 0
   options: 0
@@ -41,6 +43,7 @@ module:
   path_alias: 0
   rdf: 0
   recreate_block_content: 0
+  reroute_email: 0
   search: 0
   simple_sitemap: 0
   system: 0
@@ -52,6 +55,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  forum: 1
   pathauto: 1
   content_translation: 10
   views: 10

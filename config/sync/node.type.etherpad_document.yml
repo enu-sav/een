@@ -1,0 +1,17 @@
+uuid: 683c4710-b093-4fe3-904e-c87520d90e07
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Etherpad document'
+type: etherpad_document
+description: 'A document edited using Etherpad, a real-time collaborative text editor.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
