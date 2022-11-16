@@ -24,6 +24,7 @@
         "drupal/config_ignore": "^2.3",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/forum_access": "^1.0@beta",
         "drupal/gin": "^3.0@beta",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/mailsystem": "^4.4",
