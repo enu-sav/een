@@ -55,6 +55,8 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  workbench: 0
+  workbench_access: 0
   forum: 1
   pathauto: 1
   content_translation: 10

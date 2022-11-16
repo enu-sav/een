@@ -33,6 +33,8 @@
         "drupal/recreate_block_content": "^2.1",
         "drupal/reroute_email": "^2.1",
         "drupal/simple_sitemap": "^4.1",
+        "drupal/workbench": "^1.4",
+        "drupal/workbench_access": "^1.1",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"

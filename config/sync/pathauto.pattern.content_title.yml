@@ -1,0 +1,25 @@
+uuid: 736a4d9b-b4bf-4953-ad76-ae1e3d77a5f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_title
+label: 'Content title'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  b379ae30-f3c3-4662-85b8-33b984f99ebb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b379ae30-f3c3-4662-85b8-33b984f99ebb
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      etherpad_document: etherpad_document
+      forum: forum
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }
