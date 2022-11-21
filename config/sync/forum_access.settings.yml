@@ -5,3 +5,4 @@ forum_access_roles_gids:
   authenticated: 2
   content_editor: 3
   administrator: 4
+  senior_editor: 5

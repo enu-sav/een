@@ -17,6 +17,8 @@ content:
   author:
     weight: -2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   comment_body:
     type: text_textarea
     weight: 11
@@ -38,6 +40,6 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Enter subject of your comment here. It may remain empty.'
     third_party_settings: {  }
 hidden: {  }

@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - node.type.etherpad_document
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.encyclopedia
   module:
     - comment
     - contact
@@ -12,6 +14,7 @@ dependencies:
     - node
     - search
     - system
+    - taxonomy
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -22,8 +25,11 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'create terms in encyclopedia'
+  - 'edit terms in encyclopedia'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view etherpad_document revisions'
+  - 'view article revisions'
+  - 'view page revisions'

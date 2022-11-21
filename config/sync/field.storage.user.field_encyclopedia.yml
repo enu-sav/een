@@ -1,0 +1,20 @@
+uuid: 5e4a5e9b-b101-422b-9386-7b8b36dd339c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_encyclopedia
+field_name: field_encyclopedia
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

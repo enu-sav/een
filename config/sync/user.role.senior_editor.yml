@@ -1,4 +1,4 @@
-uuid: 62809fbe-50a9-4c6e-902f-5bef67cec50f
+uuid: 9cf53c9e-4f7b-4b19-9740-387261d2a7cc
 langcode: en
 status: true
 dependencies:
@@ -14,12 +14,10 @@ dependencies:
     - content_moderation
     - node
     - system
-_core:
-  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
-id: content_editor
-label: 'Content editor'
-weight: 2
-is_admin: false
+id: senior_editor
+label: 'Senior editor'
+weight: 4
+is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
@@ -28,14 +26,20 @@ permissions:
   - 'create forum content'
   - 'create page content'
   - 'delete own page content'
-  - 'edit own article content'
+  - 'edit any article content'
+  - 'edit any etherpad_document content'
+  - 'edit any page content'
   - 'edit own comments'
-  - 'edit own etherpad_document content'
   - 'edit own forum content'
-  - 'edit own page content'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'
+  - 'use editorial transition needs_review'
+  - 'use editorial transition publish'
   - 'use editorial transition submit'
   - 'use etherpads transition create_new_draft'
+  - 'use etherpads transition promote_to_finished'
   - 'use etherpads transition submit_for_comments'
   - 'view all revisions'
   - 'view any unpublished content'

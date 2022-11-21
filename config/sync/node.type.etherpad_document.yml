@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: 'Etherpad document'
 type: etherpad_document
-description: 'A document edited using Etherpad, a real-time collaborative text editor.'
+description: 'Use  <em>Etherpad document</em> to create documents using Etherpad, a real-time collaborative text editor.'
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: true
