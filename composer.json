@@ -23,6 +23,7 @@
         "drupal/advpoll": "^1.2",
         "drupal/antibot": "^2.0",
         "drupal/config_ignore": "^2.3",
+        "drupal/content_moderation_owner_permissions": "^1.0@alpha",
         "drupal/core": "^9.4",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
