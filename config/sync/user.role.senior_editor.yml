@@ -8,12 +8,11 @@ dependencies:
     - node.type.forum
     - node.type.page
     - workflows.workflow.editorial
-    - workflows.workflow.etherpads
   module:
     - comment
     - content_moderation
+    - content_moderation_owner_permissions
     - node
-    - poll
     - system
     - toolbar
     - workbench
@@ -25,57 +24,30 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access poll overview'
-  - 'access polls'
   - 'access toolbar'
   - 'access workbench'
-  - 'administer content types'
-  - 'administer nodes'
-  - 'bypass node access'
-  - 'cancel own vote'
   - 'create article content'
   - 'create etherpad_document content'
   - 'create forum content'
   - 'create page content'
-  - 'create polls'
-  - 'delete all revisions'
-  - 'delete any article content'
-  - 'delete any etherpad_document content'
-  - 'delete any forum content'
-  - 'delete any page content'
-  - 'delete article revisions'
-  - 'delete etherpad_document revisions'
-  - 'delete forum revisions'
-  - 'delete own article content'
-  - 'delete own etherpad_document content'
-  - 'delete own forum content'
-  - 'delete own page content'
-  - 'delete page revisions'
   - 'edit any article content'
   - 'edit any etherpad_document content'
-  - 'edit any forum content'
   - 'edit any page content'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
   - 'edit own forum content'
   - 'edit own page content'
-  - 'edit own polls'
-  - 'revert all revisions'
-  - 'revert article revisions'
-  - 'revert etherpad_document revisions'
-  - 'revert forum revisions'
-  - 'revert page revisions'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'
-  - 'use editorial transition create_new_draft'
-  - 'use editorial transition needs_review'
+  - 'use editorial transition create_new_draft for own content'
+  - 'use editorial transition needs_review for own content'
   - 'use editorial transition publish'
-  - 'use editorial transition submit'
-  - 'use etherpads transition create_new_draft'
-  - 'use etherpads transition promote_to_finished'
-  - 'use etherpads transition submit_for_comments'
+  - 'use editorial transition submit for own content'
+  - 'use etherpads transition create_new_draft for own content'
+  - 'use etherpads transition promote_to_finished for own content'
+  - 'use etherpads transition submit_for_comments for own content'
   - 'use workbench access'
   - 'view all revisions'
   - 'view any unpublished content'

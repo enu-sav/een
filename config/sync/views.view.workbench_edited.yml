@@ -751,7 +751,7 @@ display:
           entity_field: status
           plugin_id: boolean
           operator: '='
-          value: '1'
+          value: All
           group: 1
           exposed: true
           expose:
@@ -769,8 +769,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              content_editor: '0'
+              senior_editor: '0'
               administrator: '0'
-              editor: '0'
           is_grouped: false
           group_info:
             label: ''
