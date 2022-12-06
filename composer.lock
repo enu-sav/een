@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7aa6c0b9a8bf7e3c21c94234e829e0ac",
+    "content-hash": "a7765bad9818e2f9591910fbc6d4ec5d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2287,6 +2287,55 @@
             }
         },
         {
+            "name": "drupal/forum",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/forum.git",
+                "reference": "4978fff629e3ba1eabe1222c4f59a168788c82f1"
+            },
+            "require": {
+                "drupal/core": ">=9.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "1.x-dev",
+                    "datestamp": "1649110640",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/786132"
+                },
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides discussion forums.",
+            "homepage": "https://www.drupal.org/project/forum",
+            "support": {
+                "source": "https://git.drupalcode.org/project/forum"
+            }
+        },
+        {
             "name": "drupal/forum_access",
             "version": "1.0.0-beta1",
             "source": {
@@ -2343,6 +2392,51 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/forum_access",
                 "issues": "https://drupal.org/project/issues/forum_access"
+            }
+        },
+        {
+            "name": "drupal/forum_notifications_subscription",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/forum_notifications_subscription.git",
+                "reference": "1.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/forum_notifications_subscription-1.0.0-alpha1.zip",
+                "reference": "1.0.0-alpha1",
+                "shasum": "ea92c5e8ba1c3f0f1cdaf0ab17e30d7ead353a49"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/forum": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha1",
+                    "datestamp": "1661784544",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "diaodiallo",
+                    "homepage": "https://www.drupal.org/user/3574365"
+                }
+            ],
+            "description": "Allow subscription to forum notifications",
+            "homepage": "https://www.drupal.org/project/forum_notifications_subscription",
+            "support": {
+                "source": "https://git.drupalcode.org/project/forum_notifications_subscription"
             }
         },
         {
@@ -12311,6 +12405,7 @@
     "stability-flags": {
         "drupal/content_moderation_owner_permissions": 15,
         "drupal/forum_access": 10,
+        "drupal/forum_notifications_subscription": 15,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/mimemail": 15

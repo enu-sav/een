@@ -29,6 +29,7 @@
         "drupal/core-recommended": "^9.4",
         "drupal/diff": "^1.1",
         "drupal/forum_access": "^1.0@beta",
+        "drupal/forum_notifications_subscription": "^1.0@alpha",
         "drupal/gin": "^3.0@beta",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/mailsystem": "^4.4",

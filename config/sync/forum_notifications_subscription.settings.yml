@@ -1,0 +1,12 @@
+settings:
+  forum_label_on: 'Subscribe to this forum'
+  forum_label_off: 'Unsubscribe from this forum'
+  post_subject: 'New discussion added on the "Site name" website'
+  post_message: Subscribe
+  topic_label_on: 'Subscribe to this forum topic'
+  topic_label_off: 'Unsubscribe from this forum topic'
+  comment_subject: 'New comment on the "Site name" website'
+  comment_message: Unsubscribe
+  forum_default_frequency: 'Single Emails'
+  topic_default_frequency: 'Single Emails'
+  cron: 0
