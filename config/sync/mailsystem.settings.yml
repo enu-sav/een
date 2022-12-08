@@ -4,3 +4,8 @@ theme: olivero
 defaults:
   sender: phpmailer_smtp
   formatter: phpmailer_smtp
+modules:
+  user:
+    All:
+      sender: phpmailer_smtp
+      formatter: phpmailer_smtp
