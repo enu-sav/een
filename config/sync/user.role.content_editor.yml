@@ -13,7 +13,6 @@ dependencies:
     - content_moderation_owner_permissions
     - node
     - system
-    - toolbar
     - workbench
     - workbench_access
 _core:
@@ -25,7 +24,6 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access toolbar'
   - 'access workbench'
   - 'create article content'
   - 'create etherpad_document content'
@@ -36,6 +34,7 @@ permissions:
   - 'edit own etherpad_document content'
   - 'edit own forum content'
   - 'edit own page content'
+  - 'revert forum revisions'
   - 'use editorial transition create_new_draft for own content'
   - 'use editorial transition needs_review for own content'
   - 'use editorial transition submit for own content'

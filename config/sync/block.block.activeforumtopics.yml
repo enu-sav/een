@@ -1,0 +1,23 @@
+uuid: 32e47325-a50e-4b85-8902-3b8c919bc2eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - forum
+  theme:
+    - olivero
+id: activeforumtopics
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: forum_active_block
+settings:
+  id: forum_active_block
+  label: 'Active forum topics'
+  label_display: visible
+  provider: forum
+  properties:
+    administrative: '1'
+  block_count: 5
+visibility: {  }

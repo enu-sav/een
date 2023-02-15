@@ -1,12 +1,12 @@
 settings:
   forum_label_on: 'Subscribe to this forum'
   forum_label_off: 'Unsubscribe from this forum'
-  post_subject: 'New discussion added on the "Site name" website'
-  post_message: Subscribe
+  post_subject: 'New topic on the EEN website in "[fns_topic:forum_name]"'
+  post_message: "A new topic has been created in the EEN website forum.\r\n\r\nForum name: [fns_topic:forum_name]\r\nTopic name: [fns_topic:topic_name]\r\nTopic address: [fns_topic:topic_url]\r\nCreated by:[fns_topic:poster_name]\r\n"
   topic_label_on: 'Subscribe to this forum topic'
   topic_label_off: 'Unsubscribe from this forum topic'
-  comment_subject: 'New comment on the "Site name" website'
-  comment_message: Unsubscribe
+  comment_subject: 'New comment on the EEN website on "[fns_comment:topic_name]"'
+  comment_message: "A new comment has been posted in the EEN website forum.\r\n\r\nTopic name: [fns_comment:topic_name]\r\nTopic address: [fns_comment:topic_url]\r\nComment address: [fns_comment:comment_url]\r\nPosted by: [fns_comment:poster_name]\r\n\r\nComment text:\r\n[fns_comment:comment_body]"
   forum_default_frequency: 'Single Emails'
   topic_default_frequency: 'Single Emails'
   cron: 0

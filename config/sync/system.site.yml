@@ -3,12 +3,12 @@ _core:
 langcode: en
 uuid: 3f222c2f-de2b-4c3d-8b9d-5025a7f9ddcd
 name: 'European Encyclopedia Network'
-mail: een@encyklopedianetwork.eu
+mail: een@encyclopedianetwork.eu
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/15
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

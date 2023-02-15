@@ -38,6 +38,7 @@ permissions:
   - 'edit own etherpad_document content'
   - 'edit own forum content'
   - 'edit own page content'
+  - 'revert forum revisions'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'
