@@ -7,6 +7,7 @@ dependencies:
   module:
     - comment
     - contact
+    - file
     - filter
     - search
     - system
@@ -20,6 +21,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'delete own files'
   - 'edit own comments'
   - 'post comments'
   - 'search content'

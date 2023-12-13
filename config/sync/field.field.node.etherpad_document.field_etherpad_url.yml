@@ -12,7 +12,7 @@ field_name: field_etherpad_url
 entity_type: node
 bundle: etherpad_document
 label: 'URL of the Etherpad document to be edited'
-description: 'Etherpad URL. Create a document in Etherpad and copy here its URL. Address of the Network''s Etherpad editor will be announced in Forum'
+description: "Etherpad URL. Create a document in Etherpad and copy here its URL. Address of the Network's Etherpad editor will be announced in Forum"
 required: true
 translatable: false
 default_value: {  }

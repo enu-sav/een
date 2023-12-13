@@ -45,11 +45,10 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   phpmailer_smtp: 0
   poll: 0
-  rdf: 0
   recreate_block_content: 0
-  reroute_email: 0
   search: 0
   simple_sitemap: 0
   system: 0
@@ -59,7 +58,6 @@ module:
   toolbar: 0
   tour: 0
   update: 0
-  upgrade_status: 0
   user: 0
   views_ui: 0
   workbench: 0

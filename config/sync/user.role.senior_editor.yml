@@ -12,6 +12,7 @@ dependencies:
     - comment
     - content_moderation
     - content_moderation_owner_permissions
+    - file
     - node
     - system
     - toolbar
@@ -30,6 +31,7 @@ permissions:
   - 'create etherpad_document content'
   - 'create forum content'
   - 'create page content'
+  - 'delete own files'
   - 'edit any article content'
   - 'edit any etherpad_document content'
   - 'edit any page content'

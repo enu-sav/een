@@ -35,6 +35,11 @@ content:
     third_party_settings: {  }
     weight: 20
     region: content
+  forum_notifications_subscription:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content

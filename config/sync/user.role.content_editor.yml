@@ -11,6 +11,7 @@ dependencies:
     - comment
     - content_moderation
     - content_moderation_owner_permissions
+    - file
     - node
     - system
     - workbench
@@ -29,6 +30,7 @@ permissions:
   - 'create etherpad_document content'
   - 'create forum content'
   - 'create page content'
+  - 'delete own files'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
