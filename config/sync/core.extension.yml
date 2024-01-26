@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   acl: 0
+  admin_local_tasks: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   advpoll: 0
@@ -23,6 +24,8 @@ module:
   diff: 0
   dynamic_page_cache: 0
   editor: 0
+  een_base: 0
+  entity_reference_revisions: 0
   environment_indicator: 0
   field: 0
   field_ui: 0
@@ -33,8 +36,13 @@ module:
   history: 0
   image: 0
   language: 0
+  layout_discovery: 0
+  layout_options: 0
+  layout_paragraphs: 0
   link: 0
   mailsystem: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
@@ -43,14 +51,18 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_features: 0
   path: 0
   path_alias: 0
   phpass: 0
   phpmailer_smtp: 0
   poll: 0
   recreate_block_content: 0
+  responsive_image: 0
   search: 0
   simple_sitemap: 0
+  svg_image: 0
+  svg_image_responsive: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -67,9 +79,11 @@ module:
   pathauto: 1
   forum_access: 2
   views: 10
+  paragraphs: 11
+  paragraphs_ee: 15
   standard: 1000
 theme:
-  olivero: 0
   claro: 0
   gin: 0
+  een: 0
 profile: standard

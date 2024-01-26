@@ -1,0 +1,15 @@
+uuid: ddac9498-d5e5-4a64-b8e2-ccecec2c76f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: Text
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

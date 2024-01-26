@@ -1,0 +1,20 @@
+uuid: c785ad4a-7be5-416c-80bb-2dfd22db6056
+langcode: en
+status: true
+dependencies:
+  theme:
+    - een
+id: een_primary_local_tasks
+theme: een
+region: help
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
