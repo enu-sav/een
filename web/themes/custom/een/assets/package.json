@@ -1,0 +1,33 @@
+{
+  "name": "theme",
+  "version": "1.1.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "npm": ">=10.2.4",
+    "node": ">=20.10.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "gulp start"
+  },
+  "devDependencies": {
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-symbols": "^3.2.3",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-upng": "^4.0.0",
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains een_base.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Component\Render\FormattableMarkup;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function een_base_page_attachments(&$page) {
+  if (\Drupal::service('router.admin_context')
+      ->isAdminRoute() && !\Drupal::currentUser()->isAnonymous()) {
+    $page['#attached']['library'][] = 'een_base/admin_overrides';
+  }
+}
+
+
+/**
+ * Implements hook_language_fallback_candidates_OPERATION_alter().
+ */
+function een_base_language_fallback_candidates_entity_view_alter(array &$candidates, array $context) {
+  // Prevent paragraph fallbacks when unpublished translation
+  if ($context['data']->getEntityTypeId() == 'paragraph') {
+    $candidates = [];
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function een_base_paragraph_view(array &$build, EntityInterface $paragraph, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('disabled_preview_message')) {
+    $bundles = \Drupal::service('entity_type.bundle.info')
+      ->getBundleInfo('paragraph');
+    $label = $bundles[$paragraph->bundle()]['label'];
+
+    $build['disabled_preview_message'] = [
+      '#markup' => new FormattableMarkup('<div class="messages messages--warning"><strong>:label</strong> :reason</div>', [
+        ':label' => t('Paragraph :bundle', [':bundle' => $label]),
+        ':reason' => t('can not be previewed when editing content.'),
+      ]),
+    ];
+  }
+}

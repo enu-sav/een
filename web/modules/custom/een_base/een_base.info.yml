@@ -1,0 +1,9 @@
+name: 'EEN Base'
+type: module
+description: 'EEN Base Module'
+package: EEN
+core_version_requirement: ^8 || ^9 || ^10
+
+dependencies:
+  - drupal:layout_options
+  - drupal:layout_paragraphs

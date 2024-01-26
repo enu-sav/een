@@ -1,0 +1,13 @@
+admin_overrides:
+  version: VERSION
+  css:
+    theme:
+      assets/css/admin_tweak.css: { media: all }
+  dependencies:
+    - een_base/grillade
+
+grillade:
+  version: VERSION
+  css:
+    theme:
+      assets/css/grillade.css: { }

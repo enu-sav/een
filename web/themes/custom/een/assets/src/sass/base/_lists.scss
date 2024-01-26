@@ -1,0 +1,28 @@
+// List styles
+ul,
+ol {
+  #header &,
+  #footer &,
+  nav & {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .paragraph & {
+    margin: 0 0 $small-spacing;
+  }
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}

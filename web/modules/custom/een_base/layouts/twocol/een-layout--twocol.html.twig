@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+  'layout',
+  'layout--twocol',
+  'page__section',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="wrapper">
+
+      {% set other_grid = [
+        settings.column_widths == 'spec-px' ? ' g_spec-px' : null,
+        settings.column_widths == 'spec-px-second' ? ' g_spec-px-second' : null
+      ] %}
+
+      <div class="grid has-gutter-xl{{ other_grid|join }}">
+        {% set first_region_classes = [
+          'layout__region',
+          'layout__region--first',
+          settings.column_widths == '75-25' ? 'col-3' : null,
+          settings.column_widths == '67-33' ? 'col-2' : null,
+          settings.column_widths == 'spec-px' ? 'f_spec-px' : null,
+          settings.column_widths == 'spec-px-second' ? 'f_spec-px-second' : null
+        ] %}
+
+        <div {{ region_attributes.first.addClass(first_region_classes) }}>
+          {{ content.first }}
+        </div>
+
+        {% set second_region_classes = [
+          'layout__region',
+          'layout__region--second',
+          settings.column_widths == '25-75' ? 'col-3' : null,
+          settings.column_widths == '33-67' ? 'col-2' : null,
+          settings.column_widths == 'spec-px' ? 's_spec-px' : null,
+          settings.column_widths == 'spec-px-second' ? 's_spec-px-second' : null
+        ] %}
+
+        <div {{ region_attributes.second.addClass(second_region_classes) }}>
+          {{ content.second }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

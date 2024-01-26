@@ -1,0 +1,63 @@
+// Margin/Padding
+$margin: $gutter;
+$padding: $gutter;
+
+// Typography
+$base-font-family: 'Hind', sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: $font-size;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.3;
+
+// Letter spacing
+$base-letter-spacing: 0.03em;
+
+// Other Sizes
+$base-border-radius: 2px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: calc($base-spacing / 2);
+$base-z-index: 0;
+
+// Colors
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #F7F7F7;
+
+// Brand Colors
+$primary-color: #555;
+$blue: #90DCFC;
+$dark-blue: #181C24;
+
+// Action Colors
+$status-color: #8dbe51;
+$warning-color: #ddc44f;
+$error-color: #cd4533;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $primary-color;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$white: #fff;
+$viewport-background-color: $white;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+$trans-time-fast: 250ms cubic-bezier(0.33, 0.7, 0.32, 1) 0ms;
+$transition-collapse: max-height .35s ease !default;
+$transition-base: all .2s ease-in-out !default;

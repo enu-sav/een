@@ -1,0 +1,99 @@
+// Define global font size
+$font-size: 16px;
+
+// Variables to override default grid settings
+$columns: 12;
+$gutter-small: 16px;
+$gutter: 24px;
+$max-screen: 1500px;
+
+// =============================================
+// MEDIA QUERIES
+// =============================================
+$grid-xs: 100%;
+$grid-sm: 480px;
+$grid-md: 759px;
+$grid-lg: 1024px;
+$grid-xl: 1400px;
+
+@mixin size($mq) {
+  @if $mq == 'xs-only' {
+    @media only screen and (max-width: $grid-sm - 1px) {
+      @content;
+    }
+  }
+  @else if $mq == 'sm-up' {
+    @media only screen and (min-width: $grid-sm) {
+      @content;
+    }
+  }
+  @else if $mq == 'sm-only' {
+    @media only screen and (min-width: $grid-sm) and (max-width: ($grid-md - 1px)) {
+      @content;
+    }
+  }
+  @else if $mq == 'sm-down' {
+    @media only screen and (max-width: ($grid-md - 1px)) {
+      @content;
+    }
+  }
+  @else if $mq == 'md-up' {
+    @media only screen and (min-width: $grid-md) {
+      @content;
+    }
+  }
+  @else if $mq == 'md-only' {
+    @media only screen and (min-width: $grid-md) and (max-width: ($grid-lg - 1px)) {
+      @content;
+    }
+  }
+  @else if $mq == 'md-down' {
+    @media only screen and (max-width: ($grid-lg - 1px)) {
+      @content;
+    }
+  }
+  @else if $mq == 'lg-up' {
+    @media only screen and (min-width: $grid-lg) {
+      @content;
+    }
+  }
+  @else if $mq == 'lg-only' {
+    @media only screen and (min-width: $grid-lg) and (max-width: ($grid-xl - 1px )) {
+      @content;
+    }
+  }
+  @else if $mq == 'lg-down' {
+    @media only screen and (max-width: ($grid-xl - 1px)) {
+      @content;
+    }
+  }
+  @else if $mq == 'xl-up' {
+    @media only screen and (min-width: $grid-xl) {
+      @content;
+    }
+  }
+}
+
+
+// COLUMN WIDHTS
+$width-1-col-small: calc(8.3333% - #{calc($gutter-small / 12 * 10)});
+$width-1-5-col-small: calc(12.5% - #{calc($gutter-small / 12 * 10)});
+$width-2-col-small: calc(16.6666% - #{calc($gutter-small / 12 * 10)});
+$width-3-col-small: calc(25% - #{calc($gutter-small / 12 * 9)});
+$width-4-col-small: calc(33.3333% - #{calc($gutter-small / 12 * 8)});
+$width-6-col-small: calc(50% - #{calc($gutter-small / 12 * 6)});
+$width-7-col-small: calc(58.3333% - #{calc($gutter-small / 12 * 8)});
+$width-8-col-small: calc(66.6666% - #{calc($gutter-small / 12 * 4)});
+$width-9-col-small: calc(75% - #{calc($gutter-small / 12 * 3)});
+$width-10-col-small: calc(83.3333% - #{calc($gutter-small / 12 * 2)});
+
+$width-1-col: calc(8.3333% - #{calc($gutter / 12 * 10)});
+$width-1-5-col: calc(12.5% - #{calc($gutter / 12 * 10)});
+$width-2-col: calc(16.6666% - #{calc($gutter / 12 * 10)});
+$width-3-col: calc(25% - #{calc($gutter / 12 * 9)});
+$width-4-col: calc(33.3333% - #{calc($gutter / 12 * 8)});
+$width-6-col: calc(50% - #{calc($gutter / 12 * 6)});
+$width-7-col: calc(58.3333% - #{calc($gutter / 12 * 8)});
+$width-8-col: calc(66.6666% - #{calc($gutter / 12 * 4)});
+$width-9-col: calc(75% - #{calc($gutter / 12 * 3)});
+$width-10-col: calc(83.3333% - #{calc($gutter / 12 * 2)});

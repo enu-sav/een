@@ -1,0 +1,50 @@
+een_layout_twocol:
+  label: 'Two column'
+  path: layouts/twocol
+  template: een-layout--twocol
+  class: '\Drupal\een_base\Plugin\Layout\TwoColumnLayout'
+  category: 'EEN'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+een_layout_threecol:
+  label: 'Three column'
+  path: layouts/threecol
+  template: een-layout--threecol
+  class: '\Drupal\een_base\Plugin\Layout\ThreeColumnLayout'
+  category: 'EEN'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+een_layout_fourcol:
+  label: 'Four column'
+  path: layouts/fourcol
+  template: een-layout--fourcol
+  class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
+  category: 'EEN'
+  default_region: first
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth

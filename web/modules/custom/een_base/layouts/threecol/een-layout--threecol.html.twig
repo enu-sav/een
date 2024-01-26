@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+  'layout',
+  'layout--threecol',
+  'page__section',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="wrapper">
+      <div class="grid has-gutter-xl">
+        {% set first_region_classes = [
+          'layout__region',
+          'layout__region--first',
+          settings.column_widths == '50-25-25' ? 'col-2' : null
+        ] %}
+
+        <div {{ region_attributes.first.addClass(first_region_classes) }}>
+          {{ content.first }}
+        </div>
+
+        {% set second_region_classes = [
+          'layout__region',
+          'layout__region--second',
+          settings.column_widths == '25-50-25' ? 'col-2' : null
+        ] %}
+
+        <div {{ region_attributes.second.addClass(second_region_classes) }}>
+          {{ content.second }}
+        </div>
+
+        {% set third_region_classes = [
+          'layout__region',
+          'layout__region--third',
+          settings.column_widths == '25-25-50' ? 'col-2' : null
+        ] %}
+
+        <div {{ region_attributes.third.addClass(third_region_classes) }}>
+          {{ content.third }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

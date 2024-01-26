@@ -1,0 +1,25 @@
+// Tabs.
+ul.tabs {
+  width: 100%;
+  margin: 0 0 2em;
+  border-bottom: 1px solid $dark-gray;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    background-color: $action-color;
+    border: 1px solid $action-color;
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    padding: 0.5em 1em;
+    color: #ffffff;
+
+    &:hover {
+      background-color: shade($action-color, 20%);
+      border-color: shade($action-color, 20%);
+    }
+  }
+}

@@ -1,0 +1,2 @@
+((Drupal, settings) => {
+})(Drupal, drupalSettings);

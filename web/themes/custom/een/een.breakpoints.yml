@@ -1,0 +1,28 @@
+my_theme.small:
+  label: small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+my_theme.medium:
+  label: medium
+  mediaQuery: 'screen and (min-width: 480px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+my_theme.wide:
+  label: wide
+  mediaQuery: 'screen and (min-width: 900px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+my_theme.max:
+  label: max
+  mediaQuery: 'screen and (min-width: 1200px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x

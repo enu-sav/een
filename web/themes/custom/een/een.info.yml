@@ -1,0 +1,23 @@
+name: European Encyclopedia Network
+type: theme
+description: 'European Encyclopedia Network theme'
+package: Core
+project: 'een'
+datestamp: 1524949387
+version: '1.0'
+core_version_requirement: ^10
+base theme: false
+
+libraries:
+  - core/normalize
+  - een/global
+
+regions:
+  header: Header
+  menu: Menu
+  hero: 'Hero image'
+  help: Help
+  highlighted: Highlighted
+  content: Content
+  content_footer: 'Content Footer'
+  footer: Footer
