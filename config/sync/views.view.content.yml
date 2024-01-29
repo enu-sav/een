@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.forum
     - node.type.page
     - system.menu.main
@@ -1118,7 +1117,6 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            article: article
             page: page
             forum: forum
           group: 1

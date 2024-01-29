@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
+    - node.type.page
   module:
     - content_moderation
 _core:
@@ -80,5 +80,5 @@ type_settings:
       weight: -3
   entity_types:
     node:
-      - article
+      - page
   default_moderation_state: draft

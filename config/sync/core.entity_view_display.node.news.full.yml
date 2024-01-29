@@ -1,27 +1,30 @@
-uuid: dc763b75-e7cd-48b1-8670-705b3ed5a1ca
+uuid: dea52d7c-e913-46af-ae2b-3a6946998a19
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.full
     - field.field.node.news.field_lead_text
     - field.field.node.news.field_paragraphs
     - node.type.news
   module:
+    - layout_paragraphs
     - user
-id: node.news.teaser
+id: node.news.full
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: full
 content:
-  field_lead_text:
-    type: basic_string
+  field_paragraphs:
+    type: layout_paragraphs
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  field_paragraphs: true
+  field_lead_text: true
   langcode: true
   links: true

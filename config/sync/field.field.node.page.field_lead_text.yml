@@ -1,0 +1,19 @@
+uuid: 0ecfb70d-3df0-4d95-9850-00b7782a7111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead_text
+    - node.type.page
+id: node.page.field_lead_text
+field_name: field_lead_text
+entity_type: node
+bundle: page
+label: 'Lead text'
+description: 'Lead text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

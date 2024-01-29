@@ -1,0 +1,24 @@
+uuid: 49b21ede-24b3-4c7f-ba92-427fc49b818c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attached_document.field_attached_document
+    - paragraphs.paragraphs_type.attached_document
+  module:
+    - media_library
+id: paragraph.attached_document.default
+targetEntityType: paragraph
+bundle: attached_document
+mode: default
+content:
+  field_attached_document:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

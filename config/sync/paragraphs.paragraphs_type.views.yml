@@ -1,0 +1,15 @@
+uuid: 4c2e3f40-54a2-4d5e-880d-a5a6fc2f8073
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: views
+label: Views
+icon_uuid: null
+icon_default: null
+description: Views
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

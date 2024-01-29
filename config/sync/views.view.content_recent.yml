@@ -1,10 +1,10 @@
 uuid: 42a982b6-b2a9-4691-beac-5f0a331ec8fb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.page
   module:
     - node
     - text
@@ -330,11 +330,11 @@ display:
       tags: {  }
   block_2:
     id: block_2
-    display_title: 'Recent articles'
+    display_title: 'Recent pages'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Recent articles'
+      title: 'Recent pages'
       fields:
         title:
           id: title
@@ -445,7 +445,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-          label: 'Article created '
+          label: 'Pages created '
           exclude: false
           alter:
             alter_text: false
@@ -596,7 +596,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            article: article
+            page: page
           group: 1
           exposed: false
           expose:

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.etherpad_document
     - node.type.forum
     - node.type.page
@@ -534,7 +533,6 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            article: article
             page: page
             etherpad_document: etherpad_document
           group: 1

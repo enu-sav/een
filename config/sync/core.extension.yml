@@ -38,7 +38,9 @@ module:
   language: 0
   layout_discovery: 0
   layout_options: 0
+  layout_options_ui: 0
   layout_paragraphs: 0
+  layout_paragraphs_permissions: 0
   link: 0
   mailsystem: 0
   media: 0

@@ -1,0 +1,11 @@
+een_base.admin:
+  route_name: een_base.admin
+  parent: system.admin
+  title: EEN
+  weight: -9
+
+een_base.admin_config:
+  title: 'Site settings'
+  parent: een_base.admin
+  weight: 100
+  route_name: een_base.admin_config

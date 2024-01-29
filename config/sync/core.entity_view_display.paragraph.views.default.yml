@@ -1,0 +1,21 @@
+uuid: a47c30d5-8525-4397-b5ba-e43f6d4c131d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.views.field_views
+    - paragraphs.paragraphs_type.views
+id: paragraph.views.default
+targetEntityType: paragraph
+bundle: views
+mode: default
+content:
+  field_views:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

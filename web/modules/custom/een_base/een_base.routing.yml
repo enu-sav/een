@@ -1,0 +1,15 @@
+een_base.admin:
+  path: '/admin/een'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'EEN'
+  requirements:
+    _permission: 'access administration pages'
+
+een_base.admin_config:
+  path: '/admin/een/config'
+  defaults:
+    _form: '\Drupal\een_base\Form\SettingsForm'
+    _title: 'Site settings'
+  requirements:
+    _permission: 'administer een settings'

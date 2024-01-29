@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.etherpad_document
     - node.type.forum
     - node.type.page
@@ -26,12 +25,10 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access workbench'
-  - 'create article content'
   - 'create etherpad_document content'
   - 'create forum content'
   - 'create page content'
   - 'delete own files'
-  - 'edit own article content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
   - 'edit own forum content'
@@ -46,14 +43,12 @@ permissions:
   - 'use workbench access'
   - 'view all revisions'
   - 'view any unpublished content'
-  - 'view article revisions'
   - 'view etherpad_document revisions'
   - 'view forum revisions'
   - 'view latest version'
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view the administration theme'
-  - 'view unpublished article content'
   - 'view unpublished etherpad_document content'
   - 'view unpublished forum content'
   - 'view unpublished page content'

@@ -1,0 +1,7 @@
+general:
+  contacts:
+    text:
+      value: '<h2>EUROPEAN ENCYCLOPEDIA NETWORK&nbsp;</h2><p>Contact person&nbsp;</p><p>Bruno Kragić</p>'
+      format: full_html
+    email: bruno.kragic@lzmk.hr
+    phone_number: '+385 1 4800 398'

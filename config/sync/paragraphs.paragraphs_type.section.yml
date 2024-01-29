@@ -13,12 +13,7 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      layout_onecol: 'One column'
-      layout_twocol: 'Two column'
-      layout_twocol_bricks: 'Two column bricks'
-      layout_threecol_25_50_25: 'Three column 25/50/25'
-      layout_threecol_33_34_33: 'Three column 33/34/33'
-      een_layout_onecol: '1 column'
-      een_layout_twocol: '2 column'
-      een_layout_threecol: '3 column'
-      een_layout_fourcol: '4 column'
+      een_layout_fourcol: 'Four column'
+      een_layout_onecol: 'One column'
+      een_layout_threecol: 'Three column'
+      een_layout_twocol: 'Two column'

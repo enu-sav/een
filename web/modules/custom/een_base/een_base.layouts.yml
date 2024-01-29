@@ -1,3 +1,16 @@
+een_layout_onecol:
+  label: 'One column'
+  path: layouts/onecol
+  template: een-layout--onecol
+  class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
+  category: 'EEN'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
 een_layout_twocol:
   label: 'Two column'
   path: layouts/twocol

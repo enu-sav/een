@@ -118,6 +118,8 @@ layout_options:
     layout_class: { }
     layout_spacing_top: { }
     layout_spacing_bottom: { }
+  een_layout_onecol:
+    layout_design_classes: { }
   een_layout_twocol:
     layout_slick_classes: { }
     layout_align_items: { }

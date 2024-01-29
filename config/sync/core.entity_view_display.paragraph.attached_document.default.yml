@@ -1,0 +1,22 @@
+uuid: c13bf4ee-94fa-4c13-9cdf-2d8fa943cd3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attached_document.field_attached_document
+    - paragraphs.paragraphs_type.attached_document
+id: paragraph.attached_document.default
+targetEntityType: paragraph
+bundle: attached_document
+mode: default
+content:
+  field_attached_document:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
