@@ -1,0 +1,20 @@
+uuid: f41c7586-e5a5-46ca-b3b0-4f1a45b1b2aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - een_base
+  theme:
+    - een
+id: een_copyright
+theme: een
+region: footer
+weight: 0
+provider: null
+plugin: een_copyright
+settings:
+  id: een_copyright
+  label: Copyright
+  label_display: '0'
+  provider: een_base
+visibility: {  }

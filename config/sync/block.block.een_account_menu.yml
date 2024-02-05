@@ -1,6 +1,6 @@
 uuid: 1d7d9441-d710-44d9-830c-6f5e6df6c91e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -13,7 +13,7 @@ _core:
 id: een_account_menu
 theme: een
 region: header
-weight: -3
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

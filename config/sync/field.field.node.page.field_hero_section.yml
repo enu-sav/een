@@ -1,19 +1,19 @@
-uuid: 7bd4505c-818f-4469-9a5e-2d1bfb4828c9
+uuid: d82991cb-c8cc-49b0-b867-ea116c16e72b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs
+    - field.storage.node.field_hero_section
     - node.type.page
     - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
-id: node.page.field_paragraphs
-field_name: field_paragraphs
+id: node.page.field_hero_section
+field_name: field_hero_section
 entity_type: node
 bundle: page
-label: Paragraphs
-description: Paragraphs
+label: 'Hero section'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -23,7 +23,7 @@ settings:
   handler_settings:
     target_bundles:
       hero: hero
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
       attached_document:
         weight: 7
@@ -32,13 +32,13 @@ settings:
         weight: 8
         enabled: true
       image:
-        weight: 4
+        weight: 9
         enabled: false
       section:
-        weight: 5
+        weight: 10
         enabled: false
       text:
-        weight: 6
+        weight: 11
         enabled: false
       views:
         weight: 12

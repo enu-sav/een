@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.comment
+    - field.field.node.page.field_hero_section
     - field.field.node.page.field_lead_text
     - field.field.node.page.field_paragraphs
     - node.type.page
@@ -17,6 +18,11 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_lead_text:
     type: basic_string
     label: hidden
@@ -26,6 +32,7 @@ content:
     region: content
 hidden:
   comment: true
+  field_hero_section: true
   field_paragraphs: true
   langcode: true
   links: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.comment
+    - field.field.node.page.field_hero_section
     - field.field.node.page.field_lead_text
     - field.field.node.page.field_paragraphs
     - node.type.page
@@ -18,6 +19,8 @@ mode: default
 content: {  }
 hidden:
   comment: true
+  content_moderation_control: true
+  field_hero_section: true
   field_lead_text: true
   field_paragraphs: true
   langcode: true

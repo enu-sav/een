@@ -624,6 +624,7 @@ display:
     display_plugin: page
     position: 2
     display_options:
+      enabled: false
       title: 'View content'
       fields:
         title:
@@ -1231,7 +1232,8 @@ display:
         type: normal
         title: 'View content'
         description: ''
-        weight: 0
+        weight: -47
+        enabled: false
         expanded: false
         menu_name: main
         parent: ''

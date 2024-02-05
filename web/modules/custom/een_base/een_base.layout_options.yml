@@ -9,6 +9,61 @@ layout_option_definitions:
     regions: false
     weight: -49
 
+  layout_bg_color:
+    title: 'Background color'
+    description: ''
+    default: 'bg-white'
+    plugin: layout_options_class_select
+    multi: false
+    options: {
+      bg-white: 'White',
+      bg-gray: 'Gray',
+    }
+    layout: true
+    regions: false
+    weight: -99
+
+  layout_bg_image:
+    title: 'Background image'
+    description: ''
+    default: ''
+    plugin: een_layout_background_image
+    multi: false
+    layout: true
+    regions: false
+    weight: -96
+
+  layout_bg_image_width:
+    title: 'Background image width'
+    description: ''
+    default: ''
+    plugin: layout_options_class_radios
+    multi: false
+    inline: true
+    layout: true
+    regions: false
+    weight: -95
+    options: {
+      background--full-width: 'Full Width',
+      background--contain: 'Contain',
+    }
+
+  layout_bg_image_options:
+    title: 'Background image position'
+    description: ''
+    default: ''
+    plugin: layout_options_class_radios
+    multi: false
+    inline: true
+    layout: true
+    regions: false
+    weight: -90
+    options: {
+      background--left: 'Left',
+      background--center: 'Center',
+      background--rigth: 'Right',
+    }
+
   layout_class:
     title: 'Custom classes'
     description: 'The CSS classes to use on this layout item.'
@@ -16,7 +71,7 @@ layout_option_definitions:
     plugin: layout_options_class_string
     layout: true
     regions: false
-    weight: -48
+    weight: -85
 
   layout_design_classes:
     title: 'Visual options'
@@ -29,20 +84,7 @@ layout_option_definitions:
     }
     layout: true
     regions: false
-    weight: -99
-
-  layout_slick_classes:
-    title: 'Slick options'
-    description: ''
-    default: ''
-    plugin: layout_options_class_checkboxes
-    inline: false
-    options: {
-      slick: 'Enable slick',
-    }
-    layout: true
-    regions: false
-    weight: -99
+    weight: -80
 
   layout_invert_classes:
     title: 'Invert column'
@@ -55,7 +97,7 @@ layout_option_definitions:
     }
     layout: true
     regions: false
-    weight: -98
+    weight: -75
 
   layout_spacing_top:
     title: 'Inner space - Top'
@@ -73,7 +115,7 @@ layout_option_definitions:
     }
     layout: true
     regions: false
-    weight: -95
+    weight: -70
 
   layout_spacing_bottom:
     title: 'Inner space - Bottom'
@@ -91,7 +133,7 @@ layout_option_definitions:
     }
     layout: true
     regions: false
-    weight: -94
+    weight: -65
 
   layout_align_items:
     title: 'Align items'
@@ -106,7 +148,7 @@ layout_option_definitions:
     }
     layout: true
     regions: false
-    weight: -93
+    weight: -60
 
 #
 # This section of the yaml file defines the "rules" used to determine which options are shown.
@@ -115,18 +157,19 @@ layout_option_definitions:
 layout_options:
   global:
     layout_id: { }
+    layout_bg_color: { }
+    layout_bg_image: { }
+    layout_bg_image_width: { }
+    layout_bg_image_options: { }
     layout_class: { }
     layout_spacing_top: { }
     layout_spacing_bottom: { }
   een_layout_onecol:
     layout_design_classes: { }
   een_layout_twocol:
-    layout_slick_classes: { }
     layout_align_items: { }
     layout_invert_classes: { }
   een_layout_threecol:
-    layout_slick_classes: { }
     layout_align_items: { }
   een_layout_fourcol:
-    layout_slick_classes: { }
     layout_align_items: { }
