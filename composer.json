@@ -52,6 +52,7 @@
         "drupal/simple_sitemap": "^4.1",
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.13",
+        "drupal/twig_tweak": "^3.2",
         "drupal/upgrade_status": "^4.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/workbench": "^1.4",
