@@ -182,10 +182,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_events:
-    id: block_events
-    display_title: 'Block: Events'
-    display_plugin: block
+  embed_events:
+    id: embed_events
+    display_title: 'Embed: Events'
+    display_plugin: embed
     position: 2
     display_options:
       pager:
@@ -195,7 +195,7 @@ display:
           items_per_page: 4
       defaults:
         pager: false
-      display_description: 'Block: Events'
+      display_description: 'Embed: Events'
       display_extenders: {  }
     cache_metadata:
       max-age: -1

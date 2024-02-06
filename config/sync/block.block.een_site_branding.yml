@@ -1,0 +1,23 @@
+uuid: 25c02e72-abdd-4aa3-a069-5d3ad517d341
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - een
+id: een_site_branding
+theme: een
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

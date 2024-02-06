@@ -24,7 +24,7 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/advpoll": "^1.2",
         "drupal/antibot": "^2.0",
-        "drupal/config_ignore": "^2.3",
+        "drupal/config_ignore": "^3.2",
         "drupal/content_moderation_owner_permissions": "^1.0@alpha",
         "drupal/core": "10.1.7",
         "drupal/core-composer-scaffold": "^10",
@@ -53,9 +53,11 @@
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.13",
         "drupal/upgrade_status": "^4.0",
+        "drupal/viewsreference": "^2.0@beta",
         "drupal/workbench": "^1.4",
         "drupal/workbench_access": "^2.0",
         "drupal/workbench_moderation": "^1.7",
+        "drupal/wpf": "^1.1",
         "drush/drush": "^12.4",
         "mglaman/composer-drupal-lenient": "^1.0",
         "vlucas/phpdotenv": "^5.6",
@@ -138,7 +140,8 @@
                 "3407173 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-12-09/acl.8.x-1.1.rector.patch"
             },
             "drupal/forum_access": {
-                "3354309 - Cannot install in Drupal 10": "https://git.drupalcode.org/project/forum_access/-/merge_requests/5.diff"
+                "3354309 - Cannot install in Drupal 10": "https://git.drupalcode.org/project/forum_access/-/merge_requests/5.diff",
+                "3333087 - Forum access table template breaks on Drupal 10": "https://www.drupal.org/files/issues/2023-06-29/forum_access-3333087-table-template-breaks-10.patch"
             }
         }
     }

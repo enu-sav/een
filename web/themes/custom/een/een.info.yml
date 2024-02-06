@@ -14,8 +14,6 @@ libraries:
 
 regions:
   header: Header
-  menu: Menu
-  hero: 'Hero image'
   help: Help
   highlighted: Highlighted
   content: Content

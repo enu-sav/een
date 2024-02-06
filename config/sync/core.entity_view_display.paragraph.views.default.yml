@@ -3,18 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.views.field_views
+    - field.field.paragraph.views.field_view
     - paragraphs.paragraphs_type.views
+  module:
+    - viewsreference
 id: paragraph.views.default
 targetEntityType: paragraph
 bundle: views
 mode: default
 content:
-  field_views:
-    type: entity_reference_label
+  field_view:
+    type: viewsreference_lazy_formatter
     label: hidden
     settings:
-      link: true
+      plugin_types:
+        embed: embed
+        default: '0'
+        page: '0'
+        feed: '0'
+        block: '0'
     third_party_settings: {  }
     weight: 0
     region: content

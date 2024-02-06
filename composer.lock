@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a1d30383bfa098c60f2fd3c1fd07d5c",
+    "content-hash": "0f36e49d9e24c9cc327ec1cdada3814d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1577,33 +1577,31 @@
             }
         },
         {
-            "name": "drupal/config_filter",
-            "version": "2.6.0",
+            "name": "drupal/config_ignore",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-2.6"
+                "url": "https://git.drupalcode.org/project/config_ignore.git",
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "fd1a057a402436fc906c63bf0a74722f73b9b155"
+                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "00335fc1ddeb4ed93f245dd6963d99b3c084c052"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
             },
-            "conflict": {
-                "drush/drush": "<10"
-            },
-            "suggest": {
-                "drupal/config_split": "Split site configuration for different environments."
+            "require-dev": {
+                "drupal/config_filter": "^1.8||^2.2",
+                "drush/drush": "^10 || ^11 || ^12"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1698308577",
+                    "version": "8.x-3.2",
+                    "datestamp": "1705226226",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1612,71 +1610,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Fabian Bircher",
-                    "homepage": "https://www.drupal.org/u/bircher",
-                    "email": "opensource@fabianbircher.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Nuvole Web",
-                    "homepage": "http://nuvole.org",
-                    "email": "info@nuvole.org",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "pescetti",
-                    "homepage": "https://www.drupal.org/user/436244"
-                }
-            ],
-            "description": "Config Filter allows other modules to interact with a ConfigStorage through filter plugins.",
-            "homepage": "https://www.drupal.org/project/config_filter",
-            "keywords": [
-                "Drupal",
-                "configuration",
-                "configuration management"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/config_filter",
-                "issues": "https://www.drupal.org/project/issues/config_filter",
-                "slack": "https://drupal.slack.com/archives/C45342CDD"
-            }
-        },
-        {
-            "name": "drupal/config_ignore",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/config_ignore.git",
-                "reference": "8.x-2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "e0e45dde2d6927c5d26de59f352792fb6cf26554"
-            },
-            "require": {
-                "drupal/config_filter": "^1 || ^2",
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1676045435",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1695,12 +1629,11 @@
                     "homepage": "https://www.drupal.org/user/413139"
                 }
             ],
-            "description": "Ignore certain configuration during import.",
+            "description": "Ignore certain configuration during import and export.",
             "homepage": "http://drupal.org/project/config_ignore",
             "support": {
                 "source": "https://git.drupalcode.org/project/config_ignore",
-                "issues": "https://drupal.org/project/config_ignore",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "issues": "http://drupal.org/project/config_ignore"
             }
         },
         {
@@ -3827,6 +3760,65 @@
             }
         },
         {
+            "name": "drupal/viewsreference",
+            "version": "2.0.0-beta7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/viewsreference.git",
+                "reference": "8.x-2.0-beta7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-2.0-beta7.zip",
+                "reference": "8.x-2.0-beta7",
+                "shasum": "a1adf505b6cc7e175c548a2db52d6e26ba59a299"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "conflict": {
+                "drupal/viewsreferennce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta7",
+                    "datestamp": "1698849225",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "NewZeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Views reference",
+            "homepage": "http://drupal.org/project/viewsreference",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/viewsreference",
+                "issues": "https://www.drupal.org/project/issues/viewsreference"
+            }
+        },
+        {
             "name": "drupal/workbench",
             "version": "1.4.0",
             "source": {
@@ -4051,6 +4043,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/workbench_moderation",
                 "issues": "http://drupal.org/project/issues/workbench_moderation"
+            }
+        },
+        {
+            "name": "drupal/wpf",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/wpf.git",
+                "reference": "1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wpf-1.1.0.zip",
+                "reference": "1.1.0",
+                "shasum": "2ecdb43d709d6994093f085ec83f86843f1d36ba"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "ext-gd": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0",
+                    "datestamp": "1683061774",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dudás József",
+                    "homepage": "https://www.drupal.org/user/387119",
+                    "email": "dj@brainsum.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "pedrop",
+                    "homepage": "https://www.drupal.org/user/1043368"
+                },
+                {
+                    "name": "szato",
+                    "homepage": "https://www.drupal.org/user/389677"
+                }
+            ],
+            "description": "Generates jpg copies of webp image style derivatives.",
+            "homepage": "https://www.drupal.org/project/wpf",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/wpf",
+                "issues": "https://www.drupal.org/project/issues/wpf"
             }
         },
         {
@@ -13848,7 +13899,8 @@
         "drupal/forum_notifications_subscription": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
-        "drupal/mimemail": 15
+        "drupal/mimemail": 15,
+        "drupal/viewsreference": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

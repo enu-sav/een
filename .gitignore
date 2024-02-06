@@ -87,3 +87,4 @@ web/sites/default/services.local.yml
 ########################################
 /.editorconfig
 /.gitattributes
+/config/sync/forum_notification_frequency.settings.yml

@@ -1,0 +1,16 @@
+{% set link_attribute = create_attribute() %}
+
+{% set link_attribute = link_attribute.addClass(classes) %}
+
+{% set link_attribute = link_attribute.setAttribute('target', '_blank') %}
+{% if link_field.0.url.external %}
+  {% set link_attribute = link_attribute.setAttribute('href', link_field.uri ) %}
+{% elseif link_field.0.url.routeName %}
+  {% set link_attribute = link_attribute.setAttribute('href', path(link_field.0.url.routeName, link_field.0.url.routeParameters) ) %}
+{% endif %}
+
+{% block content %}
+  <a{{ link_attribute }}>
+    {{ link_field.title }}
+  </a>
+{% endblock %}

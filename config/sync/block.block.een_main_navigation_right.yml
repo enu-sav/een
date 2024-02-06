@@ -1,0 +1,25 @@
+uuid: 71ed7620-e4d7-4a9c-9583-a734aadad024
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-navigation-right
+  module:
+    - system
+  theme:
+    - een
+id: een_main_navigation_right
+theme: een
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main-navigation-right'
+settings:
+  id: 'system_menu_block:main-navigation-right'
+  label: 'Main navigation - Right'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

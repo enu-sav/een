@@ -47,16 +47,10 @@
 #}
 <div class="layout-container">
   <header role="banner">
-    {{ page.header }}
+    {{ page.header.een_main_navigation_left }}
+    {{ page.header.een_site_branding }}
+    {{ page.header.een_main_navigation_right }}
   </header>{# /.layout-container__header #}
-
-  <div class="layout-container__menu">
-    {{ page.menu }}
-  </div>{# /.layout-container__menu #}
-
-  <div class="layout-container__hero">
-    {{ page.hero }}
-  </div>{# /.layout-container__hero #}
 
   <div class="layout-container__help">
     {{ page.help }}
@@ -73,21 +67,24 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
   </main>{# /.layout-container__content #}
 
   <div class="layout-container__content_footer">
-    {{ page.content_footer }}
+    <div class="cols cols-3">
+      <div class="col col-1">
+        {{ page.content_footer.een_footer_branding }}
+      </div>
+      <div class="col col-2">
+        {{ page.content_footer.een_footer_contacts }}
+      </div>
+      <div class="col col-3">
+        <div class="nav-reg">
+          {{ page.content_footer.een_footer_menu_first }}
+          {{ page.content_footer.een_footer_menu_second }}
+        </div>
+      </div>
+    </div>
+    {{ page.content_footer|without('een_footer_branding', 'een_footer_contacts', 'een_footer_menu_first', 'een_footer_menu_second') }}
   </div>{# /.layout-container__content_footer #}
 
   {% if page.footer %}

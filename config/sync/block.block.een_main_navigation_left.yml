@@ -1,4 +1,4 @@
-uuid: 9eedf53d-ccdc-408b-a583-1fa964037601
+uuid: 702dc528-91c0-4614-be64-0d202f369fd3
 langcode: en
 status: true
 dependencies:
@@ -8,20 +8,18 @@ dependencies:
     - system
   theme:
     - een
-_core:
-  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: een_main_menu
+id: een_main_navigation_left
 theme: een
-region: menu
-weight: -6
+region: header
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main navigation - Left'
   label_display: '0'
   provider: system
   level: 1
-  depth: 2
-  expand_all_items: true
+  depth: 0
+  expand_all_items: false
 visibility: {  }

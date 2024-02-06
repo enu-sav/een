@@ -182,10 +182,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_news:
-    id: block_news
-    display_title: 'Block: News'
-    display_plugin: block
+  embed_news:
+    id: embed_news
+    display_title: 'Embed: News'
+    display_plugin: embed
     position: 2
     display_options:
       pager:
@@ -195,7 +195,7 @@ display:
           items_per_page: 2
       defaults:
         pager: false
-      display_description: 'Block: News'
+      display_description: 'Embed: News'
       display_extenders: {  }
     cache_metadata:
       max-age: -1

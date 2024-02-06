@@ -1,0 +1,15 @@
+{% extends "paragraph.html.twig" %}
+{% set attributes = attributes.addClass('my-6 font-primary') %}
+
+{% if paragraph.field_link_style.0.value == 'link' %}
+  {% set link_classes = 'font-light text-gray-700 underline underline-offset-4 transition-colors delay-150 ease-in-out hover:text-primary' %}
+{% elseif paragraph.field_link_style.0.value == 'button' %}
+  {% set link_classes = 'btn--primary' %}
+{% endif %}
+
+{% block content %}
+  {% include directory ~ '/templates/partials/link.html.twig' with {
+    link_field: paragraph.field_link,
+    classes: link_classes
+  } %}
+{% endblock %}
