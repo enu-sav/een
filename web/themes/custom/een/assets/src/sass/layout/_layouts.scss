@@ -1,0 +1,311 @@
+.layout {
+  $layout: &;
+
+  &:not(.fullwidth) {
+
+    > .wrapper {
+      @include container();
+    }
+  }
+
+  &.fullwidth  {
+    padding-right: 0;
+    padding-left: 0;
+    > .wrapper {
+      max-width: none;
+      padding-right: 0;
+      padding-left: 0;
+      margin: 0;
+    }
+  }
+
+  .grid {
+    @media all and (min-width: em($template-tablet)) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      grid-gap: em($gap--mobile);
+    }
+    @media all and (min-width: em($template-desktop)) {
+      grid-gap: em($gap--desktop);
+      &.g_spec-px,
+      &.g_spec-px-second {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &.invert-desktop .grid {
+
+    @media all and (min-width: em($template-tablet)) and (max-width: em($template-desktop - 1)){
+
+      .layout__region {
+
+        &--first {
+          order: 2;
+        }
+
+        &--second {
+          order: 1;
+        }
+      }
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+
+      .layout__region {
+
+        &--first {
+          order: 2;
+          grid-column: auto;
+        }
+
+        &--second {
+          order: 1;
+        }
+      }
+
+      .layout__region.col-2 + .layout__region--second {
+        grid-column: auto/span 2;
+      }
+
+      .layout__region.col-3 + .layout__region--second {
+        grid-column: auto/span 3;
+      }
+
+
+      &.g_spec-px, &.g_spec-px-second {
+        //flex-direction: row-reverse;
+      }
+    }
+  }
+
+  #{$layout}__region {
+    margin-bottom: em($gap--mobile);
+    @media all and (min-width: em($template-desktop)) {
+      margin-bottom: em($gap--desktop);
+    }
+
+    &--bottom {
+      margin-bottom: 0;
+    }
+
+    &.col-2 {
+      grid-column: auto/span 2;
+    }
+
+    &.col-3 {
+      grid-column: auto/span 3;
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+      &.f_spec-px {
+        width: 100%;
+        max-width: em(510);
+      }
+
+      &.f_spec-px-second {
+        width: 100%;
+        max-width: em(460);
+      }
+
+      &.s_spec-px, &.s_spec-px-second {
+        width: 100%;
+        max-width: em(550);
+      }
+    }
+
+    .paragraph + .paragraph {
+      margin-top: em($gap--mobile);
+      @media all and (min-width: em($template-tablet)) {
+        margin-top: em($gap--desktop - 10 );
+      }
+    }
+  }
+
+  /**
+   * Layout variations
+   */
+  // One column
+  &--onecol {
+
+    #{$layout}__region {
+      margin-bottom: 0;
+    }
+  }
+
+  // Two columns
+  &--twocol {
+  }
+
+  // Three columns
+  &--threecol {
+  }
+
+  // Four column
+  &--fourcol {
+  }
+}
+
+/**
+ * Spacings
+ */
+.spacing {
+
+  // Top inner space
+  &--top {
+
+    &--none {
+      padding-top: 0;
+    }
+
+    &--xs {
+      padding-top: em(32);
+      @media all and (min-width: em($template-desktop)) {
+        padding-top: em($gap--mobile * 2);
+      }
+    }
+
+    &--s {
+      padding-top: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em($gap--mobile * 2);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-top: em($gap--mobile * 3);
+      }
+    }
+
+    &--default {
+      padding-top: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em($gap--mobile * 3);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-top: em($gap--mobile * 4);
+      }
+    }
+
+    &--l {
+      padding-top: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em($gap--mobile * 4);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-top: em($gap--mobile * 5);
+      }
+    }
+
+    &--xl {
+      padding-top: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em($gap--mobile * 5);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-top: em($gap--mobile * 6);
+      }
+    }
+  }
+
+  // Bottom inner space
+  &--bottom {
+
+    &--none {
+      padding-bottom: 0;
+    }
+
+    &--xs {
+      padding-bottom: em(32);
+      @media all and (min-width: em($template-desktop)) {
+        padding-bottom: em($gap--mobile * 2);
+      }
+    }
+
+    &--s {
+      padding-bottom: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-bottom: em($gap--mobile * 2);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-bottom: em($gap--mobile * 3);
+      }
+    }
+
+    &--default {
+      padding-bottom: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-bottom: em($gap--mobile * 3);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-bottom: em($gap--mobile * 4);
+      }
+    }
+
+    &--l {
+      padding-bottom: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-bottom: em($gap--mobile * 4);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-bottom: em($gap--mobile * 5);
+      }
+    }
+
+    &--xl {
+      padding-bottom: em(32);
+      @media all and (min-width: em($template-tablet)) {
+        padding-bottom: em($gap--mobile * 5);
+      }
+      @media all and (min-width: em($template-desktop)) {
+        padding-bottom: em($gap--mobile * 6);
+      }
+    }
+  }
+}
+
+/**
+ * Align
+ */
+.align {
+
+  &--start {
+    > .wrapper > .grid {
+      @media all and (min-width: em($template-tablet)) {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &--center {
+    > .wrapper > .grid {
+      @media all and (min-width: em($template-tablet)) {
+        align-items: center;
+      }
+    }
+  }
+
+  &--bottom {
+    > .wrapper > .grid {
+      @media all and (min-width: em($template-tablet)) {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+/**
+ * Color BG definitions
+ */
+
+//// Blue background
+//.bg-blue {
+//  color: $white;
+//  background-color: $accent-color;
+//
+//  ::-moz-selection,
+//  ::selection {
+//    color: $accent-color;
+//    background: $white;
+//  }
+//}

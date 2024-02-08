@@ -57,3 +57,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+@mixin container {
+  padding: 0 em(14);
+  margin: 0 auto;
+  @media all and (min-width: em($template-tablet)) {
+    padding: 0 em(40);
+    max-width: em(1280);
+  }
+}

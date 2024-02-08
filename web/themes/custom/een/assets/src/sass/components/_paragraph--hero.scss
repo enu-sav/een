@@ -1,0 +1,23 @@
+.paragraph--type--hero {
+  position: relative;
+  overflow: hidden;
+  height: 100dvh;
+  width: 100%;
+  background: $secondary-color;
+
+  .hero-wrapper {
+    @include container();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .hero-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

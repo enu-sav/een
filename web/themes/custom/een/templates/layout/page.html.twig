@@ -46,11 +46,24 @@
  */
 #}
 <div class="layout-container">
-  <header role="banner">
-    {{ page.header.een_main_navigation_left }}
-    {{ page.header.een_site_branding }}
-    {{ page.header.een_main_navigation_right }}
-  </header>{# /.layout-container__header #}
+
+  <!-- ______________________ HEADER _______________________ -->
+  <header class="header" role="banner">
+    <div class="sticky-header">
+      <div class="region-header-wrapper">
+        <div class="region region-header">
+          {{ page.header.een_main_navigation_left }}
+          {{ page.header.een_site_branding }}
+          {{ page.header.een_main_navigation_right }}
+        </div>
+        <a href="#"  class="mn mn__icon mn__icon--menu open-menu">
+          <span class="hamburger-slice hamburger-slice__one"></span>
+          <span class="hamburger-slice hamburger-slice__two"></span>
+          <span class="hamburger-slice hamburger-slice__three"></span>
+        </a>
+      </div>
+    </div>
+  </header>{# /.header #}
 
   <div class="layout-container__help">
     {{ page.help }}
@@ -60,6 +73,7 @@
     {{ page.highlighted }}
   </div>{# /.layout-container__highlighted #}
 
+  <!-- ______________________ MAIN _______________________ -->
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -67,30 +81,32 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
-  </main>{# /.layout-container__content #}
+  </main>{# /.main #}
 
-  <div class="layout-container__content_footer">
-    <div class="cols cols-3">
-      <div class="col col-1">
-        {{ page.content_footer.een_footer_branding }}
-      </div>
-      <div class="col col-2">
-        {{ page.content_footer.een_footer_contacts }}
-      </div>
-      <div class="col col-3">
-        <div class="nav-reg">
-          {{ page.content_footer.een_footer_menu_first }}
-          {{ page.content_footer.een_footer_menu_second }}
-        </div>
-      </div>
-    </div>
-    {{ page.content_footer|without('een_footer_branding', 'een_footer_contacts', 'een_footer_menu_first', 'een_footer_menu_second') }}
-  </div>{# /.layout-container__content_footer #}
-
+  <!-- ______________________ FOOTER _______________________ -->
   {% if page.footer %}
     <footer role="contentinfo">
-      {{ page.footer }}
+      <div class="layout-container__content_footer">
+        <div class="cols cols-3">
+          <div class="col col-1">
+            {{ page.footer.een_footer_branding }}
+          </div>
+          <div class="col col-2">
+            {{ page.footer.een_footer_contacts }}
+          </div>
+          <div class="col col-3">
+            <div class="nav-reg">
+              {{ page.footer.een_footer_menu_first }}
+              {{ page.footer.een_footer_menu_second }}
+            </div>
+          </div>
+        </div>
+        {{ page.footer|without('een_footer_branding', 'een_footer_contacts', 'een_footer_menu_first', 'een_footer_menu_second', 'een_copyright') }}
+      </div>
+      <div class="layout-container__copyright">
+        {{ page.footer.een_copyright }}
+      </div>
     </footer>
-  {% endif %}{# /.layout-container__footer #}
+  {% endif %}{# /.footer #}
 
 </div>{# /.layout-container #}

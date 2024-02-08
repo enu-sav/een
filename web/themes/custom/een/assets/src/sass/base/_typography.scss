@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
-
-
 // Typographic styles
 html {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: em($base-font-size);
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
   -webkit-font-smoothing: antialiased;
@@ -19,9 +16,10 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-size: em($base-font-size);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  color: $black;
 }
 
 h1 {

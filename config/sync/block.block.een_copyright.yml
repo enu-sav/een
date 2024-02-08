@@ -9,7 +9,7 @@ dependencies:
 id: een_copyright
 theme: een
 region: footer
-weight: 0
+weight: -3
 provider: null
 plugin: een_copyright
 settings:

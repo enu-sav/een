@@ -1,7 +1,18 @@
 footer {
-  background-color: $dark-blue;
+  background-color: $secondary-color;
   &,
   a {
     color: $white;
+  }
+
+  > .layout-container {
+
+    &__content_footer {
+      @include container();
+    }
+
+    &__copyright {
+      @include container();
+    }
   }
 }

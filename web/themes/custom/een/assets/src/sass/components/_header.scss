@@ -1,0 +1,105 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  @media all and (max-width: em($template-desktop - 1)) {
+    body.toolbar-vertical & {
+      top: em(39, 16);
+    }
+  }
+
+  @media all and (min-width: em(976)) {
+    body.toolbar-horizontal & {
+      top: em(59, 16) !important;
+    }
+  }
+
+  .sticky-header {
+
+    .region-header-wrapper {
+      @include container();
+      padding-top: em(15);
+      padding-bottom: em(15);
+
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em(15);
+        padding-bottom: em(15);
+      }
+
+      > .region-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: em(20);
+        height: em(130);
+
+        nav > ul {
+          display: flex;
+          margin: 0 em(-15);
+
+          li {
+            padding: 0 em(15);
+
+            a {
+              color: $white;
+              font-size: rem(20);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      a.mn {
+
+        &.open-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          z-index: 23;
+          width: em(52);
+          height: em(32);
+          padding: em(8) em(14);
+          right: em(-16);
+
+          .hamburger-slice {
+            height: em(2);
+            width: em(22);
+            background-color: $white;
+            transition: all .3s ease-in-out;
+          }
+
+          &.mn__icon {
+
+            &--close-menu {
+
+              .hamburger-slice {
+
+                &__one {
+                  transform: translateY(#{em(6)}) rotate(45deg);
+                }
+
+                &__two {
+                  opacity: 0;
+                  height: 0;
+                }
+
+                &__three {
+                  transform: translateY(#{em(-8)}) rotate(-45deg);
+                }
+              }
+            }
+          }
+
+          @media all and (min-width: em($template-desktop)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

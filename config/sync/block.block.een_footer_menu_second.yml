@@ -10,8 +10,8 @@ dependencies:
     - een
 id: een_footer_menu_second
 theme: een
-region: content_footer
-weight: 0
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer-second'
 settings:

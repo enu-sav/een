@@ -1,0 +1,17 @@
+#block-een-site-branding {
+
+  > a {
+    width: em(120);
+    height: em(120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: em(55);
+      height: auto;
+    }
+  }
+}

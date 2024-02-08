@@ -1,0 +1,17 @@
+{% extends "node.html.twig" %}
+
+{% set page_not_hero = node.field_hero_section.isEmpty() %}
+
+{% if page_not_hero %}
+  {% set attributes = attributes.addClass('not-hero') %}
+{% endif %}
+
+{% block title %}
+  {% if label and page %}
+    {% if page_not_hero %}
+      <div class="node__header">
+        <div class="field field-page-title"><h1 class="page-title">{{ label }}</h1></div>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endblock %}

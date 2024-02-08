@@ -8,8 +8,8 @@ dependencies:
     - een
 id: een_footer_branding
 theme: een
-region: content_footer
-weight: -6
+region: footer
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

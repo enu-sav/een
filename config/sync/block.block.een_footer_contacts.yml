@@ -8,8 +8,8 @@ dependencies:
     - een
 id: een_footer_contacts
 theme: een
-region: content_footer
-weight: -5
+region: footer
+weight: -6
 provider: null
 plugin: een_footer_contacts
 settings:

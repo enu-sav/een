@@ -21,6 +21,7 @@
  * Layout
  */
 @import "./layout/layout--grid";
+@import "./layout/layouts";
 
 /**
  * Components
@@ -31,14 +32,15 @@
 @import "./components/site-name";
 @import "./components/pager";
 @import "./components/footer";
+@import "./components/header";
 @import "./components/messages";
 @import "./components/tabs";
 
 // Blocks
-//@import "./components/block--...";
+@import "./components/block--site-branding";
 
 // Nodes
 //@import "./components/node--...";
 
-// Paragraphs
-//@import "./components/paragraph--...";
+//Paragraphs
+@import "components/paragraph--hero";
