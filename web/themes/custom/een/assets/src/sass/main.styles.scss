@@ -38,9 +38,15 @@
 
 // Blocks
 @import "./components/block--site-branding";
+@import "./components/block--content";
+@import "./components/block--local-tasks";
+@import "./components/block--page-title";
+@import "./components/block--footer-branding";
+@import "./components/block--footer-contacts";
+@import "./components/block--footer-menu";
 
 // Nodes
-//@import "./components/node--...";
+@import "./components/node--page";
 
 //Paragraphs
 @import "components/paragraph--hero";

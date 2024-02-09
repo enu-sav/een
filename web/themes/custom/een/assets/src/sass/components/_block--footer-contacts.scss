@@ -1,0 +1,73 @@
+#block-een-footer-contacts {
+
+  > .contact {
+
+    > .footer--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media all and (min-width: em($template-tablet)) {
+        align-items: flex-start;
+      }
+
+      > h2 {
+        color: $white;
+        text-transform: uppercase;
+        line-height: 2;
+        font-size: rem(14);
+        letter-spacing: em(2.8, 14);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0;
+
+        @media all and (min-width: em($template-tablet)) {
+          font-size: rem(16);
+          letter-spacing: em(3.2, 16);
+          margin-bottom: em(16, 16);
+        }
+      }
+
+      > p {
+        color: rgb(166, 177, 163);
+        font-size: rem(18);
+        line-height: em(32, 16);
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+    }
+
+    > .email {
+      text-align: center;
+      margin-top: em(16);
+
+      @media all and (min-width: em($template-tablet)) {
+        text-align: left;
+      }
+
+      > a {
+        color: $white;
+        font-size: rem(18);
+        line-height: em(24, 16);
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+    }
+
+    > .phone-number {
+      text-align: center;
+
+      @media all and (min-width: em($template-tablet)) {
+        text-align: left;
+      }
+
+      > a {
+        color: $white;
+        font-size: rem(18);
+        line-height: em(24, 16);
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+    }
+  }
+}

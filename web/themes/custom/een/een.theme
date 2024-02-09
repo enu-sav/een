@@ -1,1 +1,30 @@
 <?php
+/**
+ * @file
+ * Functions to support theming in the een theme.
+ */
+
+/**
+ * Implements template_preprocess_html().
+ */
+function een_preprocess_html(&$variables) {
+  // Get the current node from the route.
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  // Check if the node exists and is a NodeInterface instance.
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    // Check if the content type of the node is "page".
+    if ($node->bundle() == 'page') {
+      // Now check if the 'field_hero_section' field is empty or not.
+      if (empty($node->get('field_hero_section')->getValue())) {
+        // Add 'not-hero' class if the field is empty.
+        $variables['attributes']['class'][] = 'not-hero';
+      } else {
+        // Add 'hero' class if the field is not empty.
+        $variables['attributes']['class'][] = 'hero';
+      }
+    } else {
+      $variables['attributes']['class'][] = 'not-hero';
+    }
+  }
+}

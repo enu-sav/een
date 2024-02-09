@@ -1,0 +1,24 @@
+#block-een-footer-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media all and (min-width: em($template-desktop)) {
+    justify-content: flex-start;
+  }
+
+  > a {
+    width: em(100);
+    height: em(100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: em(47);
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+#block-een-content {
+
+  body.path-user &,
+  body.path-webform &,
+  body.path-404 &,
+  body.path-403 &,
+  body.path-forum & {
+    @include container();
+    padding-bottom: em(64);
+    @media all and (min-width: em($template-desktop)) {
+      padding-bottom: em(128);
+    }
+  }
+}

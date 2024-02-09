@@ -1,0 +1,9 @@
+{% extends "node.html.twig" %}
+
+{% block title %}
+  {% if label and page %}
+    <div class="node__header">
+      <div class="field field-page-title"><h1 class="page-title">{{ label }}</h1></div>
+    </div>
+  {% endif %}
+{% endblock %}

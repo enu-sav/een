@@ -6,8 +6,8 @@ dependencies:
     - een
 id: een_primary_local_tasks
 theme: een
-region: help
-weight: -6
+region: content
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

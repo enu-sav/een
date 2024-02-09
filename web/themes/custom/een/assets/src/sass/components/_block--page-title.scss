@@ -1,0 +1,19 @@
+#block-een-page-title {
+
+  body.path-user &,
+  body.path-webform &,
+  body.path-404 &,
+  body.path-403 &,
+  body.path-forum &,
+  body.page-node-type-forum &,
+  body.page-node-type-event &,
+  body.page-node-type-news & {
+    @include container();
+    padding-top: em(16);
+    margin-bottom: em(16);
+    @media all and (min-width: em($template-desktop)) {
+      padding-top: em(32);
+      margin-bottom: em(32);
+    }
+  }
+}

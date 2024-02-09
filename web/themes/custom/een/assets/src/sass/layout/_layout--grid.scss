@@ -31,3 +31,32 @@ body {
 .node {
   clear: both;
 }
+
+body.toolbar-vertical #toolbar-administration {
+  display: none;
+}
+
+
+main {
+
+  .layout-content {
+
+    > div {
+
+      body.path-user &,
+      body.path-404 &,
+      body.path-403 &,
+      body.path-webform &,
+      body.path-forum & {
+        padding-top: em(140);
+        @media all and (min-width: em($template-desktop)) {
+          padding-top: em(220);
+        }
+      }
+    }
+  }
+}
+
+#block-een-breadcrumbs {
+  display: none;
+}

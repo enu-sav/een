@@ -10,8 +10,8 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: een_breadcrumbs
 theme: een
-region: highlighted
-weight: -4
+region: content
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

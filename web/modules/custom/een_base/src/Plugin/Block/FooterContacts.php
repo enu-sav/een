@@ -66,6 +66,7 @@ class FooterContacts extends BlockBase implements ContainerFactoryPluginInterfac
   public function build(): array {
     $config = $this->configFactory->get('een_base.settings');
 
+    $text = $config->get('general.contacts.text')['value'];
     $phone_number = $config->get('general.contacts.phone_number');
     $phone_number_trim = str_replace(' ', '', $phone_number);
     $email = $config->get('general.contacts.email');
@@ -74,6 +75,15 @@ class FooterContacts extends BlockBase implements ContainerFactoryPluginInterfac
       '#type' => 'container',
       '#attributes' => [
         'class' => ['contact'],
+      ],
+    ];
+
+    $build['content']['contact']['text'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'div',
+      '#value' => $text,
+      '#attributes' => [
+        'class' => ['footer--text'],
       ],
     ];
 

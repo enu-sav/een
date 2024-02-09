@@ -52,9 +52,11 @@
     <div class="sticky-header">
       <div class="region-header-wrapper">
         <div class="region region-header">
-          {{ page.header.een_main_navigation_left }}
-          {{ page.header.een_site_branding }}
-          {{ page.header.een_main_navigation_right }}
+          <div class="nav-con">
+            {{ page.header.een_main_navigation_left }}
+            {{ page.header.een_site_branding }}
+            {{ page.header.een_main_navigation_right }}
+          </div>
         </div>
         <a href="#"  class="mn mn__icon mn__icon--menu open-menu">
           <span class="hamburger-slice hamburger-slice__one"></span>
@@ -95,7 +97,7 @@
             {{ page.footer.een_footer_contacts }}
           </div>
           <div class="col col-3">
-            <div class="nav-reg">
+            <div class="nav--footer">
               {{ page.footer.een_footer_menu_first }}
               {{ page.footer.een_footer_menu_second }}
             </div>
