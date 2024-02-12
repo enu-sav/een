@@ -16,6 +16,7 @@ body {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -64,3 +65,10 @@ main {
 .toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   margin-inline-start: 0 !important;
 }
+
+//@media all and (max-width: em($template-desktop - 1)) {
+//  body.navigation-expanded {
+//    position: fixed;
+//    overflow-y: hidden;
+//  }
+//}

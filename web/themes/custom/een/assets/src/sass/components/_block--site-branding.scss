@@ -1,20 +1,17 @@
-#block-een-site-branding {
+#block-een-site-branding, #block-een-site-branding--2 {
 
   > a {
-    width: em(100);
-    height: em(100);
+    width: em(90);
+    height: em(90);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media all and (min-width: em($template-tablet)) {
-      margin-left: em(20);
-      margin-right: em(20);
-    }
-
     @media all and (min-width: em($template-desktop)) {
       width: em(120);
       height: em(120);
+      margin-left: em(20);
+      margin-right: em(20);
     }
 
     img {

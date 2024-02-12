@@ -45,6 +45,11 @@ header {
     }
   }
 
+  body.sticky-header & {
+    position: fixed;
+    background-color: $secondary-color;
+  }
+
   .sticky-header {
 
     .region-header-wrapper {
@@ -54,13 +59,29 @@ header {
       height: em(120);
       position: relative;
 
+      body.sticky-header & {
+        height: em(105);
+        padding-top: em(7.5);
+        padding-bottom: em(7.5);
+      }
+
       @media all and (min-width: em($template-tablet)) {
         padding-top: em(15);
         padding-bottom: em(15);
+        body.sticky-header & {
+          padding-top: em(7.5);
+          padding-bottom: em(7.5);
+        }
       }
 
       @media all and (min-width: em($template-desktop)) {
         height: em(160);
+
+        body.sticky-header & {
+          height: em(140);
+          padding-top: em(7.5);
+          padding-bottom: em(7.5);
+        }
       }
 
       > .region-header {
@@ -71,6 +92,31 @@ header {
 
         @media all and (min-width: em($template-desktop)) {
           height: em(130);
+
+          > .block-system-branding-block {
+            display: none;
+          }
+        }
+
+        @media all and (max-width: em($template-desktop - 1)) {
+          flex-direction: column;
+          margin: 0;
+          gap: em(20);
+
+          body.navigation-expanded & {
+
+            &:after {
+              display: block;
+              content: "";
+              position: fixed;
+              left: 0;
+              top: 0;
+              width: 100dvw;
+              height: 100dvh;
+              background-color: rgb(0, 0, 0, 0.3);
+              z-index: 0;
+            }
+          }
         }
 
         > .nav-con {
@@ -78,7 +124,37 @@ header {
           justify-content: flex-start;
           align-items: center;
 
-          @media all and (min-width: em($template-tablet)) {
+          @media all and (max-width: em($template-desktop - 1)) {
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $secondary-color;
+            width: 80dvw;
+            height: 100dvh;
+            top:0;
+            right: -80dvw;
+            pointer-events: none;
+            transition: right .2s linear;
+            z-index: 1;
+            padding-top: em(80);
+            padding-right: em(20);
+            padding-left: em(20);
+            gap: em(20);
+            position: absolute;
+            opacity: 0;
+
+            body.navigation-expanded & {
+              position: fixed;
+              right: 0;
+              pointer-events: auto;
+              opacity: 1;
+            }
+
+            > .block-system-branding-block {
+              display: none;
+            }
+          }
+
+          @media all and (min-width: em($template-desktop)) {
             min-width: 100%;
             justify-content: space-between;
 
@@ -105,11 +181,17 @@ header {
             margin: 0 em(-20);
 
             @media all and (max-width: em($template-desktop - 1)) {
-              display: none;
+              flex-direction: column;
+              margin: 0;
+              gap: em(20);
             }
 
             li {
               padding: 0 em(20);
+
+              @media all and (max-width: em($template-desktop - 1)) {
+                padding: 0;
+              }
 
               a {
                 color: $white;
@@ -121,61 +203,57 @@ header {
           }
         }
       }
+    }
+  }
+}
 
-      a.mn {
-        position: absolute;
-        right: em(14);
-        top:50%;
-        transform: translateY(-50%);
+a.mn {
+  position: absolute;
+  right: em(14);
 
-        @media all and (min-width: em($template-tablet)) {
-          right: em(40);
+  @media all and (min-width: em($template-tablet)) {
+    right: em(40);
+  }
+
+  &.mn__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 23;
+    width: em(52);
+    height: em(32);
+    padding: em(8) em(14);
+
+    .hamburger-slice {
+      height: em(2);
+      width: em(22);
+      background-color: $white;
+      transition: all .3s ease-in-out;
+    }
+
+    &.open-menu {
+      position: fixed;
+
+      .hamburger-slice {
+
+        &__one {
+          transform: translateY(#{em(6)}) rotate(45deg);
         }
 
-        &.open-menu {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          z-index: 23;
-          width: em(52);
-          height: em(32);
-          padding: em(8) em(14);
+        &__two {
+          opacity: 0;
+          height: 0;
+        }
 
-          .hamburger-slice {
-            height: em(2);
-            width: em(22);
-            background-color: $white;
-            transition: all .3s ease-in-out;
-          }
-
-          &.mn__icon {
-
-            &--close-menu {
-
-              .hamburger-slice {
-
-                &__one {
-                  transform: translateY(#{em(6)}) rotate(45deg);
-                }
-
-                &__two {
-                  opacity: 0;
-                  height: 0;
-                }
-
-                &__three {
-                  transform: translateY(#{em(-8)}) rotate(-45deg);
-                }
-              }
-            }
-          }
-
-          @media all and (min-width: em($template-desktop)) {
-            display: none;
-          }
+        &__three {
+          transform: translateY(#{em(-8)}) rotate(-45deg);
         }
       }
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+      display: none;
     }
   }
 }
