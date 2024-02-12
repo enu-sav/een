@@ -1,9 +1,9 @@
-uuid: fdff6fad-10ef-4ff0-91eb-c8808c192dbd
+uuid: 2b2848dd-d697-4565-be47-ab3e219fe132
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-first
   module:
     - system
   theme:
@@ -13,9 +13,9 @@ theme: een
 region: footer
 weight: -5
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-first'
 settings:
-  id: 'system_menu_block:footer'
+  id: 'system_menu_block:footer-first'
   label: 'Footer First'
   label_display: '0'
   provider: system

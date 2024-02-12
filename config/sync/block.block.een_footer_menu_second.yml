@@ -1,9 +1,9 @@
-uuid: cef1ae8d-378b-4105-b265-a939fd6f3f1a
+uuid: 63120f20-bef7-4ac9-a4cd-c004ac131cc1
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-second
+    - system.menu.footer
   module:
     - system
   theme:
@@ -13,11 +13,11 @@ theme: een
 region: footer
 weight: -4
 provider: null
-plugin: 'system_menu_block:footer-second'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'system_menu_block:footer-second'
+  id: 'system_menu_block:footer'
   label: 'Footer Second'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: 0
