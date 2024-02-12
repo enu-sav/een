@@ -60,3 +60,7 @@ main {
 #block-een-breadcrumbs {
   display: none;
 }
+
+.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
+  margin-inline-start: 0 !important;
+}

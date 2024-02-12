@@ -3,9 +3,21 @@
 
   @media all and (min-width: em($template-tablet)) {
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: em(20);
+    max-width: em(340);
   }
 
   nav {
+
+    @media all and (max-width: em($template-tablet - 1)) {
+      margin-bottom: em(10);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     > ul {
       display: flex;
@@ -17,11 +29,25 @@
       }
 
       > li {
+        margin-bottom: em(10);
+
+        @media all and (min-width: em($template-tablet)) {
+          margin-bottom: em(40);
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+
+          @media all and (min-width: em($template-tablet)) {
+            margin-bottom: 0;
+          }
+        }
 
         > a {
           text-align: center;
           color: $white;
-          font-size: rem(18);
+          font-size: rem(16);
+          letter-spacing: em(.48, 16);
           line-height: em(24, 16);
           margin-bottom: 0;
           font-weight: 700;
