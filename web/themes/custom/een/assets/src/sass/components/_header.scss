@@ -128,21 +128,23 @@ header {
             flex-direction: column;
             align-items: flex-start;
             background-color: $secondary-color;
-            width: 80%;
-            height: 100dvh;
+            width: 80vw;
+            height: 100vh;
             top:0;
-            right: -80%;
+            right: 0;
             pointer-events: none;
-            transition: right .3s linear;
+            transition: all .3s linear;
             z-index: 1;
             padding-top: em(80);
             padding-right: em(20);
             padding-left: em(20);
             gap: em(20);
-            position: absolute;
+            position: fixed;
+            transform: translateX(80vw);
+            overflow: hidden;
 
             body.navigation-expanded & {
-              right: 0;
+              transform: translateX(0);
               pointer-events: auto;
             }
 
@@ -204,7 +206,7 @@ a.mn {
     }
 
     &.open-menu {
-      position: fixed;
+      position: absolute;
 
       .hamburger-slice {
 
