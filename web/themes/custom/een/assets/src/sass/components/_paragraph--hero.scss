@@ -1,7 +1,7 @@
 .paragraph--type--hero {
   position: relative;
   overflow: hidden;
-  min-height: 85dvh;
+  min-height: 85vh;
   width: 100%;
   background: rgba(24, 64, 41, 0.97);
   padding-top: em(140);
@@ -10,7 +10,7 @@
   align-items: center;
 
   @media all and (min-width: em($template-tablet)) {
-    height: 100dvh;
+    height: 100vh;
     min-height: em(850);
     padding-top: 0;
   }
