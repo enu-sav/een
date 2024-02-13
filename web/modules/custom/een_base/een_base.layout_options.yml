@@ -18,6 +18,7 @@ layout_option_definitions:
     options: {
       bg-white: 'White',
       bg-gray: 'Gray',
+      bg-green: 'Green',
     }
     layout: true
     regions: false

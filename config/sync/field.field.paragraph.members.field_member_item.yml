@@ -1,20 +1,19 @@
-uuid: 48772888-50a6-40b9-bfe9-108081cc0193
+uuid: cb1e39d0-d3ae-4f73-9b14-be2825a83ab2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs
-    - node.type.event
-    - paragraphs.paragraphs_type.hero
+    - field.storage.paragraph.field_member_item
     - paragraphs.paragraphs_type.member_item
+    - paragraphs.paragraphs_type.members
   module:
     - entity_reference_revisions
-id: node.event.field_paragraphs
-field_name: field_paragraphs
-entity_type: node
-bundle: event
-label: Paragraphs
-description: Paragraphs
+id: paragraph.members.field_member_item
+field_name: field_member_item
+entity_type: paragraph
+bundle: members
+label: 'Member item'
+description: 'Member item'
 required: false
 translatable: false
 default_value: {  }
@@ -23,21 +22,20 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      hero: hero
       member_item: member_item
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
       attached_document:
-        weight: 5
+        weight: 11
         enabled: false
       heading:
         weight: 12
         enabled: false
       hero:
         weight: 13
-        enabled: true
+        enabled: false
       image:
-        weight: 4
+        weight: 14
         enabled: false
       link:
         weight: 15
@@ -49,10 +47,10 @@ settings:
         weight: 16
         enabled: false
       section:
-        weight: 5
+        weight: 18
         enabled: false
       text:
-        weight: 6
+        weight: 19
         enabled: false
       views:
         weight: 20
