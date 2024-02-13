@@ -59,7 +59,7 @@ header {
       height: em(120);
       position: relative;
 
-      body.sticky-header & {
+      body.sticky-header:not(.navigation-expanded) & {
         height: em(105);
         padding-top: em(7.5);
         padding-bottom: em(7.5);
@@ -68,7 +68,7 @@ header {
       @media all and (min-width: em($template-tablet)) {
         padding-top: em(15);
         padding-bottom: em(15);
-        body.sticky-header & {
+        body.sticky-header:not(.navigation-expanded) & {
           padding-top: em(7.5);
           padding-bottom: em(7.5);
         }
@@ -77,8 +77,8 @@ header {
       @media all and (min-width: em($template-desktop)) {
         height: em(160);
 
-        body.sticky-header & {
-          height: em(140);
+        body.sticky-header:not(.navigation-expanded) & {
+          height: em(145);
           padding-top: em(7.5);
           padding-bottom: em(7.5);
         }
@@ -131,22 +131,19 @@ header {
             width: 80dvw;
             height: 100dvh;
             top:0;
-            right: -80dvw;
+            right: -80%;
             pointer-events: none;
-            transition: right .2s linear;
+            transition: right .3s linear;
             z-index: 1;
             padding-top: em(80);
             padding-right: em(20);
             padding-left: em(20);
             gap: em(20);
             position: absolute;
-            opacity: 0;
 
             body.navigation-expanded & {
-              position: fixed;
               right: 0;
               pointer-events: auto;
-              opacity: 1;
             }
 
             > .block-system-branding-block {
@@ -172,32 +169,6 @@ header {
               > ul {
                 display: flex;
                 justify-content: flex-start;
-              }
-            }
-          }
-
-          nav > ul {
-            display: flex;
-            margin: 0 em(-20);
-
-            @media all and (max-width: em($template-desktop - 1)) {
-              flex-direction: column;
-              margin: 0;
-              gap: em(20);
-            }
-
-            li {
-              padding: 0 em(20);
-
-              @media all and (max-width: em($template-desktop - 1)) {
-                padding: 0;
-              }
-
-              a {
-                color: $white;
-                font-size: rem(20);
-                font-weight: 700;
-                letter-spacing: rem(0.6);
               }
             }
           }

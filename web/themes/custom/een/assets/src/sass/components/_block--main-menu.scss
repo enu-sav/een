@@ -1,0 +1,87 @@
+#block-een-main-navigation-left,
+#block-een-main-navigation-right {
+
+  > ul.menu {
+    display: inline-flex;
+    margin: 0 em(-20);
+
+    @media all and (max-width: em($template-desktop - 1)) {
+      flex-wrap: wrap;
+      margin: 0;
+      gap: em(20);
+    }
+
+    li.menu-item {
+      padding: 0 em(20);
+
+      @media all and (max-width: em($template-desktop - 1)) {
+        padding: 0;
+        width: 100%;
+      }
+
+      a {
+        color: $white;
+        font-size: rem(20);
+        font-weight: 700;
+        letter-spacing: rem(0.6);
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1;
+        height: em(39, 20);
+        position: relative;
+      }
+
+      a:before {
+        display: block;
+        content: "";
+        height: em(1, 20);
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: em(-7, 20);
+        left: 0;
+        transition: all .2s linear;
+      }
+
+      a:after {
+        display: block;
+        content: "";
+        height: em(1, 20);
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        bottom: em(-7, 20);
+        left: 0;
+        transition: all .2s linear;
+      }
+
+      &:hover,&:focus {
+        a:before {
+          background-color: $white;
+          top: 0;
+          left: 0;
+        }
+
+        a:after {
+          background-color: $white;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      &.menu-item--active-trail {
+        a:before {
+          background-color: $white;
+          top: 0;
+          left: 0;
+        }
+        a:after {
+          background-color: $white;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
