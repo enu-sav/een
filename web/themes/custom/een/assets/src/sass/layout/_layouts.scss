@@ -117,9 +117,23 @@
     }
 
     .paragraph + .paragraph {
-      margin-top: em($gap--mobile);
+      margin-bottom: em($gap--mobile);
       @media all and (min-width: em($template-tablet)) {
-        margin-top: em($gap--desktop - 10 );
+        margin-bottom: em($gap--desktop - 10 );
+      }
+    }
+
+    .paragraph:last-child {
+      margin-bottom: 0;
+      @media all and (min-width: em($template-tablet)) {
+        margin-bottom: 0;
+      }
+    }
+
+    .paragraph.paragraph--type--heading + .paragraph.paragraph--type--heading {
+      margin-bottom: 0;
+      @media all and (min-width: em($template-tablet)) {
+        margin-bottom: 0;
       }
     }
   }

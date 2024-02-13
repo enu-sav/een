@@ -1,5 +1,4 @@
 {% extends "paragraph.html.twig" %}
-{% set attributes = attributes.addClass('prose prose-headings:mb-4 md:prose-headings:mb-8 font-primary') %}
 
 {% set heading_level = paragraph.field_heading_level.0.value %}
 {% set heading_text = paragraph.field_heading.0.value %}
@@ -7,8 +6,8 @@
 
 {% if not(heading_level matches '{^h[1-6]$}') %}
   {% set heading_level = "div" %}
-  {% if heading_level == 'additional_title' %}
-    {% set heading_attributes = heading_attributes.addClass('text-zinc-800 text-lg font-medium leading-snug') %}
+  {% if heading_level == 'div' %}
+    {% set heading_attributes = heading_attributes.addClass('additional-title') %}
   {% endif %}
 {% endif %}
 
