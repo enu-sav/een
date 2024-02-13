@@ -128,24 +128,25 @@ header {
             flex-direction: column;
             align-items: flex-start;
             background-color: $secondary-color;
-            width: 80vw;
+            width: 0;
             height: 100vh;
             top:0;
             right: 0;
             pointer-events: none;
-            transition: all .3s linear;
+            transition: transform .5s linear, width .5s linear;
             z-index: 1;
             padding-top: em(80);
             padding-right: em(20);
             padding-left: em(20);
             gap: em(20);
             position: fixed;
-            transform: translateX(80vw);
+            transform: translateX(calc(100vw + #{em(100)}));
             overflow: hidden;
 
             body.navigation-expanded & {
               transform: translateX(0);
               pointer-events: auto;
+              width: 80vw;
             }
 
             > .block-system-branding-block {
