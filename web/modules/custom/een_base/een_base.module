@@ -47,3 +47,24 @@ function een_base_paragraph_view(array &$build, EntityInterface $paragraph, Enti
     ];
   }
 }
+
+/**
+ * Implements hook_theme().
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ *
+ * @return \null[][][]
+ */
+function een_base_theme($existing, $type, $theme, $path): array {
+  return [
+    'info_popup_block' => [
+      'variables' => [
+        'prod_url' => NULL,
+      ],
+      'template' => 'info-popup-block',
+    ],
+  ];
+}

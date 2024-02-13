@@ -1,0 +1,20 @@
+uuid: 1a54c40d-a115-40f6-bbce-859c5b991de8
+langcode: en
+status: true
+dependencies:
+  module:
+    - een_base
+  theme:
+    - een
+id: een_info_popup
+theme: een
+region: content
+weight: 0
+provider: null
+plugin: een_info_pop_up_block
+settings:
+  id: een_info_pop_up_block
+  label: 'EEN Info - PopUp'
+  label_display: '0'
+  provider: een_base
+visibility: {  }
