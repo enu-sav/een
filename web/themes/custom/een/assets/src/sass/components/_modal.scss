@@ -1,0 +1,79 @@
+$modal-breakpoint: 500;
+$medium-screen: 768;
+
+.een-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 1000;
+  overflow-y: auto;
+  @media all and (min-width: em($modal-breakpoint, 16)) {
+    align-items: center;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: em($medium-screen, 16);
+    margin-top: em(40, 16);
+    padding: em(30, 16);
+    background-color: $white;
+    z-index: 1500;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (orientation:landscape) {
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: em(15, 16);
+    right: em(15, 16);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  &__content-container {
+    @media screen and (orientation:landscape) and (max-width: em($medium-screen - 1, 16)) {
+      padding-bottom: em(40, 16);
+    }
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-size: 1em auto;
+  }
+}
+
+.icon-close::before {
+  width: em(25, 16);
+  height: em(25, 16);
+  background: transparent url('../svg/close.svg') no-repeat 0 0;
+  background-size: em(25, 16);
+}
