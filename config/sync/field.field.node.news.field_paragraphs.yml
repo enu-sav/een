@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.news
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.member_item
   module:
     - entity_reference_revisions
 id: node.news.field_paragraphs
@@ -20,19 +22,39 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
+    target_bundles:
+      hero: hero
+      member_item: member_item
     negate: 1
     target_bundles_drag_drop:
       attached_document:
         weight: 5
         enabled: false
+      heading:
+        weight: 12
+        enabled: false
+      hero:
+        weight: 13
+        enabled: true
       image:
         weight: 4
+        enabled: false
+      link:
+        weight: 15
+        enabled: false
+      member_item:
+        weight: 17
+        enabled: true
+      members:
+        weight: 16
         enabled: false
       section:
         weight: 5
         enabled: false
       text:
         weight: 6
+        enabled: false
+      views:
+        weight: 20
         enabled: false
 field_type: entity_reference_revisions

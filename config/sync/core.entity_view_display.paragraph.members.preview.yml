@@ -1,0 +1,15 @@
+uuid: 20d853b6-e98e-47f3-acd5-1598304c3585
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.members.field_member_item
+    - paragraphs.paragraphs_type.members
+id: paragraph.members.preview
+targetEntityType: paragraph
+bundle: members
+mode: preview
+content: {  }
+hidden:
+  field_member_item: true
