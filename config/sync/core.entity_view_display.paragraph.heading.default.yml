@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.heading.field_heading
+    - field.field.paragraph.heading.field_heading_center
     - field.field.paragraph.heading.field_heading_level
+    - field.field.paragraph.heading.field_heading_line
     - paragraphs.paragraphs_type.heading
 id: paragraph.heading.default
 targetEntityType: paragraph
@@ -19,5 +21,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_heading_center:
+    type: boolean
+    label: hidden
+    settings:
+      format: custom
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_heading_level: true
+  field_heading_line: true

@@ -1,32 +1,102 @@
 .paragraph--type--heading {
 
+  &.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  > * {
+    display: flex;
+  }
+
   .additional-title {
     letter-spacing: em(4.96);
     color: $dark-blue;
     margin-bottom: em(10);
+    &:before, &:after {
+      background-color: $dark-blue;
+    }
+    .bg-green & {
+      color: $white;
+      &:before, &:after {
+        background-color: $white;
+      }
+    }
   }
 
-  h2 {
+  .center {
+    text-align: center;
+  }
+
+  .top-line, .bottom-line, .top-bottom-line {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-line {
+    &:before {
+      display: block;
+      content: "";
+      height: rem(60);
+      width: rem(2);
+      margin-bottom: rem(15);
+    }
+  }
+
+  .bottom-line {
+    &:after {
+      display: block;
+      content: "";
+      height: rem(60);
+      width: rem(2);
+      margin-top: rem(15);
+    }
+  }
+
+  .top-bottom-line {
+    &:before {
+      display: block;
+      content: "";
+      height: rem(60);
+      width: rem(2);
+      margin-bottom: rem(15);
+    }
+    &:after {
+      display: block;
+      content: "";
+      height: rem(60);
+      width: rem(2);
+      margin-top: rem(15);
+    }
+  }
+
+  h2, h3, h4 {
     color: $secondary-color;
     font-weight: 500;
     margin-bottom: .5em;
+    &:before, &:after {
+      background-color: $secondary-color;
+    }
+    .bg-green & {
+      color: $white;
+      &:before, &:after {
+        background-color: $white;
+      }
+    }
   }
 
-  h3 {
-    color: $secondary-color;
+  h5, h6 {
+    font-weight: 500;
     margin-bottom: .5em;
-  }
-
-  h4 {
-    color: $secondary-color;
-    margin-bottom: .5em;
-  }
-
-  h5 {
-    margin-bottom: .5em;
-  }
-
-  h6 {
-    margin-bottom: .5em;
+    &:before, &:after {
+      background-color: $light-green;
+    }
+    .bg-green & {
+      color: $white;
+      &:before, &:after {
+        background-color: $white;
+      }
+    }
   }
 }

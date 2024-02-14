@@ -1,0 +1,30 @@
+uuid: 58de4e67-4faf-492c-8ad0-4ff1c8a44990
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_heading_line
+field_name: field_heading_line
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: top_line
+      label: Hore
+    -
+      value: bottom_line
+      label: Dole
+    -
+      value: top_bottom_line
+      label: 'Hore & Dole'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

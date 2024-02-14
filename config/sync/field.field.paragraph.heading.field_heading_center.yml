@@ -1,0 +1,21 @@
+uuid: a223e6a6-1a9b-4b5b-b497-871cf3628d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_center
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.field_heading_center
+field_name: field_heading_center
+entity_type: paragraph
+bundle: heading
+label: Center
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

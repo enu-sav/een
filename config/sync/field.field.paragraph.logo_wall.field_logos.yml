@@ -1,17 +1,17 @@
-uuid: 51a2ed9c-03fc-4b0b-8427-0c800d072621
+uuid: c450be34-6287-4566-9ba3-a3244a9b47a3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
-    - media.type.image
-    - paragraphs.paragraphs_type.member_item
-id: paragraph.member_item.field_image
-field_name: field_image
+    - field.storage.paragraph.field_logos
+    - media.type.image_link
+    - paragraphs.paragraphs_type.logo_wall
+id: paragraph.logo_wall.field_logos
+field_name: field_logos
 entity_type: paragraph
-bundle: member_item
-label: Image
-description: Image
+bundle: logo_wall
+label: Logá
+description: ''
 required: true
 translatable: false
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      image_link: image_link
     sort:
       field: _none
       direction: ASC

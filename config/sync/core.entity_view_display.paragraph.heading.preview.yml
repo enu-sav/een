@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.heading.field_heading
+    - field.field.paragraph.heading.field_heading_center
     - field.field.paragraph.heading.field_heading_level
+    - field.field.paragraph.heading.field_heading_line
     - paragraphs.paragraphs_type.heading
 id: paragraph.heading.preview
 targetEntityType: paragraph
@@ -21,4 +23,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_heading_center: true
   field_heading_level: true
+  field_heading_line: true

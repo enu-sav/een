@@ -1,0 +1,21 @@
+uuid: db7d11e7-d38f-4b02-85d8-01c5ec2a3fc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_line
+    - paragraphs.paragraphs_type.heading
+  module:
+    - options
+id: paragraph.heading.field_heading_line
+field_name: field_heading_line
+entity_type: paragraph
+bundle: heading
+label: Čiara
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

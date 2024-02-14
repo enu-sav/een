@@ -1,0 +1,20 @@
+.paragraph--type--link {
+
+  a {
+
+    &.link {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $action-color;
+
+      &:before {
+        display: block;
+        content: "━";
+        margin-right: em(2);
+      }
+    }
+  }
+}

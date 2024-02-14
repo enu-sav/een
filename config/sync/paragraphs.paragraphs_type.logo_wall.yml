@@ -1,10 +1,10 @@
-uuid: fead90f7-e3b1-4015-a03c-23ed51a6ae9b
+uuid: a361f4d6-117f-4b11-8cab-5b25faa3e6ea
 langcode: en
 status: true
 dependencies: {  }
-id: members
-label: Members
+id: logo_wall
+label: 'Logo wall'
 icon_uuid: null
 icon_default: null
-description: Members
+description: ''
 behavior_plugins: {  }

@@ -29,6 +29,14 @@ h1 {
   @media all and (min-width: em($template-tablet)) {
     font-size: rem(68);
   }
+
+  &.page-title {
+    font-size: rem(30);
+    font-weight: 500;
+    @media all and (min-width: em($template-tablet)) {
+      font-size: rem(48);
+    }
+  }
 }
 
 h2 {
@@ -76,6 +84,10 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.text-center {
+    text-align: center;
+  }
 }
 
 strong, b {
@@ -83,10 +95,9 @@ strong, b {
 }
 
 a {
-  color: $action-color;
+  color: $dark-blue;
   text-decoration: none;
   transition: color $base-duration $base-timing;
-  font-weight: 700;
 
   &:active,
   &:focus,

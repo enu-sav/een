@@ -1,0 +1,44 @@
+.paragraph--type--logo-wall {
+  padding-top: em(16);
+
+  @media all and (min-width: em($template-tablet)) {
+    padding-top: em(32);
+  }
+
+  @media all and (min-width: em($template-desktop)) {
+    padding-top: em(64);
+  }
+
+  > .field--name-field-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: em(20);
+
+    @media all and (min-width: em($template-tablet)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: em(40);
+    }
+
+    > .field__item {
+      align-self: center;
+
+      .media--image-link {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        img {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          height: 100%;
+          max-height: em(75);
+        }
+      }
+    }
+  }
+}

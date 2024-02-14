@@ -136,6 +136,13 @@
         margin-bottom: 0;
       }
     }
+
+    .paragraph.paragraph--type--text + .paragraph.paragraph--type--link {
+      margin-top: em(-16);
+      @media all and (min-width: em($template-tablet)) {
+        margin-top: em(-16);
+      }
+    }
   }
 
   /**
@@ -312,14 +319,14 @@
  * Color BG definitions
  */
 
-//// Blue background
-//.bg-blue {
-//  color: $white;
-//  background-color: $accent-color;
-//
-//  ::-moz-selection,
-//  ::selection {
-//    color: $accent-color;
-//    background: $white;
-//  }
-//}
+// Blue background
+.bg-green {
+  color: $white;
+  background-color: $secondary-color;
+
+  ::-moz-selection,
+  ::selection {
+    color: $secondary-color;
+    background: $white;
+  }
+}

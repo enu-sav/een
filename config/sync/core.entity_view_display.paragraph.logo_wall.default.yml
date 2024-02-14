@@ -1,0 +1,22 @@
+uuid: 98ddcdfe-525e-4813-b762-2ca09ed46311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_wall.field_logos
+    - paragraphs.paragraphs_type.logo_wall
+id: paragraph.logo_wall.default
+targetEntityType: paragraph
+bundle: logo_wall
+mode: default
+content:
+  field_logos:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
