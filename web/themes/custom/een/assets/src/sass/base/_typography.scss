@@ -22,6 +22,10 @@ h6 {
   color: $dark-blue;
   font-weight: normal;
   letter-spacing: normal;
+
+  .bg-green & {
+    color: $white;
+  }
 }
 
 h1 {
@@ -61,12 +65,20 @@ h5 {
   font-size: rem(16);
   color: $light-green;
   letter-spacing: em(4.96);
+
+  .bg-green & {
+    color: $white;
+  }
 }
 
 h6 {
   font-size: rem(16);
   color: $light-green;
   letter-spacing: em(4.96);
+
+  .bg-green & {
+    color: $white;
+  }
 }
 
 p {
@@ -75,6 +87,10 @@ p {
   font-weight: normal;
   margin: 0 0 $small-spacing;
   color: rgb(110, 114, 123);
+
+  .bg-green & {
+    color: $white;
+  }
 
   @media all and (min-width: em($template-tablet)) {
     font-size: rem(18);
@@ -99,10 +115,18 @@ a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
+  .bg-green & {
+    color: $white;
+  }
+
   &:active,
   &:focus,
   &:hover {
     color: shade($action-color, 25%);
+
+    .bg-green & {
+      color: $white;
+    }
   }
 }
 

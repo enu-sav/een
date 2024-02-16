@@ -51,6 +51,7 @@ article.node--type-event {
         grid-template-columns: repeat(12, 1fr);
         gap: em(10);
         grid-template-rows: 3fr;
+        align-self: center;
       }
 
       > .date {
@@ -71,9 +72,8 @@ article.node--type-event {
           margin-bottom: 0;
           grid-column: 1 / 6;
           grid-row: 1 / 2;
-          height: 100%;
           max-width: em(170);
-          min-height: em(200);
+          height: em(200);
         }
 
         @media all and (min-width: em($template-desktop)) {
@@ -163,8 +163,8 @@ article.node--type-event {
           font-size: rem(16);
           line-height: 2;
 
-          @media all and (min-width: em($template-desktop)) {
-            font-size: rem(18);
+          @media all and (min-width: em($template-tablet)) {
+            @include line-clamp(2, 2);
           }
 
           .bg-green & {

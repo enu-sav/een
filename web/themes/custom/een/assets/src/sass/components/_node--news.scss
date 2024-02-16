@@ -74,6 +74,11 @@ article.node--type-news {
         line-height: 2.4;
         letter-spacing: em(0.48);
         margin-bottom: em(10);
+
+        @media all and (min-width: em($template-tablet)) {
+          min-height: em(76.8);
+          @include line-clamp(2, 2.4);
+        }
       }
 
       > a {
