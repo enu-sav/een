@@ -52,6 +52,11 @@
         line-height: em(24, 16);
         margin-bottom: 0;
         font-weight: 700;
+        transition: text-shadow .1s linear;
+
+        &:hover, &:focus {
+          text-shadow: em(.3) em(.3) em(.3) $white;
+        }
       }
     }
 
@@ -68,6 +73,11 @@
         line-height: em(24, 16);
         margin-bottom: 0;
         font-weight: 700;
+        transition: text-shadow .1s linear;
+
+        &:hover, &:focus {
+          text-shadow: em(.3) em(.3) em(.3) $white;
+        }
       }
     }
   }

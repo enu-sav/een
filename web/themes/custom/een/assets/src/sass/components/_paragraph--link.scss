@@ -9,11 +9,16 @@
       font-weight: 900;
       text-transform: uppercase;
       color: $action-color;
+      transition: text-shadow .1s linear;
 
       &:before {
         display: block;
         content: "━";
         margin-right: em(2);
+      }
+
+      &:hover, &:focus {
+        text-shadow: em(.3) em(.3) em(.3) $action-color;
       }
     }
   }

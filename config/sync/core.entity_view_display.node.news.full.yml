@@ -15,6 +15,13 @@ targetEntityType: node
 bundle: news
 mode: full
 content:
+  field_lead_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_paragraphs:
     type: layout_paragraphs
     label: hidden
@@ -22,9 +29,8 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
-  field_lead_text: true
   langcode: true
   links: true
