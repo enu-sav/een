@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Events
+      title: ''
       fields:
         title:
           id: title
@@ -170,6 +170,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: 'view--events full'
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -194,7 +195,9 @@ display:
           offset: 0
           items_per_page: 4
       defaults:
+        css_class: false
         pager: false
+      css_class: 'view--events teaser'
       display_description: 'Embed: Events'
       display_extenders: {  }
     cache_metadata:

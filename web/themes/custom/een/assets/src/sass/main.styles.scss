@@ -49,10 +49,17 @@
 
 // Nodes
 @import "./components/node--page";
+@import "./components/node--news";
+@import "./components/node--event";
+@import "./components/node--forum";
 
-//Paragraphs
+// Paragraphs
 @import "components/paragraph--hero";
 @import "components/paragraph--heading";
 @import "components/paragraph--link";
 @import "components/paragraph--image";
 @import "components/paragraph--logo-wall";
+
+// Views
+@import "components/view--news";
+@import "components/view--events";

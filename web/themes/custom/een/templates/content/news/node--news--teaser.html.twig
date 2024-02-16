@@ -1,21 +1,18 @@
 {% extends "node.html.twig" %}
 
 {% block title %}
-  <h3{{ title_attributes }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-  </h3>
 {% endblock %}
 
 {% block meta %}
 {% endblock %}
 
 {% block content %}
-  <div{{ content_attributes }}>
-    <div>
-      {{ node.getCreatedTime|date('F') }}
-      {{ node.getCreatedTime|date('j') }}
-      {{ node.getCreatedTime|date('Y') }}
-    </div>
+  <div class="content">
+    <h3>{{ label }}</h3>
     {{ content }}
+    <a class="link" href="{{ url }}" rel="bookmark">{{ 'Read more'|trans }}</a>
+    <div class="date">
+      {{ node.getCreatedTime|date('F j Y') }}
+    </div>
   </div>
 {% endblock %}

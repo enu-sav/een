@@ -1,0 +1,21 @@
+.view--events {
+
+  &.teaser {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: em(20);
+    padding: em(16) 0;
+
+    @media all and (min-width: em($template-tablet)) {
+      grid-template-columns: repeat(2, 1fr);
+
+      .views-row {
+        height: 100%;
+      }
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+      gap: em(40);
+    }
+  }
+}
