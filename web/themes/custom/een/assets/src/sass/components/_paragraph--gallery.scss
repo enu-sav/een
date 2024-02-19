@@ -44,6 +44,12 @@
     bottom: em(-54);
   }
 
+  .slick-dots {
+    > li:only-child {
+      display: none;
+    }
+  }
+
   .slick-dots li.slick-active button::before {
     color: $action-color;
     opacity: 1;

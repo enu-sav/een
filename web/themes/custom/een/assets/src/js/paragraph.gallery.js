@@ -9,11 +9,11 @@
   Drupal.behaviors.paragraphGallery = {
     attach: function (context, settings) {
 
-      once('paragraph-gallery', '.paragraph--type--gallery .field--name-field-media-image', context).forEach(function (item) {
+      once('paragraph-gallery', '.paragraph--type--gallery .field--name-field-images', context).forEach(function (item) {
         if (item) {
           lightGallery(item, {
             plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgRotate],
-            selector: 'a',
+            selector: '.field__item > a',
             download: false,
             licenseKey: '605A035C-4289-4FC9-AC3D-15F950552E1B',
             speed: 500,
@@ -33,7 +33,7 @@
           slidesToScroll: 1,
           dots: true,
           arrows: true,
-          infinite: true,
+          infinite: false,
           touchMove: false,
           responsive: [
             {
