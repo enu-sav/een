@@ -1,13 +1,4 @@
 .paragraph--type--logo-wall {
-  padding-top: em(16);
-
-  @media all and (min-width: em($template-tablet)) {
-    padding-top: em(32);
-  }
-
-  @media all and (min-width: em($template-desktop)) {
-    padding-top: em(64);
-  }
 
   > .field--name-field-logos {
     display: grid;

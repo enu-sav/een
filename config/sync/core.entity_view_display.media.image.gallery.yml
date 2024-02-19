@@ -1,26 +1,27 @@
-uuid: 48e71f43-fcd2-4a73-84fe-3eea615229ac
+uuid: 02981e54-a3b7-4fff-b8ea-bc4ec1a9cfa2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.gallery
     - field.field.media.image.field_media_image
-    - image.style.large
+    - image.style.max_650x650
     - media.type.image
   module:
     - svg_image
 _core:
   default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
-id: media.image.default
+id: media.image.gallery
 targetEntityType: media
 bundle: image
-mode: default
+mode: gallery
 content:
   field_media_image:
     type: image
     label: visually_hidden
     settings:
-      image_link: ''
-      image_style: large
+      image_link: file
+      image_style: max_650x650
       image_loading:
         attribute: lazy
       svg_attributes:

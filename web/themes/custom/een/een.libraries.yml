@@ -1,3 +1,61 @@
+# Libs
+slick:
+  version: 1.x
+  js:
+    assets/dist/libs/slick/slick.min.js: { }
+  css:
+    theme:
+      assets/dist/libs/slick/slick.css: { }
+      assets/dist/libs/slick/slick-theme.css: { }
+  dependencies:
+    - core/jquery
+
+lightGallery:
+  version: 2.7.2
+  css:
+    theme:
+      assets/dist/libs/lightgallery/css/lightgallery-bundle.min.css: {
+        minified: true,
+        weight: -200,
+        attributes: { defer: true }
+      }
+  js:
+    assets/dist/libs/lightgallery/lightgallery.min.js: {
+      minified: true,
+      weight: -210,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/zoom/lg-zoom.min.js: {
+      minified: true,
+      weight: -211,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/thumbnail/lg-thumbnail.min.js: {
+      minified: true,
+      weight: -212,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/autoplay/lg-autoplay.min.js: {
+      minified: true,
+      weight: -213,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/fullscreen/lg-fullscreen.min.js: {
+      minified: true,
+      weight: -214,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/rotate/lg-rotate.min.js: {
+      minified: true,
+      weight: -215,
+      attributes: { defer: true }
+    }
+    assets/dist/libs/lightgallery/plugins/video/lg-video.min.js: {
+      minified: true,
+      weight: -216,
+      attributes: { defer: true }
+    }
+
 global:
   version: 1.0.0
   css:
@@ -18,3 +76,17 @@ info_popup:
   dependencies:
     - core/once
     - core/drupalSettings
+
+# Paragraphs
+paragraph.gallery:
+  version: 1.x
+  js:
+    assets/dist/js/paragraph.gallery.js: {
+      minified: true,
+      weight: -250,
+      attributes: { defer: true }
+    }
+  dependencies:
+    - core/jquery
+    - een/lightGallery
+    - een/slick
