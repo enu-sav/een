@@ -1,0 +1,17 @@
+uuid: 807023a9-d4ca-4854-ae4d-d98b865d25c2
+langcode: en
+status: true
+dependencies: {  }
+id: accepted
+workflow: editorial
+transitions:
+  publish: publish
+roles: {  }
+author: false
+site_mail: false
+emails: eva.katreniakova@savba.sk
+subject: 'Content approved'
+body:
+  value: '<p>Your content <a href="[node:url:absolute]">[node:title]</a> or its modifications have been approved/published.</p>'
+  format: basic_html
+label: Accepted

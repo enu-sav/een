@@ -121,7 +121,7 @@ layout_option_definitions:
   layout_spacing_bottom:
     title: 'Inner space - Bottom'
     description: ''
-    default: 'spacing--bottom--none'
+    default: 'spacing--bottom--default'
     plugin: layout_options_class_radios
     inline: false
     options: {

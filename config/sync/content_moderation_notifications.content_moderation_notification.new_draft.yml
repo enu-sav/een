@@ -1,0 +1,17 @@
+uuid: ea89198a-22ed-4573-bdf4-3bc0802f7c03
+langcode: en
+status: true
+dependencies: {  }
+id: new_draft
+workflow: editorial
+transitions:
+  create_new_draft: create_new_draft
+roles: {  }
+author: false
+site_mail: false
+emails: eva.katreniakova@savba.sk
+subject: 'Content for moderation'
+body:
+  value: '<p>New changes are awaiting approval in the content <a href="[node:url:absolute]">[node:title]</a></p>'
+  format: basic_html
+label: 'New Draft'

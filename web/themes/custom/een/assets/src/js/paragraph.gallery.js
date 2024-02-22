@@ -12,7 +12,7 @@
       once('paragraph-gallery', '.paragraph--type--gallery .field--name-field-images', context).forEach(function (item) {
         if (item) {
           lightGallery(item, {
-            plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgRotate],
+            plugins: [lgThumbnail, lgFullscreen],
             selector: '.field__item > a',
             download: false,
             licenseKey: '605A035C-4289-4FC9-AC3D-15F950552E1B',

@@ -45,10 +45,12 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('een/wcag-tools') }}
+
 <div class="layout-container">
 
   <!-- ______________________ HEADER _______________________ -->
-  <header class="header" role="banner">
+  <header class="header" role="banner" tabindex="0" aria-label="Site header">
     <div class="sticky-header">
       <div class="region-header-wrapper">
         <div class="region region-header">
@@ -58,7 +60,7 @@
             {{ page.header.een_site_branding }}
             {{ page.header.een_main_navigation_right }}
           </div>
-          <a href="#"  class="mn mn__icon mn__icon--menu">
+          <a href="#"  class="mn mn__icon mn__icon--menu" tabindex="0" aria-expanded="false" aria-label="You are in the section: Mobile menu">
             <span class="hamburger-slice hamburger-slice__one"></span>
             <span class="hamburger-slice hamburger-slice__two"></span>
             <span class="hamburger-slice hamburger-slice__three"></span>
@@ -77,7 +79,7 @@
   </div>{# /.layout-container__highlighted #}
 
   <!-- ______________________ MAIN _______________________ -->
-  <main role="main">
+  <main role="main" aria-label="Site body">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -88,7 +90,7 @@
 
   <!-- ______________________ FOOTER _______________________ -->
   {% if page.footer %}
-    <footer role="contentinfo">
+    <footer role="contentinfo" aria-label="Site footer">
       <div class="layout-container__content_footer">
         <div class="cols cols-3">
           <div class="col col-1">

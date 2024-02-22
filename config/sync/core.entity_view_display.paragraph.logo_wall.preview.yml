@@ -1,0 +1,15 @@
+uuid: 1e75d210-6b04-4f34-b8d4-e0136b1fcd7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.logo_wall.field_logos
+    - paragraphs.paragraphs_type.logo_wall
+id: paragraph.logo_wall.preview
+targetEntityType: paragraph
+bundle: logo_wall
+mode: preview
+content: {  }
+hidden:
+  field_logos: true

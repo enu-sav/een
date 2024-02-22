@@ -43,7 +43,7 @@ abstract class MultiWidthLayoutBase extends LayoutOptions implements PluginFormI
   /**
    * {@inheritdoc}
    */
-  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
+  public function submitConfigurationForm(array &$form, FormStateInterface $form_state): void {
     parent::submitConfigurationForm($form, $form_state);
     $this->configuration['column_widths'] = $form_state->getValue('column_widths');
   }

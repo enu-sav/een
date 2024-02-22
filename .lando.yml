@@ -5,7 +5,6 @@ config:
   via: apache
   webroot: web
   database: mariadb
-  drush: 10
   xdebug: false
   config:
     php: .lando/php.ini
@@ -18,8 +17,6 @@ services:
     type: phpmyadmin
     hosts:
       - database
-    overrides:
-      image: bitnami/mariadb:10.4.12
   mailhog:
     type: mailhog
     portforward: true

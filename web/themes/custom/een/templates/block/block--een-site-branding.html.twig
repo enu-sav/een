@@ -1,0 +1,28 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Default theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup themeable
+ */
+#}
+{% block content %}
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" rel="home" aria-current="page" tabindex="1" aria-label="Link to home page - European Encyclopedia Network">
+      <img src="{{ site_logo }}" {{ attributes.setAttribute('loading', 'eager') }} width="55" height="74" alt="European Encyclopedia Networks" title="European Encyclopedia Network" />
+    </a>
+  {% endif %}
+{% endblock %}
+
+
+
+

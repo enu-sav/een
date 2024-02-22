@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.event
+    - node.type.news
     - node.type.page
   module:
     - content_moderation
@@ -80,5 +82,7 @@ type_settings:
       weight: -3
   entity_types:
     node:
+      - event
+      - news
       - page
   default_moderation_state: draft

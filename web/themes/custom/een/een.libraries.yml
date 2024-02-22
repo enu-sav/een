@@ -25,34 +25,14 @@ lightGallery:
       weight: -210,
       attributes: { defer: true }
     }
-    assets/dist/libs/lightgallery/plugins/zoom/lg-zoom.min.js: {
-      minified: true,
-      weight: -211,
-      attributes: { defer: true }
-    }
     assets/dist/libs/lightgallery/plugins/thumbnail/lg-thumbnail.min.js: {
       minified: true,
       weight: -212,
       attributes: { defer: true }
     }
-    assets/dist/libs/lightgallery/plugins/autoplay/lg-autoplay.min.js: {
-      minified: true,
-      weight: -213,
-      attributes: { defer: true }
-    }
     assets/dist/libs/lightgallery/plugins/fullscreen/lg-fullscreen.min.js: {
       minified: true,
       weight: -214,
-      attributes: { defer: true }
-    }
-    assets/dist/libs/lightgallery/plugins/rotate/lg-rotate.min.js: {
-      minified: true,
-      weight: -215,
-      attributes: { defer: true }
-    }
-    assets/dist/libs/lightgallery/plugins/video/lg-video.min.js: {
-      minified: true,
-      weight: -216,
       attributes: { defer: true }
     }
 
@@ -76,6 +56,18 @@ info_popup:
   dependencies:
     - core/once
     - core/drupalSettings
+
+wcag-tools:
+  version: VERSION
+  header: true
+  js:
+    assets/dist/js/wcag-tools/wcag-tools.js: {
+      minified: true,
+      attributes: { defer: true }
+    }
+  dependencies:
+    - core/drupal
+    - core/once
 
 # Paragraphs
 paragraph.gallery:
