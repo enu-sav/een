@@ -1,0 +1,29 @@
+uuid: 2704c38e-530f-40dc-9335-82cd56dfff55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.views.field_view
+    - paragraphs.paragraphs_type.views
+  module:
+    - viewsreference
+id: paragraph.views.preview
+targetEntityType: paragraph
+bundle: views
+mode: preview
+content:
+  field_view:
+    type: viewsreference_lazy_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        embed: embed
+        default: '0'
+        page: '0'
+        feed: '0'
+        block: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

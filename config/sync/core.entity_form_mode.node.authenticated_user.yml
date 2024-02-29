@@ -1,0 +1,10 @@
+uuid: afe01ea9-4474-449e-abf4-f53f23159eb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.authenticated_user
+label: 'Authenticated user'
+targetEntityType: node
+cache: true

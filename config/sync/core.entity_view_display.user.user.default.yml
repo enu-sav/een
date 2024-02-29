@@ -9,7 +9,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - user
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
@@ -20,7 +20,7 @@ mode: default
 content:
   field_encyclopedia:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -28,7 +28,7 @@ content:
     region: content
   field_name:
     type: string
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -36,7 +36,7 @@ content:
     region: content
   field_surname:
     type: string
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -55,6 +55,10 @@ content:
       image_style: thumbnail
       image_loading:
         attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 0
     region: content

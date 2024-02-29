@@ -5,11 +5,24 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.logo_wall.field_logos
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.logo_wall
+  module:
+    - media
 id: paragraph.logo_wall.preview
 targetEntityType: paragraph
 bundle: logo_wall
 mode: preview
-content: {  }
-hidden:
-  field_logos: true
+content:
+  field_logos:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

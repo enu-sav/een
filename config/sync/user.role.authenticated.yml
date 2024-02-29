@@ -4,12 +4,16 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.forum
   module:
     - comment
+    - comment_notify
     - contact
     - file
     - filter
+    - form_mode_control
     - media
+    - node
     - search
     - system
 _core:
@@ -22,10 +26,17 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'create forum content'
   - 'delete own files'
+  - 'delete own forum content'
   - 'edit own comments'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'subscribe to comments'
+  - 'use  The form mode authenticated_user linked to  node entity( forum )'
+  - 'use  The form mode default linked to  comment entity( comment )'
+  - 'use  The form mode default linked to  comment entity( comment_forum )'
+  - 'use  The form mode default linked to  node entity( forum )'
   - 'use text format basic_html'
   - 'view media'

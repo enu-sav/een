@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Theme override to display a list of forums and containers.
+ *
+ * Available variables:
+ * - forums: A collection of forums and containers to display. It is keyed to
+ *   the numeric IDs of all child forums and containers. Each forum in forums
+ *   contains:
+ *   - is_container: A flag indicating if the forum can contain other
+ *     forums. Otherwise, the forum can only contain topics.
+ *   - depth: How deep the forum is in the current hierarchy.
+ *   - zebra: 'even' or 'odd', used for row class.
+ *   - icon_class: 'default' or 'new', used for forum icon class.
+ *   - icon_title: Text alternative for the forum icon.
+ *   - name: The name of the forum.
+ *   - link: The URL to link to this forum.
+ *   - description: The description field for the forum, containing:
+ *     - value: The descriptive text for the forum.
+ *   - new_topics: A flag indicating if the forum contains unread posts.
+ *   - new_url: A URL to the forum's unread posts.
+ *   - new_text: Text for the above URL, which tells how many new posts.
+ *   - old_topics: A count of posts that have already been read.
+ *   - num_posts: The total number of posts in the forum.
+ *   - last_reply: Text representing the last time a forum was posted or
+ *     commented in.
+ * - forum_id: Forum ID for the current forum. Parent to all items within the
+ *   forums array.
+ *
+ * @see template_preprocess_forum_list()
+ */
+#}
+
+<div id="forum-{{ forum_id }}" class="forum-list">
+  {% for child_id, forum in forums %}
+    <div id="forum-list-{{ child_id }}" class="forum-list__row">
+
+      <div class="forum-list__row__forum">
+        <div class="forum-list__row__forum__name">
+          <a href="{{ forum.link }}">{{ forum.label }}</a>
+        </div>
+      </div>
+
+      <div class="forum-list__row__topics">
+        {{ forum.num_topics }}
+        {% if forum.num_topics == 1 %}
+          {{ 'topic'|t }}
+        {% else %}
+          {{ 'topics'|t }}
+        {% endif %}
+      </div>
+
+      <div class="forum-list__row__last-reply">
+        {{ forum.last_reply }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

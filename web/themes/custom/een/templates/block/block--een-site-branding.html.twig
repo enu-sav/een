@@ -17,7 +17,7 @@
 #}
 {% block content %}
   {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home" aria-current="page" tabindex="1" aria-label="Link to home page - European Encyclopedia Network">
+    <a href="{{ path('<front>') }}" rel="home" aria-current="page" tabindex="0" aria-label="Link to home page - European Encyclopedia Network">
       <img src="{{ site_logo }}" {{ attributes.setAttribute('loading', 'eager') }} width="55" height="74" alt="European Encyclopedia Networks" title="European Encyclopedia Network" />
     </a>
   {% endif %}

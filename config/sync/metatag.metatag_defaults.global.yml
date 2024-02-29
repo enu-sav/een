@@ -8,4 +8,5 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
+  description: 'Školská verzia Encyclopaedie Beliany, ktorá prináša spracovanie encyklopedických hesiel z matematiky a fyziky na úrovni učiva stredných škôl.'
   title: '[current-page:title] | [site:name]'

@@ -9,9 +9,11 @@ dependencies:
     - workflows.workflow.editorial
   module:
     - comment
+    - comment_notify
     - content_moderation
     - content_moderation_owner_permissions
     - file
+    - form_mode_control
     - node
     - system
     - toolbar
@@ -29,14 +31,19 @@ permissions:
   - 'create etherpad_document content'
   - 'create forum content'
   - 'create page content'
+  - 'delete any forum content'
   - 'delete own files'
+  - 'delete own forum content'
   - 'edit any etherpad_document content'
   - 'edit any page content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
   - 'edit own forum content'
   - 'edit own page content'
-  - 'revert forum revisions'
+  - 'subscribe to comments'
+  - 'use  The form mode default linked to  comment entity( comment )'
+  - 'use  The form mode default linked to  comment entity( comment_forum )'
+  - 'use  The form mode default linked to  node entity( forum )'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'

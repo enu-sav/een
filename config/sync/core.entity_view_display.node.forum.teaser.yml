@@ -24,15 +24,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 100
-    region: content
-  forum_notifications_subscription:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 101
+    weight: 1
     region: content
   taxonomy_forums:
     type: entity_reference_label
@@ -40,8 +32,10 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 0
     region: content
 hidden:
   comment_forum: true
+  forum_notifications_subscription: true
   langcode: true
+  links: true

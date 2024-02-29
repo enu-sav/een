@@ -1,0 +1,15 @@
+<div{{ attributes.addClass('forum-topics') }}>
+  {% if rows %}
+    {% for row in rows %}
+      <div class="forum-topics__row">
+        {% for cell in row.cells %}
+          <div{{ cell.attributes }}>
+            {{- cell.content -}}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% elseif empty %}
+    <div>{{ 'There are no posts yet...'|t }}</div>
+  {% endif %}
+</div>

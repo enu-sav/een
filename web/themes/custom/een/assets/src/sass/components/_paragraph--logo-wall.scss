@@ -23,6 +23,8 @@
         align-items: center;
 
         > a {
+          display: contents;
+          
           img {
             transition: transform .3s ease-in-out;
           }

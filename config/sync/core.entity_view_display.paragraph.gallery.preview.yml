@@ -1,0 +1,28 @@
+uuid: 20c4a3ea-435b-4fec-84ab-cd2a1b186dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.gallery.field_images
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - media
+id: paragraph.gallery.preview
+targetEntityType: paragraph
+bundle: gallery
+mode: preview
+content:
+  field_images:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

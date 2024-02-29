@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news.field_lead_text
     - field.field.node.news.field_paragraphs
     - node.type.news
+    - workflows.workflow.editorial
   module:
     - content_moderation
     - layout_paragraphs
@@ -34,7 +35,7 @@ content:
     weight: 2
     region: content
     settings:
-      preview_view_mode: default
+      preview_view_mode: preview
       nesting_depth: 0
       require_layouts: 1
       empty_message: ''

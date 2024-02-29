@@ -908,11 +908,19 @@ if (getenv('REROUTE_EMAIL')) {
 }
 
 /**
- * Environment indicator
+ *  Environment indicator
  */
 $config['environment_indicator.indicator']['bg_color'] = getenv('ENVIRONMENT_INDICATOR') ?? '#000';
 $config['environment_indicator.indicator']['name'] = getenv('ENVIRONMENT_INDICATOR_NAME') ?? 'Development';
 
+/**
+ *  Update notifications
+ */
+$config['content_moderation_notifications.content_moderation_notification.accepted']['status'] = getenv('CONTENT_MODERATION_NOTIFICATIONS_ACCEPTED_STATUS') ?? 0;
+$config['content_moderation_notifications.content_moderation_notification.new_draft']['status'] = getenv('CONTENT_MODERATION_NOTIFICATIONS_NEW_DRAFT_STATUS') ?? 0;
+
+
+$config['comment_notify.settings']['available_alerts'][1] = TRUE;
 
 $settings['config_sync_directory'] = '../config/sync';
 $settings['config_exclude_modules'] = explode(',', getenv('EXCLUDE_MODULES'));

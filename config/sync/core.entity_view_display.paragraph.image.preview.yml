@@ -1,0 +1,28 @@
+uuid: 887dac1d-f64e-4b64-9350-43279e5a9db9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.image.field_image
+    - image.style.large
+    - paragraphs.paragraphs_type.image
+  module:
+    - media
+id: paragraph.image.preview
+targetEntityType: paragraph
+bundle: image
+mode: preview
+content:
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

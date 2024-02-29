@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8779583fdf2c71dd40eea42bbb1a9385",
+    "content-hash": "689cb59e9128707659d93f4d022a4f68",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1577,6 +1577,67 @@
             }
         },
         {
+            "name": "drupal/comment_notify",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/comment_notify.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/comment_notify-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "9f98848f25c1a0db60a8d39f6bbe1d22f47cc2a9"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/token": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1679409019",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Knaddison (greggles)",
+                    "homepage": "https://www.drupal.org/u/greggles",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "David Valdez (gnuget)",
+                    "homepage": "https://www.drupal.org/u/gnuget",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "stefanos.petrakis",
+                    "homepage": "https://www.drupal.org/user/2573064"
+                }
+            ],
+            "description": "Comment follow-up e-mail notification for anonymous as well as registered users.",
+            "homepage": "https://drupal.org/project/comment_notify",
+            "support": {
+                "source": "https://git.drupalcode.org/project/comment_notify",
+                "issues": "https://drupal.org/project/issues/comment_notify",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/config_ignore",
             "version": "3.2.0",
             "source": {
@@ -2331,6 +2392,78 @@
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
                 "source": "https://git.drupalcode.org/project/environment_indicator"
+            }
+        },
+        {
+            "name": "drupal/form_mode_control",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/form_mode_control.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/form_mode_control-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "513801713dd3ccb50c59310145bf3b36c895f592"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1709142668",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dakwamine",
+                    "homepage": "https://www.drupal.org/user/3517785"
+                },
+                {
+                    "name": "eme",
+                    "homepage": "https://www.drupal.org/user/542492"
+                },
+                {
+                    "name": "Flodevelop",
+                    "homepage": "https://www.drupal.org/user/735818"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "mh.marouan",
+                    "homepage": "https://www.drupal.org/user/3203501"
+                },
+                {
+                    "name": "MichaelB",
+                    "homepage": "https://www.drupal.org/user/2309046"
+                },
+                {
+                    "name": "snake_plissken",
+                    "homepage": "https://www.drupal.org/user/3624793"
+                }
+            ],
+            "description": "Allow you to use the form modes per role and per bundle / Entity.",
+            "homepage": "https://www.drupal.org/project/form_mode_control",
+            "support": {
+                "source": "https://git.drupalcode.org/project/form_mode_control"
             }
         },
         {
@@ -3677,6 +3810,103 @@
             }
         },
         {
+            "name": "drupal/stage_file_proxy",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stage_file_proxy.git",
+                "reference": "2.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-2.1.4.zip",
+                "reference": "2.1.4",
+                "shasum": "85f8451f123fcfb1b272f5a0cc11e6bd1673476c"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "php": ">=8"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3",
+                "drush/drush": "^11 || ^12"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.4",
+                    "datestamp": "1706627704",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "stage_file_proxy.drush.services.yml": "^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "phpcs": [
+                    "vendor/bin/phpcs -p ."
+                ],
+                "phpcbf": [
+                    "vendor/bin/phpcbf -p ."
+                ],
+                "test": [
+                    "@phpcs"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "BarisW",
+                    "homepage": "https://www.drupal.org/user/107229"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "msonnabaum",
+                    "homepage": "https://www.drupal.org/user/75278"
+                },
+                {
+                    "name": "netaustin",
+                    "homepage": "https://www.drupal.org/user/199298"
+                },
+                {
+                    "name": "robwilmshurst",
+                    "homepage": "https://www.drupal.org/user/144488"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
+                }
+            ],
+            "description": "Provides stage_file_proxy module.",
+            "homepage": "https://www.drupal.org/project/stage_file_proxy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stage_file_proxy"
+            }
+        },
+        {
             "name": "drupal/svg_image",
             "version": "3.0.2",
             "source": {
@@ -3992,6 +4222,65 @@
             }
         },
         {
+            "name": "drupal/webp",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webp.git",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webp-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "59466a0c5881f265926429ce6033084653ecd1ef"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "ext-gd": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1692124378",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bart Vanhoutte",
+                    "homepage": "https://www.drupal.org/user/145609",
+                    "email": "bart@croquemonsieur.be",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Bart Vanhoutte",
+                    "homepage": "https://www.drupal.org/user/1133754"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                }
+            ],
+            "description": "Generates WebP copies of image style derivatives.",
+            "homepage": "https://www.drupal.org/project/webp",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webp",
+                "issues": "https://www.drupal.org/project/issues/webp"
+            }
+        },
+        {
             "name": "drupal/workbench",
             "version": "1.4.0",
             "source": {
@@ -4216,65 +4505,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/workbench_moderation",
                 "issues": "http://drupal.org/project/issues/workbench_moderation"
-            }
-        },
-        {
-            "name": "drupal/wpf",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/wpf.git",
-                "reference": "1.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wpf-1.1.0.zip",
-                "reference": "1.1.0",
-                "shasum": "2ecdb43d709d6994093f085ec83f86843f1d36ba"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "ext-gd": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.1.0",
-                    "datestamp": "1683061774",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Dudás József",
-                    "homepage": "https://www.drupal.org/user/387119",
-                    "email": "dj@brainsum.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "pedrop",
-                    "homepage": "https://www.drupal.org/user/1043368"
-                },
-                {
-                    "name": "szato",
-                    "homepage": "https://www.drupal.org/user/389677"
-                }
-            ],
-            "description": "Generates jpg copies of webp image style derivatives.",
-            "homepage": "https://www.drupal.org/project/wpf",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/wpf",
-                "issues": "https://www.drupal.org/project/issues/wpf"
             }
         },
         {
@@ -14073,7 +14303,8 @@
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
         "drupal/mimemail": 15,
-        "drupal/viewsreference": 10
+        "drupal/viewsreference": 10,
+        "drupal/webp": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

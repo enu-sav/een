@@ -8,4 +8,6 @@ id: front
 label: 'Front page'
 tags:
   canonical_url: '[site:url]'
+  description: 'The mission of the EEN is to enable its members to share experiences about the current state and functioning model of encyclopedias, to identify possible areas of improvement and collaboration and to contribute to the role of encyclopedias in providing access to reliable, verified and findable information of general interest as well as to their role in the preservation of national and cultural identity, especially in regards to a constantly growing amount of information from various, often unreliable sources, and to seek financial and technical sustainability of projects.'
   shortlink: '[site:url]'
+  title: 'European Encyclopedia Network'

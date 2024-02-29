@@ -9,6 +9,7 @@ dependencies:
     - node.type.forum
   module:
     - comment
+    - content_moderation
     - path
     - text
 _core:
