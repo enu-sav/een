@@ -76,11 +76,11 @@ display:
         options:
           offset: 0
           items_per_page: 20
-          total_pages: null
+          total_pages: 4
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: ››
+            previous: ‹‹
             first: '« First'
             last: 'Last »'
           expose:
@@ -214,6 +214,9 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: News
+      defaults:
+        title: false
       display_description: 'Page: News'
       display_extenders: {  }
       path: news

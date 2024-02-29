@@ -7,7 +7,9 @@
   body.path-forum &,
   body.page-node-type-forum &,
   body.page-node-type-event &,
-  body.page-node-type-news & {
+  body.page-node-type-news &,
+  body.path-news &,
+  body.path-events & {
     @include container();
     padding-top: em(16);
     margin-bottom: em(16);

@@ -10,7 +10,9 @@ header {
   body.path-404 &,
   body.path-403 &,
   body.path-forum &,
-  body.not-hero & {
+  body.not-hero &,
+  body.path-news &,
+  body.path-events & {
     &:before {
       display: block;
       content: "";

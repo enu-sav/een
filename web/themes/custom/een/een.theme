@@ -31,6 +31,18 @@ function een_preprocess_html(&$variables): void {
       $variables['attributes']['class'][] = 'not-hero';
     }
   }
+
+  // Check if current request is an exception to get error type
+  $status = \Drupal::requestStack()->getCurrentRequest()->attributes->get('exception');
+
+  // add body classes.
+  if ($status && $status->getStatusCode() == 404) {
+    $variables['attributes']['class'][] = 'path-404';
+  }
+
+  if ($status && $status->getStatusCode() == 403) {
+    $variables['attributes']['class'][] = 'path-403';
+  }
 }
 
 /**

@@ -76,7 +76,7 @@ display:
         options:
           offset: 0
           items_per_page: 20
-          total_pages: null
+          total_pages: 4
           id: 0
           tags:
             next: ››
@@ -214,6 +214,9 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: Events
+      defaults:
+        title: false
       display_description: 'Page: Events'
       display_extenders: {  }
       path: events
