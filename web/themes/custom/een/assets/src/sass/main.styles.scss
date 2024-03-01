@@ -16,6 +16,7 @@
 @import "./base/tables";
 @import "./base/sprite";
 @import "./base/generic";
+@import "./base/file";
 
 /**
  * Layout
@@ -60,6 +61,7 @@
 @import "components/paragraph--image";
 @import "components/paragraph--logo-wall";
 @import "components/paragraph--gallery";
+@import "components/paragraph--attachment";
 
 // Views
 @import "components/view--news";

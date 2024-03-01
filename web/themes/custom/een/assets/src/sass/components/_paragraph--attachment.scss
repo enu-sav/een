@@ -1,0 +1,37 @@
+.paragraph--type--attached-document {
+  margin-bottom: em(16);
+  @media all and (min-width: em($template-desktop)) {
+    margin-bottom: em(24);
+  }
+
+  .field--name-field-attachment {
+
+    > .field__item {
+      margin-bottom: em(10);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .field--name-field-media-document {
+
+    span.file {
+      padding-left: em(25);
+
+      > a {
+        $fz: 18;
+        font-size: rem($fz);
+        line-height: em(30, $fz);
+        font-weight: 500;
+        color: #696a69;
+        transition: color .3s linear;
+
+        &:hover, &:focus {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
