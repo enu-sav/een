@@ -49,6 +49,16 @@ function een_base_paragraph_view(array &$build, EntityInterface $paragraph, Enti
 }
 
 /**
+ * Implements hook_ENTITY_TYPE_postinsert().
+ */
+function een_base_user_postinsert(EntityInterface $entity): void {
+  $userData = Drupal::service('user.data');
+  if (!$userData->get('comment_notify', $entity->id(), 'entity_notify')) {
+    $userData->set('comment_notify', $entity->id(), 'entity_notify', 1);
+  }
+}
+
+/**
  * Implements hook_theme().
  *
  * @param $existing

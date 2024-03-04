@@ -8,7 +8,6 @@ dependencies:
     - node.type.page
   module:
     - comment
-    - comment_notify
     - content_moderation
     - content_moderation_owner_permissions
     - file
@@ -37,7 +36,6 @@ permissions:
   - 'edit own etherpad_document content'
   - 'edit own forum content'
   - 'edit own page content'
-  - 'subscribe to comments'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'
   - 'use  The form mode default linked to  node entity( forum )'

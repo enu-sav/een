@@ -3,9 +3,7 @@
 {% block content %}
   {% set user_name = content.field_name.0['#context'].value %}
   {% set user_surname = content.field_surname.0['#context'].value %}
-  <a href="{{ path('entity.user.canonical', {'user': user.id}) }}" title="{{ user_name }} {{ user_surname }}">
-    <div class="user-full-name">
-      {{ user_name|length > 20 ? user_name|slice(0, 20)|raw ~ '...' : user_name|raw }}&nbsp;{{ user_surname|length > 20 ? user_name|slice(0, 20)|raw ~ '...' : user_name|raw }}
-    </div>
-  </a>
+  <div class="user-full-name">
+    {{ user_name|raw }}&nbsp;{{ user_surname|raw }}
+  </div>
 {% endblock %}

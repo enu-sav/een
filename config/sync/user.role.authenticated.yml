@@ -7,7 +7,6 @@ dependencies:
     - node.type.forum
   module:
     - comment
-    - comment_notify
     - contact
     - file
     - filter
@@ -33,7 +32,6 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'subscribe to comments'
   - 'use  The form mode authenticated_user linked to  node entity( forum )'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'
