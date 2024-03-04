@@ -17,5 +17,6 @@ regions:
   help: Help
   highlighted: Highlighted
   content: Content
+  sidebar: Sidebar
   content_footer: 'Content Footer'
   footer: Footer

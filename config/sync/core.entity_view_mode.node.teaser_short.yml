@@ -1,0 +1,10 @@
+uuid: 1f0fbb23-1194-4f7a-8ded-dc16fded5adc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_short
+label: 'Teaser - Short'
+targetEntityType: node
+cache: true

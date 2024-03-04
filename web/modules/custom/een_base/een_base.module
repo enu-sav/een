@@ -8,6 +8,7 @@
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_page_attachments().
@@ -49,13 +50,30 @@ function een_base_paragraph_view(array &$build, EntityInterface $paragraph, Enti
 }
 
 /**
- * Implements hook_ENTITY_TYPE_postinsert().
+ * Implements hook_field_widget_form_alter().
  */
-function een_base_user_postinsert(EntityInterface $entity): void {
-  $userData = Drupal::service('user.data');
-  if (!$userData->get('comment_notify', $entity->id(), 'entity_notify')) {
-    $userData->set('comment_notify', $entity->id(), 'entity_notify', 1);
+function een_base_form_alter(&$form, &$form_state, &$form_id): void {
+  $form['comment_body']['widget']['#after_build'][] = '_allowed_formats_remove_textarea_help';
+}
+
+
+/**
+ * @param $form_element
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *
+ * @return array
+ */
+function _allowed_formats_remove_textarea_help($form_element, FormStateInterface $form_state): array {
+  if (isset($form_element[0]['format'])) {
+    // All this stuff is needed to hide the help text.
+    unset($form_element[0]['format']['guidelines']);
+    unset($form_element[0]['format']['help']);
+    unset($form_element[0]['format']['#type']);
+    unset($form_element[0]['format']['#theme_wrappers']);
+    $form_element[0]['format']['format']['#access'] = FALSE;
   }
+
+  return $form_element;
 }
 
 /**

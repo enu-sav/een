@@ -36,12 +36,12 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  links:
+  forum_notifications_subscription:
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
 hidden:
-  forum_notifications_subscription: true
   langcode: true
+  links: true
   taxonomy_forums: true

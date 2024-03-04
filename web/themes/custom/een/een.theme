@@ -4,6 +4,7 @@
  * Functions to support theming in the een theme.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\node\Entity\Node;
@@ -151,4 +152,20 @@ function getHumanLastComment($last_reaction) {
     }
   }
   return $last_reaction;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ *
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function een_form_comment_form_alter(&$form, FormStateInterface $form_state, $form_id): void {
+  if (isset($form)) {
+    unset(
+      $form['author']['homepage'],
+      $form['actions']['preview']
+    );
+  }
 }

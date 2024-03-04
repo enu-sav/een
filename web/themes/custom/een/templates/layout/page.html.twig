@@ -86,6 +86,12 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
+    {% if page.sidebar %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+
   </main>{# /.main #}
 
   <!-- ______________________ FOOTER _______________________ -->

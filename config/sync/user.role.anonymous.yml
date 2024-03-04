@@ -2,13 +2,9 @@ uuid: 5a5cd5c3-9726-4250-acd9-758dc12883a5
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
     - contact
-    - filter
     - media
-    - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
@@ -19,6 +15,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
-  - 'search content'
-  - 'use text format restricted_html'
   - 'view media'
