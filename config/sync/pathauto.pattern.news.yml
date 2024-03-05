@@ -1,23 +1,22 @@
-uuid: 736a4d9b-b4bf-4953-ad76-ae1e3d77a5f9
+uuid: f41e90ea-2f53-46c7-90c9-9549db1f4833
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: content_title
-label: 'Content title'
+id: news
+label: News
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'news/[node:title]'
 selection_criteria:
-  b213f251-7fff-4e46-9178-5eaf3b34e140:
+  1deb03fc-ca6b-4484-a47f-9b214c4b0647:
     id: 'entity_bundle:node'
     negate: false
-    uuid: b213f251-7fff-4e46-9178-5eaf3b34e140
+    uuid: 1deb03fc-ca6b-4484-a47f-9b214c4b0647
     context_mapping:
       node: node
     bundles:
-      etherpad_document: etherpad_document
-      page: page
+      news: news
 selection_logic: and
 weight: -5
 relationships: {  }

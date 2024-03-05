@@ -3,4 +3,38 @@
   @media all and (min-width: em($template-desktop)) {
     padding-bottom: em(128);
   }
+
+  > h2 {
+    $fz: 31;
+    line-height: em(40, $fz);
+    margin-bottom: em(15, $fz);
+    font-size: em($fz);
+  }
+
+  > div {
+    margin-top: em(20);
+    padding: em(30) em(30) em(35);
+    background-color: $white;
+
+    .view-header {
+      $fz: 13;
+      line-height: em(20, $fz);
+      margin-bottom: em(32, $fz);
+      font-size: em($fz);
+      text-transform: uppercase;
+      color: #757575;
+    }
+
+    .views-row {
+      margin-bottom: em(32);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .read-more-link {
+      margin-top: em(30);
+    }
+  }
 }

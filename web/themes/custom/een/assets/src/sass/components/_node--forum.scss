@@ -1,9 +1,13 @@
 article.node--type-forum {
 
   &.node--view-mode-full {
+    padding-bottom: em(64);
+
+    @media all and (min-width: em($template-tablet)) {
+      padding-bottom: em(128);
+    }
 
     > .node__header {
-      @include container();
       padding-top: em(140);
       padding-bottom: em(16);
 
@@ -19,17 +23,72 @@ article.node--type-forum {
     }
 
     > footer {
-      @include container();
-      margin-bottom: em(16);
+
+      .user-full-name {
+        $fz: 16;
+        display: inline-flex;
+        align-items: center;
+        height: em(35, $fz);
+        line-height: em(28, $fz);
+        padding: 0 em(15, $fz);
+        font-size: em($fz);
+        color: $white;
+        background-color: $black;
+        min-width: em(90, $fz);
+      }
     }
 
-    > div {
-      @include container();
-      padding-bottom: em(64);
+  }
 
-      @media all and (min-width: em($template-desktop)) {
-        padding-bottom: em(128);
+  &.node--view-mode-teaser-short {
+
+    .title {
+      $fz: 18;
+      line-height: em(28,$fz);
+      margin: 0;
+      font-size: em($fz);
+      text-transform: uppercase;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: $action-color;
+          text-decoration: underline;
+        }
       }
+    }
+
+    .content {
+
+      & * {
+        $fz: 13;
+        line-height: em(20,$fz);
+        margin-top: em(8, $fz);
+        margin-bottom: em(8, $fz);
+        font-size: rem($fz);
+        color: #555;
+      }
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .author {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #555;
+      $fz: 13;
+      line-height: em(20,$fz);
+      margin-top: em(8, $fz);
+      margin-bottom: em(8, $fz);
+      font-size: rem($fz);
     }
   }
 }

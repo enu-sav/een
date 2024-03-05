@@ -1,23 +1,22 @@
-uuid: 736a4d9b-b4bf-4953-ad76-ae1e3d77a5f9
+uuid: 674dc317-e4c2-45b8-98ce-0f444ff2b9a4
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: content_title
-label: 'Content title'
+id: events
+label: Events
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'events/[node:title]'
 selection_criteria:
-  b213f251-7fff-4e46-9178-5eaf3b34e140:
+  7c55af53-fbd5-4281-a746-aad384939372:
     id: 'entity_bundle:node'
     negate: false
-    uuid: b213f251-7fff-4e46-9178-5eaf3b34e140
+    uuid: 7c55af53-fbd5-4281-a746-aad384939372
     context_mapping:
       node: node
     bundles:
-      etherpad_document: etherpad_document
-      page: page
+      event: event
 selection_logic: and
 weight: -5
 relationships: {  }

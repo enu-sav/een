@@ -104,6 +104,14 @@ p {
   &.text-center {
     text-align: center;
   }
+
+  a {
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 strong, b {

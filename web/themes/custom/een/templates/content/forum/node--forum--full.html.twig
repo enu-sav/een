@@ -17,14 +17,7 @@
 {% block content %}
   <div class="forum-full">
     <div class="forum-full__desc">{{ content.body }}</div>
-    <div class="forum-full__header">
-      <div class="forum-full__header__left">
-        <a href="#comment-form-anchor" class="btn" data-layer="add-comment--user-logged">{{ 'Add a comment'|t }}</a>
-        <a href="#watch-comment" class="btn btn__secondary btn__secondary--bell" data-layer="watch-comment--user-logged">{{ 'Watch'|t }}</a>
-      </div>
-    </div>
     <div class="forum-full__content">
-      <div id="watch-comment"></div>
       {{ content|without('body') }}
     </div>
   </div>

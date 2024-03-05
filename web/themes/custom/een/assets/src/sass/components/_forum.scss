@@ -1,0 +1,440 @@
+/**
+ * Blocks on forum pages
+ */
+
+.path-forum #block-een-content > .action-links {
+  display: none;
+}
+
+/**
+ * Common
+ */
+
+.forum-description {
+  margin-top: em(20);
+
+  p {
+    color: #555;
+    font-style: italic;
+  }
+
+  + .forum-actions {
+    margin-top: em(35);
+    margin-bottom: em(30);
+  }
+}
+
+/**
+ * forum list
+ */
+
+.forum-list {
+  margin-top: em(24);
+  background-color: $white;
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: em(25) em(30);
+    border-bottom: em(1) solid #f5f5f5;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &__forum {
+      flex: 1 1 auto;
+
+      &__name {
+
+        a {
+          $fz: 18;
+          line-height: em(32, $fz);
+          font-size: em($fz);
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+
+          &:hover {
+            color: $action-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__topics {
+      $fz: 16;
+      flex: 0 1 auto;
+      display: flex;
+      align-items: center;
+      height: em(35, $fz);
+      line-height: em(28, $fz);
+      padding: 0 em(15, $fz);
+      font-size: em($fz);
+      color: $white;
+      background-color: $black;
+      min-width: em(90, $fz);
+    }
+
+    &__last-reply {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      $fz: 13;
+      line-height: em(30, $fz);
+      font-size: em($fz);
+      text-transform: uppercase;
+      color: $black;
+
+      > span {
+        display: flex;
+        flex-wrap: wrap;
+        color: #555;
+      }
+
+      .submitted {
+
+        a,
+        span {
+          color: #999;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Forum topics
+ */
+.forum-topics {
+  margin-top: em(24);
+  background-color: $white;
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: em(25) em(30);
+    border-bottom: em(1) solid #f5f5f5;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &__topic-name {
+      flex: 1 1 auto;
+      max-width: em(530);
+
+      a {
+        $fz: 18;
+        line-height: em(32, $fz);
+        font-size: em($fz);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+          color: $action-color;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__count {
+      flex: 0 1 auto;
+      display: flex;
+      flex-flow: row nowrap;
+
+      &__views {
+        $fz: 16;
+        display: flex;
+        align-items: center;
+        height: em(35, $fz);
+        line-height: em(28, $fz);
+        margin-right: em(10, $fz);
+        padding-left: em(25, $fz);
+        font-size: em($fz);
+        color: $black;
+        background: transparent url('../../dist/svg/count.svg') no-repeat 0 center;
+      }
+
+      &__comments {
+        $fz: 16;
+        flex: 0 1 auto;
+        display: flex;
+        align-items: center;
+        height: em(35, $fz);
+        line-height: em(28, $fz);
+        padding: 0 em(15, $fz);
+        font-size: em($fz);
+        color: $white;
+        background-color: $black;
+        min-width: em(90, $fz);
+      }
+    }
+
+    &__meta {
+      $fz: 13;
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: space-between;
+      line-height: em(20, $fz);
+      margin-top: em(10, $fz);
+      font-size: em($fz);
+      text-transform: uppercase;
+      color: #555;
+      @media all and (max-width: em(500, 16)) {
+        flex-wrap: wrap;
+      }
+
+      a {
+        text-decoration: none;
+        color: #555;
+
+        &:hover {
+          color: $action-color
+        }
+      }
+
+      &__author {
+        display: flex;
+
+        .user, .user-full-name {
+          margin-right: em(10);
+        }
+      }
+
+      &__last-reply {
+      }
+    }
+  }
+}
+
+/**
+ * Forum detail page
+ */
+.forum-full {
+
+  &__author {
+    margin-top: em(35);
+  }
+
+  &__desc {
+    margin-top: em(20);
+    margin-bottom: em(20);
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: em(30);
+
+    &__left {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+
+      > * {
+        margin-right: em(10);
+        margin-bottom: em(15);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      //.btn__secondary--bell {
+      //  margin-left: em(10);
+      //}
+      //
+      //.block-dob-facebook-share {
+      //  margin: 0 em(10);
+      //}
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    .field--name-comment-forum {
+      margin-top: em(20);
+
+      .top-button {
+        margin-bottom: em(20);
+      }
+
+      .indented .forum-post {
+        padding-left: em(50);
+      }
+
+      .forum-post {
+        background-color: $white;
+        border-bottom: em(1) solid #f5f5f5;
+
+        &:nth-last-child(2) {
+          border-bottom: 0;
+        }
+      }
+
+      .title {
+        $fz: 26;
+        margin: 0;
+        padding-top: em(25, $fz);
+        padding-bottom: em(15, $fz);
+        font-size: em($fz);
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .node__links {
+      display: none;
+    }
+  }
+
+  /**
+ * Footer
+ * Common styles in _node--view-mode--full.scss
+ */
+  .article-footer {
+
+    &__bottom {
+
+      .related-content {
+        margin-top: em(40);
+      }
+    }
+  }
+}
+
+/**
+ * Forum post
+ */
+.forum-post {
+  padding: em(30);
+
+  > mark {
+    padding: em(5) em(8);
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: em(1);
+    background-color: $action-color;
+  }
+
+  &__body {
+    margin-bottom: em(15);
+
+    p {
+      color: $black;
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    @media all and (min-width: em(600, 16)) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    &__author {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+
+      &__right {
+        $fz: 13;
+        line-height: em(20, $fz);
+        font-size: em($fz);
+
+        &__author-name {
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $secondary-color;
+        }
+
+        &__created {
+          white-space: nowrap;
+          color: #555;
+        }
+      }
+    }
+
+    &__links {
+      margin-top: em(15);
+
+      ul.links {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none outside none;
+          margin: 0 em(15) 0 0;
+          padding: 0;
+          @media all and (min-width: em(600, 16)) {
+            margin: 0 0 0 em(15);
+          }
+
+          &.comment-forbidden {
+            display: none;
+          }
+
+          a {
+            text-decoration: none;
+
+            &:hover {
+              color: $action-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Add new comment
+ */
+
+body.path-comment {
+
+  .forum-post {
+    margin-top: em(30);
+    margin-bottom: em(30);
+    background-color: $white;
+
+    .comment-reply {
+      display: none;
+    }
+  }
+}
+
+/**
+ * Comment delete form
+ */
+.comment-comment-forum-delete-form {
+  margin-top: em(25);
+
+  .form-item-delete-operation {
+    margin-top: em(15);
+  }
+}
