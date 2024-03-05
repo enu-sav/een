@@ -70,16 +70,8 @@
     </div>
   </header>{# /.header #}
 
-  <div class="layout-container__help">
-    {{ page.help }}
-  </div>{# /.layout-container__help #}
-
-  <div class="layout-container__highlighted">
-    {{ page.highlighted }}
-  </div>{# /.layout-container__highlighted #}
-
   <!-- ______________________ MAIN _______________________ -->
-  <main role="main" aria-label="Site body">
+  <main role="main" aria-label="Site body" class="{% if page.sidebar %}has-sidebar{% else %}no-sidebar{% endif %}">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -98,21 +90,7 @@
   {% if page.footer %}
     <footer role="contentinfo" aria-label="Site footer">
       <div class="layout-container__content_footer">
-        <div class="cols cols-3">
-          <div class="col col-1">
-            {{ page.footer.een_footer_branding }}
-          </div>
-          <div class="col col-2">
-            {{ page.footer.een_footer_contacts }}
-          </div>
-          <div class="col col-3">
-            <div class="nav--footer">
-              {{ page.footer.een_footer_menu_first }}
-              {{ page.footer.een_footer_menu_second }}
-            </div>
-          </div>
-        </div>
-        {{ page.footer|without('een_footer_branding', 'een_footer_contacts', 'een_footer_menu_first', 'een_footer_menu_second', 'een_copyright') }}
+        {{ page.footer|without('een_copyright') }}
       </div>
       <div class="layout-container__copyright">
         {{ page.footer.een_copyright }}

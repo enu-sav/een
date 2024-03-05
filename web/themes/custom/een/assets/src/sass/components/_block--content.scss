@@ -4,10 +4,21 @@
   body.path-webform &,
   body.path-404 &,
   body.path-403 &,
-  body.path-forum &,
   body.path-news &,
   body.path-events & {
     @include container();
+    padding-bottom: em(64);
+
+    @media all and (min-width: em($template-tablet)) {
+      padding-bottom: em(128);
+    }
+
+    @media all and (min-width: em($template-desktop)) {
+      padding-bottom: em(128);
+    }
+  }
+
+  body.path-forum & {
     padding-bottom: em(64);
     @media all and (min-width: em($template-desktop)) {
       padding-bottom: em(128);

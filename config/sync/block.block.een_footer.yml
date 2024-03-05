@@ -1,25 +1,25 @@
-uuid: 2b2848dd-d697-4565-be47-ab3e219fe132
+uuid: 703dff16-3390-4fdf-b57e-bea77775d06d
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer-first
+    - system.menu.footer
   module:
     - system
   theme:
     - een
-id: een_footer_menu_first
+id: een_footer
 theme: een
 region: footer
-weight: -5
+weight: -7
 provider: null
-plugin: 'system_menu_block:footer-first'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'system_menu_block:footer-first'
-  label: 'Footer First'
+  id: 'system_menu_block:footer'
+  label: Footer
   label_display: '0'
   provider: system
   level: 1
-  depth: 0
+  depth: 1
   expand_all_items: false
 visibility: {  }

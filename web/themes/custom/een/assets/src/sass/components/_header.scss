@@ -42,7 +42,7 @@ header {
   }
 
   @media all and (min-width: em(976)) {
-    body.toolbar-horizontal & {
+    body.toolbar-horizontal.sticky-header & {
       top: em(59, 16) !important;
     }
   }

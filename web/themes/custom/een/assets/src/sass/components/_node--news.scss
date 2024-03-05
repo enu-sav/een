@@ -7,6 +7,11 @@ article.node--type-news {
       padding-top: em(140);
       padding-bottom: em(16);
 
+      @media all and (min-width: em($template-tablet)) {
+        padding-top: em(140);
+        padding-bottom: em(16);
+      }
+
       @media all and (min-width: em($template-desktop)) {
         padding-top: em(220);
         padding-bottom: em(16);

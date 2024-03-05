@@ -1,38 +1,19 @@
 .layout-container > footer {
   background-color: $secondary-color;
-  padding: em(50) 0;
+  padding: em(40) 0 em(25) 0;
   color: $white;
+  height: fit-content;
+  align-self: end;
 
   > .layout-container {
 
     &__content_footer {
       @include container();
-
-      > .cols {
-
-        @media all and (min-width: em($template-tablet)) {
-          display: grid;
-          gap: em(16);
-
-          .col-1 {
-            grid-column: 1 / 1;
-            max-width: em(140);
-          }
-
-          .col-2 {
-            grid-column: 2 / 4;
-          }
-
-          .col-3 {
-            grid-column: 4 / 12;
-          }
-        }
-      }
     }
 
     &__copyright {
       @include container();
-      margin-top: em(32);
+      margin-top: em(16);
       text-align: center;
     }
   }
