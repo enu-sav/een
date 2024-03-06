@@ -41,5 +41,20 @@ if (typeof Drupal !== 'undefined') {
       navigationToggle.classList.toggle('open-menu');
     });
 
+    /**
+     * Open external links and PDF files in new window
+     */
+    var externalLinks = document.querySelectorAll('.layout-container a[href^="http"]');
+    externalLinks.forEach(function (link) {
+      if (!link.href.includes(location.host)) {
+        link.setAttribute('target', '_blank');
+      }
+    });
+
+    var pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+    pdfLinks.forEach(function (link) {
+      link.setAttribute('target', '_blank');
+    });
+
   })(Drupal, once);
 }
