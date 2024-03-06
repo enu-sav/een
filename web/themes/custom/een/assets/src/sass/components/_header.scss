@@ -176,6 +176,22 @@ header {
                 justify-content: flex-start;
               }
             }
+
+            nav#block-een-user-account-menu {
+              position: absolute;
+              right: em(40);
+
+              > ul {
+                display: flex;
+                justify-content: flex-start;
+              }
+            }
+          }
+
+          @media all and (min-width: em($template-desktop + 300)) {
+            nav#block-een-user-account-menu {
+              right: 0;
+            }
           }
         }
       }

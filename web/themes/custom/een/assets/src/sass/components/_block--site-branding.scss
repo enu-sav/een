@@ -10,6 +10,9 @@
     @media all and (min-width: em($template-desktop)) {
       width: em(120);
       height: em(120);
+    }
+
+    @media all and (min-width: em($template-desktop + 200)) {
       margin-left: em(20);
       margin-right: em(20);
     }
