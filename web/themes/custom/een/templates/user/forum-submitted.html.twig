@@ -15,6 +15,7 @@
  */
 #}
 
+<span class="submitted">
 {% if time %}
   {{ 'Last added:'|t }}&nbsp;<span> {{ drupal_entity('user', topic.uid, 'compact') }}&nbsp;/&nbsp;{{ time }}</span>
 {% else %}

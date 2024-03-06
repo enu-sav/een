@@ -4,17 +4,15 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - node.type.forum
   module:
-    - comment
     - file
     - filter
     - form_mode_control
     - media
-    - node
     - search
     - statistics
     - system
+    - toolbar
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -22,15 +20,10 @@ label: 'Authenticated user'
 weight: -9
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'create forum content'
+  - 'access toolbar'
   - 'delete own files'
-  - 'delete own forum content'
-  - 'edit own comments'
-  - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'use  The form mode authenticated_user linked to  node entity( forum )'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'

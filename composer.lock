@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47d39b009be9ddec47f4756b55bd1c9e",
+    "content-hash": "578182eef02e8a1d7f7b53768d463c9e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1574,67 +1574,6 @@
             "homepage": "https://www.drupal.org/project/antibot",
             "support": {
                 "source": "https://git.drupalcode.org/project/antibot"
-            }
-        },
-        {
-            "name": "drupal/comment_notify",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/comment_notify.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/comment_notify-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "9f98848f25c1a0db60a8d39f6bbe1d22f47cc2a9"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "drupal/token": "^1.6"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1679409019",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Greg Knaddison (greggles)",
-                    "homepage": "https://www.drupal.org/u/greggles",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "David Valdez (gnuget)",
-                    "homepage": "https://www.drupal.org/u/gnuget",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "greggles",
-                    "homepage": "https://www.drupal.org/user/36762"
-                },
-                {
-                    "name": "stefanos.petrakis",
-                    "homepage": "https://www.drupal.org/user/2573064"
-                }
-            ],
-            "description": "Comment follow-up e-mail notification for anonymous as well as registered users.",
-            "homepage": "https://drupal.org/project/comment_notify",
-            "support": {
-                "source": "https://git.drupalcode.org/project/comment_notify",
-                "issues": "https://drupal.org/project/issues/comment_notify",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -4565,65 +4504,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/workbench_moderation",
                 "issues": "http://drupal.org/project/issues/workbench_moderation"
-            }
-        },
-        {
-            "name": "drupal/wpf",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/wpf.git",
-                "reference": "1.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wpf-1.1.0.zip",
-                "reference": "1.1.0",
-                "shasum": "2ecdb43d709d6994093f085ec83f86843f1d36ba"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "ext-gd": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.1.0",
-                    "datestamp": "1683061774",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Dudás József",
-                    "homepage": "https://www.drupal.org/user/387119",
-                    "email": "dj@brainsum.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "pedrop",
-                    "homepage": "https://www.drupal.org/user/1043368"
-                },
-                {
-                    "name": "szato",
-                    "homepage": "https://www.drupal.org/user/389677"
-                }
-            ],
-            "description": "Generates jpg copies of webp image style derivatives.",
-            "homepage": "https://www.drupal.org/project/wpf",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/wpf",
-                "issues": "https://www.drupal.org/project/issues/wpf"
             }
         },
         {

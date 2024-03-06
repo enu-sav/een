@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - node.type.etherpad_document
+    - node.type.event
     - node.type.forum
-    - node.type.page
+    - node.type.news
   module:
     - comment
     - content_moderation
@@ -14,6 +15,7 @@ dependencies:
     - form_mode_control
     - node
     - system
+    - toolbar
     - workbench
     - workbench_access
 _core:
@@ -23,19 +25,26 @@ label: 'Content editor'
 weight: -8
 is_admin: false
 permissions:
-  - 'access administration pages'
+  - 'access comments'
   - 'access content overview'
+  - 'access toolbar'
   - 'access workbench'
   - 'create etherpad_document content'
+  - 'create event content'
   - 'create forum content'
-  - 'create page content'
-  - 'delete any forum content'
+  - 'create news content'
+  - 'delete own etherpad_document content'
+  - 'delete own event content'
   - 'delete own files'
   - 'delete own forum content'
+  - 'delete own news content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
+  - 'edit own event content'
   - 'edit own forum content'
-  - 'edit own page content'
+  - 'edit own news content'
+  - 'post comments'
+  - 'skip comment approval'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'
   - 'use  The form mode default linked to  node entity( forum )'
@@ -49,9 +58,10 @@ permissions:
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view etherpad_document revisions'
+  - 'view event revisions'
   - 'view forum revisions'
   - 'view latest version'
+  - 'view news revisions'
   - 'view own unpublished content'
-  - 'view page revisions'
   - 'view the administration theme'
   - 'view workbench access information'
