@@ -1,19 +1,4 @@
 .paragraph--type--attached-document {
-  margin-bottom: em(16);
-  @media all and (min-width: em($template-desktop)) {
-    margin-bottom: em(24);
-  }
-
-  .field--name-field-attachment {
-
-    > .field__item {
-      margin-bottom: em(10);
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
 
   .field--name-field-media-document {
 

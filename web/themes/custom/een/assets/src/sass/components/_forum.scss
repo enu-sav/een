@@ -300,6 +300,22 @@
     .node__links {
       display: none;
     }
+
+    .form-actions {
+
+      #edit-submit {
+        margin-top: rem(15);
+      }
+    }
+
+    .forum-topic-subscription-options {
+      margin-top: em(40);
+
+      .fieldset-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   /**
