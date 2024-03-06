@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - node.type.etherpad_document
+    - node.type.event
     - node.type.forum
+    - node.type.news
     - node.type.page
     - workflows.workflow.editorial
   module:
@@ -24,21 +26,49 @@ weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access comments'
   - 'access content overview'
   - 'access toolbar'
   - 'access workbench'
   - 'create etherpad_document content'
+  - 'create event content'
   - 'create forum content'
+  - 'create news content'
   - 'create page content'
+  - 'delete any etherpad_document content'
+  - 'delete any event content'
   - 'delete any forum content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete etherpad_document revisions'
+  - 'delete event revisions'
+  - 'delete forum revisions'
+  - 'delete news revisions'
+  - 'delete own etherpad_document content'
+  - 'delete own event content'
   - 'delete own files'
   - 'delete own forum content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete page revisions'
   - 'edit any etherpad_document content'
+  - 'edit any event content'
+  - 'edit any forum content'
+  - 'edit any news content'
   - 'edit any page content'
   - 'edit own comments'
   - 'edit own etherpad_document content'
+  - 'edit own event content'
   - 'edit own forum content'
+  - 'edit own news content'
   - 'edit own page content'
+  - 'post comments'
+  - 'revert etherpad_document revisions'
+  - 'revert event revisions'
+  - 'revert forum revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'skip comment approval'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'
   - 'use  The form mode default linked to  node entity( forum )'
@@ -56,8 +86,10 @@ permissions:
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view etherpad_document revisions'
+  - 'view event revisions'
   - 'view forum revisions'
   - 'view latest version'
+  - 'view news revisions'
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view the administration theme'
