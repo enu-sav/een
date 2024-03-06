@@ -54,7 +54,4 @@ permissions:
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view the administration theme'
-  - 'view unpublished etherpad_document content'
-  - 'view unpublished forum content'
-  - 'view unpublished page content'
   - 'view workbench access information'
