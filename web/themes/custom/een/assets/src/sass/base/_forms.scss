@@ -30,6 +30,11 @@ textarea {
   font-size: $base-font-size;
 }
 
+textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
 [type='color'],
 [type='date'],
 [type='datetime'],

@@ -143,6 +143,13 @@
         margin-top: em(16);
       }
     }
+
+    .paragraph--type--attached-document + .paragraph--type--attached-document {
+      margin-top: em(16);
+      @media all and (min-width: em($template-tablet)) {
+        margin-top: em(16);
+      }
+    }
   }
 
   /**
