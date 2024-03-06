@@ -58,7 +58,7 @@
         "drupal/stage_file_proxy": "^2.1",
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.13",
-        "drupal/twig_tweak": "^3.2",
+        "drupal/twig_tweak": "^3.3",
         "drupal/upgrade_status": "^4.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webp": "^1.0@RC",
@@ -138,6 +138,9 @@
             "allowed-list": ["drupal/advpoll", "drupal/acl", "drupal/forum_access"]
         },
         "patches": {
+            "drupal/core": {
+                "2010132 - Canonical taxonomy term link for forum vocabulary is broken": "https://www.drupal.org/files/issues/2022-12-30/2010132-154.patch"
+            },
             "drupal/poll": {
                 "3007808 - Fine grain control over results display": "https://www.drupal.org/files/issues/2021-05-06/display_results_option--3007808-8.patch"
             },

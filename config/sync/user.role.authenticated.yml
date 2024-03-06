@@ -7,13 +7,13 @@ dependencies:
     - node.type.forum
   module:
     - comment
-    - contact
     - file
     - filter
     - form_mode_control
     - media
     - node
     - search
+    - statistics
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
@@ -24,7 +24,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'create forum content'
   - 'delete own files'
   - 'delete own forum content'
@@ -38,3 +37,4 @@ permissions:
   - 'use  The form mode default linked to  node entity( forum )'
   - 'use text format basic_html'
   - 'view media'
+  - 'view post access counter'

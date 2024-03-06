@@ -9,13 +9,14 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\path_alias\Entity\PathAlias;
 
 /**
  * Implements hook_page_attachments().
  */
 function een_base_page_attachments(&$page) {
-  if (\Drupal::service('router.admin_context')
-      ->isAdminRoute() && !\Drupal::currentUser()->isAnonymous()) {
+  if (Drupal::service('router.admin_context')
+      ->isAdminRoute() && !Drupal::currentUser()->isAnonymous()) {
     $page['#attached']['library'][] = 'een_base/admin_overrides';
   }
 }
@@ -36,7 +37,7 @@ function een_base_language_fallback_candidates_entity_view_alter(array &$candida
  */
 function een_base_paragraph_view(array &$build, EntityInterface $paragraph, EntityViewDisplayInterface $display, $view_mode) {
   if ($display->getComponent('disabled_preview_message')) {
-    $bundles = \Drupal::service('entity_type.bundle.info')
+    $bundles = Drupal::service('entity_type.bundle.info')
       ->getBundleInfo('paragraph');
     $label = $bundles[$paragraph->bundle()]['label'];
 
@@ -74,6 +75,56 @@ function _allowed_formats_remove_textarea_help($form_element, FormStateInterface
   }
 
   return $form_element;
+}
+
+/**
+ * @param $alias
+ * @param array $context
+ *
+ * @return void
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function een_base_pathauto_alias_alter(&$alias, array &$context): void {
+
+  if (!empty($context['data']['term']) && $context['data']['term']->bundle() == 'forums') {
+
+    $alias_bk = $alias;
+    $alias = preg_replace('~^/forum/~', '/forum_term/', $alias);
+
+    $tid = $context['data']['term']->id();
+
+    $pids = Drupal::entityQuery('path_alias')
+      ->condition('path', '/forum/' . $tid)
+      ->accessCheck(FALSE)
+      ->execute();
+
+    if ($pids) {
+      $pids = array_values($pids);
+      $pid_main = $pids[0];
+
+      unset($pids[0]);
+
+      foreach ($pids as $pid) {
+        $alias_to_del = PathAlias::load($pid);
+        if ($alias_to_del) {
+          $alias_to_del->delete();
+        }
+      }
+
+      $alias_to_change = PathAlias::load($pid_main);
+      if ($alias_to_change) {
+        $alias_to_change->set('alias', $alias_bk)->save();
+      }
+    }
+    else {
+      $path_alias = PathAlias::create([
+        'path'  => '/forum/' . $tid,
+        'alias' => $alias_bk,
+      ]);
+
+      $path_alias->save();
+    }
+  }
 }
 
 /**
