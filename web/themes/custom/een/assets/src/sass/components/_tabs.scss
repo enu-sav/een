@@ -1,8 +1,9 @@
 // Tabs.
 ul.tabs {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  margin: 0 0 2em;
-  border-bottom: 1px solid $dark-gray;
+  gap: em(5);
 
   li {
     display: inline-block;
@@ -11,15 +12,17 @@ ul.tabs {
   a {
     display: block;
     background-color: $action-color;
-    border: 1px solid $action-color;
+    border: em(1, 14) solid $action-color;
     border-bottom: 0;
-    border-radius: 3px 3px 0 0;
-    padding: 0.5em 1em;
+    border-radius: em(2, 14) em(2, 14) 0 0;
+    padding: em(5, 14) em(15, 14);
     color: #ffffff;
+    transition: all .3s linear;
+    font-size: rem(14);
 
     &:hover {
-      background-color: shade($action-color, 20%);
-      border-color: shade($action-color, 20%);
+      background-color: $black;
+      border-color: $black;
     }
   }
 }
