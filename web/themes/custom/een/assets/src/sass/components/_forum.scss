@@ -94,10 +94,17 @@
       }
 
       .submitted {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+          display: flex;
+          flex-wrap: wrap;
+        }
 
         a,
         span {
-          color: #999;
+          color: #555;
         }
 
         a {
