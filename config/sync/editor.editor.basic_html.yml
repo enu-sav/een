@@ -17,8 +17,10 @@ settings:
       - specialCharacters
   plugins:
     ckeditor5_list:
-      reversed: false
-      startIndex: true
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
 image_upload:
   status: true
   scheme: public

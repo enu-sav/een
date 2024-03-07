@@ -1,9 +1,8 @@
 .block-local-tasks-block {
-  width: 200px !important;
-
   &.position-left {
-    body.gin--horizontal-toolbar & {
+    body.gin--horizontal-toolbar.user-form & {
       left: -170px;
+      width: 200px !important;
     }
   }
 
