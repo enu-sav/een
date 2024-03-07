@@ -38,13 +38,17 @@
 ] %}
 <section{{ attributes.addClass(classes) }}>
   <div class="content content-comment-wrapper">
-    {{ title_prefix }}
-    <h2{{ title_attributes.addClass(title_classes) }}>{{ label }}</h2>
-    {{ title_suffix }}
+    {% if comments|length > 1 %}
+      {{ title_prefix }}
+      <h2{{ title_attributes.addClass(title_classes) }}>{{ label }}</h2>
+      {{ title_suffix }}
+    {% endif %}
 
-    <div class="top-button">
-      <a href="#add-new-comment" class="btn" data-layer="add-comment--user-logged">{{ 'Add new comment'|t }}</a>
-    </div>
+    {% if comment_form %}
+      <div class="top-button">
+        <a href="#add-new-comment" class="btn" data-layer="add-comment--user-logged">{{ 'Add new comment'|t }}</a>
+      </div>
+    {% endif %}
 
     {{ comments }}
 

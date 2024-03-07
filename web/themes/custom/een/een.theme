@@ -99,7 +99,7 @@ function een_preprocess_forums(&$variables): void {
         ],
         [
           'data' => [
-            '#markup' => '<div class="forum-topics__row__meta__author">' . $user->__toString() . ' / ' . date('d.m.Y - h:i', $node->getCreatedTime()) . '</div><div class="forum-topics__row__meta__reply">Posledný príspevok: ' . $last_reaction . '</div>',
+            '#markup' => '<div class="forum-topics__row__meta__author">' . $user->__toString() . ' / ' . date('d.m.Y - h:i', $node->getCreatedTime()) . '</div><div class="forum-topics__row__meta__reply">The last post: ' . $last_reaction . '</div>',
           ],
           'class' => ['forum-topics__row__meta'],
         ],
