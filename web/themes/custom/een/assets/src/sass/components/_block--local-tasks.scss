@@ -1,6 +1,13 @@
 .block-local-tasks-block {
+  width: 200px !important;
 
-  body.path-user &,
+  &.position-left {
+    body.gin--horizontal-toolbar & {
+      left: -170px;
+    }
+  }
+
+  body.user-form &,
   body.path-webform & {
     @include container();
     margin-bottom: em(30);

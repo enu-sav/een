@@ -1,0 +1,10 @@
+uuid: 942ac67c-c194-4ca1-a76d-a0ca77ddd5d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.authenticated_user
+label: 'Authenticated user'
+targetEntityType: user
+cache: true

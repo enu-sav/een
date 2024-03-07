@@ -31,6 +31,7 @@
 'use  The form mode default linked to  taxonomy_term entity( forums )': taxonomy_term.forums.default
 'use  The form mode default linked to  user entity( user )': user.user.default
 'use  The form mode authenticated_user linked to  node entity( forum )': node.forum.authenticated_user
+'use  The form mode authenticated_user linked to  user entity( user )': user.user.authenticated_user
 creation+administrator+media+audio: media.audio.default
 modification+administrator+media+audio: media.audio.default
 creation+administrator+media+document: media.document.default
@@ -44,10 +45,18 @@ modification+administrator+media+remote_video: media.remote_video.default
 creation+administrator+media+video: media.video.default
 modification+administrator+media+video: media.video.default
 creation+authenticated+node+forum: node.forum.authenticated_user
-creation+content_editor+node+forum: node.forum.default
-creation+senior_editor+node+forum: node.forum.default
+creation+content_editor+node+forum: node.forum.authenticated_user
+creation+senior_editor+node+forum: node.forum.authenticated_user
 creation+administrator+node+forum: node.forum.default
-modification+authenticated+node+forum: node.forum.authenticated_user
+modification+authenticated+node+forum: node.forum.default
 modification+content_editor+node+forum: node.forum.default
-modification+senior_editor+node+forum: node.forum.default
+modification+senior_editor+node+forum: node.forum.authenticated_user
 modification+administrator+node+forum: node.forum.default
+creation+authenticated+user+user: user.user.authenticated_user
+creation+content_editor+user+user: user.user.authenticated_user
+creation+senior_editor+user+user: user.user.authenticated_user
+creation+administrator+user+user: user.user.default
+modification+authenticated+user+user: user.user.authenticated_user
+modification+content_editor+user+user: user.user.authenticated_user
+modification+senior_editor+user+user: user.user.default
+modification+administrator+user+user: user.user.default

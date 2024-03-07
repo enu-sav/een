@@ -9,7 +9,6 @@ dependencies:
     - filter
     - form_mode_control
     - media
-    - search
     - statistics
     - system
     - toolbar
@@ -23,11 +22,12 @@ permissions:
   - 'access content'
   - 'access toolbar'
   - 'delete own files'
-  - 'search content'
   - 'use  The form mode authenticated_user linked to  node entity( forum )'
+  - 'use  The form mode authenticated_user linked to  user entity( user )'
   - 'use  The form mode default linked to  comment entity( comment )'
   - 'use  The form mode default linked to  comment entity( comment_forum )'
   - 'use  The form mode default linked to  node entity( forum )'
+  - 'use  The form mode default linked to  user entity( user )'
   - 'use text format basic_html'
   - 'view media'
   - 'view post access counter'

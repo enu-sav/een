@@ -1,26 +1,24 @@
-uuid: a58743d3-2c0d-476f-bd08-3d9cc5961659
+uuid: b97695c8-20bf-4828-8a56-81421b88121f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.authenticated_user
     - field.field.user.user.field_encyclopedia
     - field.field.user.user.field_name
     - field.field.user.user.field_surname
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - path
-    - svg_image
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
-id: user.user.default
+id: user.user.authenticated_user
 targetEntityType: user
 bundle: user
-mode: default
+mode: authenticated_user
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -29,7 +27,7 @@ content:
     region: content
   field_encyclopedia:
     type: entity_reference_autocomplete
-    weight: 31
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
@@ -39,7 +37,7 @@ content:
     third_party_settings: {  }
   field_name:
     type: string_textfield
-    weight: 32
+    weight: 2
     region: content
     settings:
       size: 60
@@ -47,35 +45,15 @@ content:
     third_party_settings: {  }
   field_surname:
     type: string_textfield
-    weight: 33
+    weight: 3
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  language:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  user_picture:
-    type: image_image
-    weight: -1
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
 hidden:
   langcode: true
+  language: true
+  path: true
+  timezone: true
+  user_picture: true
