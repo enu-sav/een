@@ -10,7 +10,7 @@
   <div{{ content_attributes.addClass('node__content') }}>
 
     <h3 class="title">
-      <a href="{{ url }}" title="{% apply spaceless %}{{ label|render|striptags|raw }}{% endapply %}">
+      <a href="{{ url }}" aria-label="{% apply spaceless %}{{ label|render|striptags|raw }}{% endapply %}" title="{% apply spaceless %}{{ label|render|striptags|raw }}{% endapply %}">
         {{ label|render|striptags|raw }}
       </a>
     </h3>
