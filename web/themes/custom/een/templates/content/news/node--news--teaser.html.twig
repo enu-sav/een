@@ -10,7 +10,7 @@
   <div class="content">
     <h3>{{ label }}</h3>
     {{ content }}
-    <a class="link" href="{{ url }}" aria-label="Read more news: {{ label }}" rel="bookmark">{{ 'Read more'|trans }}</a>
+    <a class="link" href="{{ url }}" aria-label="Read more news: {{ label.0['#context'].value }}" title="{{ label.0['#context'].value }}" rel="bookmark">{{ 'Read more'|trans }}</a>
     <div class="date">
       {{ node.getCreatedTime|date('F j Y') }}
     </div>
