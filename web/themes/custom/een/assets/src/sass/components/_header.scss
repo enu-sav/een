@@ -43,7 +43,7 @@ header {
 
   @media all and (min-width: em(976)) {
     body.toolbar-horizontal.sticky-header & {
-      top: em(59, 16) !important;
+      top: em(53, 16) !important;
     }
   }
 
@@ -77,12 +77,13 @@ header {
       }
 
       @media all and (min-width: em($template-desktop)) {
-        height: em(160);
+        height: em(145);
+        padding-top: em(7.5);
+        padding-bottom: em(7.5);
+        transition: all .5s;
 
         body.sticky-header:not(.navigation-expanded) & {
-          height: em(145);
-          padding-top: em(7.5);
-          padding-bottom: em(7.5);
+          height: em(110);
         }
       }
 
@@ -93,7 +94,12 @@ header {
         gap: em(20);
 
         @media all and (min-width: em($template-desktop)) {
-          height: em(130);
+          height: em(96);
+          transition: all .5s;
+
+          body:not(.sticky-header) & {
+            height: em(130);
+          }
 
           > .block-system-branding-block {
             display: none;

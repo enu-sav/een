@@ -21,10 +21,10 @@ if (typeof Drupal !== 'undefined') {
      */
     document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener('scroll', function() {
-        var top = window.pageYOffset || document.documentElement.scrollTop;
+        var top = window.scrollY || document.documentElement.scrollTop;
         var body = document.body;
 
-        if (top >= 180) {
+        if (top >= 1) {
           body.classList.add('sticky-header');
         } else {
           body.classList.remove('sticky-header');
