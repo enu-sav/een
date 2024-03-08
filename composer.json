@@ -153,6 +153,9 @@
             "drupal/forum_access": {
                 "3354309 - Cannot install in Drupal 10": "https://www.drupal.org/files/issues/2023-12-22/issue-3410468-drupal-10-compatibility-fixes.patch",
                 "3333087 - Forum access table template breaks on Drupal 10": "https://www.drupal.org/files/issues/2023-06-29/forum_access-3333087-table-template-breaks-10.patch"
+            },
+            "drupal/svg_image": {
+                "3126330 - Apply image style dimensions with HTML attributes": "https://www.drupal.org/files/issues/2024-02-29/svg_image-3126330-4-image_style_dimensions_0.patch"
             }
         }
     }
