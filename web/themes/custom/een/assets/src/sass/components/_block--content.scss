@@ -19,7 +19,8 @@
     }
   }
 
-  body.path-forum & {
+  body.path-forum &,
+  body.path-taxonomy & {
     padding-bottom: em(64);
     @media all and (min-width: em($template-desktop)) {
       padding-bottom: em(128);

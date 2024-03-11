@@ -62,6 +62,7 @@ module:
   phpass: 0
   phpmailer_smtp: 0
   poll: 0
+  rabbit_hole: 0
   recreate_block_content: 0
   responsive_image: 0
   search: 0

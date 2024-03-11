@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/forum\r\n/forum/*\r\n/comment/reply/*\r\n/comment/*/delete\r\n/comment/*/edit"
+    pages: "/forum\r\n/forum/*\r\n/comment/reply/*\r\n/comment/*/delete\r\n/comment/*/edit\r\n/forum_term\r\n/forum_term/*"

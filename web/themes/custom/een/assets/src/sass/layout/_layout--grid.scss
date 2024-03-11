@@ -80,7 +80,8 @@ main {
 
     > div {
       body.page-node-type-forum &,
-      body.path-forum & {
+      body.path-forum &,
+      body.path-taxonomy & {
         @media all and (min-width: em($template-desktop)) {
           padding-top: em(220);
         }

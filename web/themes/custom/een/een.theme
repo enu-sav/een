@@ -59,8 +59,31 @@ function een_preprocess_html(&$variables): void {
  */
 function een_preprocess_forums(&$variables): void {
   if (!empty($variables['topics'])) {
-
     $rows = [];
+
+    $variables['forum_add_new'] = Link::fromTextAndUrl(t('Add new forum topic'), Url::fromRoute('node.add', ['node_type' => 'forum', 'forum_id' => $variables['term']->id()], ['attributes' => ['class' => ['btn', 'btn-success'], 'aria-label' => t('Add new forum topic')]]))->toRenderable();
+
+    $config = \Drupal::config('forum_notifications_subscription.settings');
+    $settings = $config->get('settings');
+    $frequency = \Drupal::service('forum_notifications_subscription.frequency')
+      ->checkNotificationFrequencyByEntity($variables['term'], 'forum');
+
+    if ($frequency) {
+      $url = Url::fromUserInput('/forum/unsubscription/' . $variables['term']->getEntityTypeId() . '/' . $variables['term']->id());
+      $label = $settings['forum_label_off'];
+    }
+    else {
+      $url = Url::fromUserInput('/forum/subscription/' . $variables['term']->getEntityTypeId() . '/' . $variables['term']->id());
+      $label = $settings['forum_label_on'];
+    }
+    $subscription_link = Link::fromTextAndUrl($label, $url)->toRenderable();
+
+    $subscription_link['#attributes'] = [
+      'id' => 'forum-main-subscription-'.$variables['term']->id(),
+      'class' => ['use-ajax', 'btn', 'btn-primary'],
+    ];
+    $variables['forum_notifications_subscription']['subscription_link'] = $subscription_link;
+
     /** @var Node $node */
     foreach ($variables['topics_original'] as $nid => $node) {
       $topic_views = '0';
@@ -75,9 +98,9 @@ function een_preprocess_forums(&$variables): void {
       $comment_count = $node->comment_count;
 
       if ($comment_count == 1) {
-        $topic_comment_count = $comment_count . ' ' . t('the answer');
+        $topic_comment_count = $comment_count . ' ' . t(' answer');
       } else {
-        $topic_comment_count = $comment_count . ' ' . t('the answers');
+        $topic_comment_count = $comment_count . ' ' . t(' answers');
       }
 
       $last_reaction = getHumanLastComment($node->last_comment_timestamp);
