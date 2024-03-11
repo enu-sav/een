@@ -1,0 +1,24 @@
+{% extends "node.html.twig" %}
+
+{% block title %}
+{% endblock %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div{{ content_attributes.addClass('node__content') }}>
+
+    <h3 class="title">
+      <a href="{{ url }}" aria-label="{% apply spaceless %}{{ label|render|striptags|raw }}{% endapply %}" title="{% apply spaceless %}{{ label|render|striptags|raw }}{% endapply %}">
+        {{ label|render|striptags|raw }}
+      </a>
+    </h3>
+    <div class="content">{{ content.body }}</div>
+    <div class="author">
+      {{ author_picture }}
+    </div>
+
+    {{ content|without('body', 'forum_notifications_subscription', 'taxonomy_forums') }}
+  </div>
+{% endblock %}

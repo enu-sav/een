@@ -1,0 +1,43 @@
+.view-taxonomy-term {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: em(20);
+
+  > header {
+
+    .field--name-description {
+
+      .field__label {
+        display: none;
+      }
+
+      .field__item {
+        color: #555;
+        font-style: italic;
+        margin-bottom: em(30);
+      }
+    }
+  }
+
+  > .view__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: em(10);
+    margin-top: em(20);
+    padding: em(30) em(30) em(35);
+    background-color: $white;
+
+    .views-row {
+      padding: em(10) 0;
+      border-bottom: em(1) solid #f5f5f5;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  a.feed-icon {
+    margin: em(30) auto 0 auto;
+  }
+}

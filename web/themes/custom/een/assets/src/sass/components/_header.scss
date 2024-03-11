@@ -1,4 +1,4 @@
-header {
+.layout-container > header {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +12,8 @@ header {
   body.path-forum &,
   body.not-hero &,
   body.path-news &,
-  body.path-events & {
+  body.path-events &,
+  body.path-taxonomy & {
     &:before {
       display: block;
       content: "";

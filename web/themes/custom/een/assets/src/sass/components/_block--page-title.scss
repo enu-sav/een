@@ -7,7 +7,8 @@
   body.page-node-type-event &,
   body.page-node-type-news &,
   body.path-news &,
-  body.path-events & {
+  body.path-events &,
+  body.path-taxonomy & {
     @include container();
     padding-top: em(16);
     margin-bottom: em(16);

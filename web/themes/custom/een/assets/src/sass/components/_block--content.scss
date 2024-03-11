@@ -5,7 +5,8 @@
   body.path-404 &,
   body.path-403 &,
   body.path-news &,
-  body.path-events & {
+  body.path-events &,
+  body.path-taxonomy & {
     @include container();
     padding-bottom: em(64);
 

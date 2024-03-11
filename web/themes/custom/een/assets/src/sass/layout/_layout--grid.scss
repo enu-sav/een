@@ -50,7 +50,8 @@ body {
 
   body.path-news &,
   body.path-forum:not(.path-403):not(.path-404) &,
-  body.page-node-type-forum & {
+  body.page-node-type-forum &,
+  body.path-taxonomy & {
     background: #f5f5f5;
   }
 }
@@ -104,7 +105,8 @@ main {
       body.path-webform &,
       body.path-forum &,
       body.path-news &,
-      body.path-events & {
+      body.path-events &,
+      body.path-taxonomy & {
         padding-top: em(140);
         @media all and (min-width: em($template-desktop)) {
           padding-top: em(220);

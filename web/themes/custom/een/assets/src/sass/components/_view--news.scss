@@ -1,20 +1,23 @@
 .view--news {
 
   &.teaser {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: em(20);
 
-    @media all and (min-width: em($template-tablet)) {
-      grid-template-columns: repeat(2, 1fr);
+    > .view__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: em(20);
 
-      .views-row {
-        height: 100%;
+      @media all and (min-width: em($template-tablet)) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .views-row {
+          height: 100%;
+        }
       }
-    }
 
-    @media all and (min-width: em($template-desktop)) {
-      gap: em(40);
+      @media all and (min-width: em($template-desktop)) {
+        gap: em(40);
+      }
     }
   }
 
@@ -29,16 +32,21 @@
       align-items: center;
     }
 
-    @media all and (min-width: em($template-tablet)) {
-      grid-template-columns: repeat(2, [col-start] 1fr);
+    > .view__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: em(20);
 
-      .views-row {
-        height: 100%;
+      @media all and (min-width: em($template-tablet)) {
+        grid-template-columns: repeat(2, [col-start] 1fr);
+
+        .views-row {
+          height: 100%;
+        }
       }
 
-      nav.pager {
-        grid-row: 2;
-        grid-column: col-start / span 2;
+      @media all and (min-width: em($template-desktop)) {
+        gap: em(40);
       }
     }
 

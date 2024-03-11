@@ -39,6 +39,11 @@ article.node--type-event {
       }
     }
 
+    form.content-moderation-entity-moderation-form {
+      @include container();
+      margin-bottom: em(16);
+    }
+
     > footer {
       @include container();
       margin-bottom: em(16);

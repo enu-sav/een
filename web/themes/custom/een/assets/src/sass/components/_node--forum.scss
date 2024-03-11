@@ -40,7 +40,8 @@ article.node--type-forum {
 
   }
 
-  &.node--view-mode-teaser-short {
+  &.node--view-mode-teaser-short,
+  &.node--view-mode-teaser {
 
     .title {
       $fz: 18;
