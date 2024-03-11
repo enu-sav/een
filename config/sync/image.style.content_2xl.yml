@@ -1,0 +1,21 @@
+uuid: 78cff0d1-f0b4-4b59-8a09-25e8bdf48d84
+langcode: en
+status: true
+dependencies: {  }
+name: content_2xl
+label: 'Content 2XL'
+effects:
+  d7aca728-cbf8-455e-b088-09811fa248a7:
+    uuid: d7aca728-cbf8-455e-b088-09811fa248a7
+    id: image_scale
+    weight: 1
+    data:
+      width: 2600
+      height: null
+      upscale: false
+  0535a078-bede-49e0-8fac-55992248ad7b:
+    uuid: 0535a078-bede-49e0-8fac-55992248ad7b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

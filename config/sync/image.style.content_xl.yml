@@ -1,0 +1,15 @@
+uuid: 466bf984-c1ef-48e5-9510-bb7c21f82a8b
+langcode: en
+status: true
+dependencies: {  }
+name: content_xl
+label: 'Content XL'
+effects:
+  a55cc57f-0a4d-44d7-ab21-d7317564e64f:
+    uuid: a55cc57f-0a4d-44d7-ab21-d7317564e64f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1300
+      height: null
+      upscale: false

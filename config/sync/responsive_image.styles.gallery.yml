@@ -1,0 +1,46 @@
+uuid: 303031f2-3146-4ad3-8c88-e64cbe1466d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.gallery_2xl
+    - image.style.gallery_2xs
+    - image.style.gallery_l
+    - image.style.gallery_s
+  theme:
+    - een
+id: gallery
+label: Gallery
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_l
+    breakpoint_id: een.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_2xl
+    breakpoint_id: een.tablet
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_2xs
+    breakpoint_id: een.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_2xs
+    breakpoint_id: een.medium
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_s
+    breakpoint_id: een.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: gallery_2xs
+    breakpoint_id: een.small
+    multiplier: 2x
+breakpoint_group: een
+fallback_image_style: gallery_s

@@ -1,0 +1,21 @@
+uuid: 2117cc74-00ec-46f7-9646-68597bd8f4ee
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_2xs
+label: 'Gallery 2XS'
+effects:
+  5ead4eb8-0e34-4273-b075-792a428dee0c:
+    uuid: 5ead4eb8-0e34-4273-b075-792a428dee0c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 540
+      anchor: center-center
+  462cf8aa-6503-4112-927a-610d58e5458f:
+    uuid: 462cf8aa-6503-4112-927a-610d58e5458f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

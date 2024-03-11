@@ -1,28 +1,35 @@
-my_theme.small:
+een.small:
   label: small
   mediaQuery: ''
   weight: 0
   multipliers:
     - 1x
     - 2x
-my_theme.medium:
+een.medium:
   label: medium
   mediaQuery: 'screen and (min-width: 480px)'
   weight: 1
   multipliers:
     - 1x
     - 2x
-my_theme.wide:
-  label: wide
-  mediaQuery: 'screen and (min-width: 900px)'
+een.tablet:
+  label: tablet
+  mediaQuery: 'screen and (min-width: 768px)'
   weight: 2
   multipliers:
     - 1x
     - 2x
-my_theme.max:
+een.wide:
+  label: wide
+  mediaQuery: 'screen and (min-width: 960px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+een.max:
   label: max
   mediaQuery: 'screen and (min-width: 1200px)'
-  weight: 3
+  weight: 4
   multipliers:
     - 1x
     - 2x

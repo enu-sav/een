@@ -1,0 +1,21 @@
+uuid: b10f363b-6436-4f8d-9f21-182b64083be6
+langcode: en
+status: true
+dependencies: {  }
+name: content_l
+label: 'Content L'
+effects:
+  0ddfaac5-06bd-4224-a2e0-19a58da14d44:
+    uuid: 0ddfaac5-06bd-4224-a2e0-19a58da14d44
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false
+  e0a903c9-8ca6-45f3-a44e-66241e0eae21:
+    uuid: e0a903c9-8ca6-45f3-a44e-66241e0eae21
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,46 @@
+uuid: 22ceeccb-279b-4acc-bd0d-4240f6f502f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.content_2xl
+    - image.style.content_l
+    - image.style.content_s
+    - image.style.content_xl
+  theme:
+    - een
+id: content
+label: Content
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: content_xl
+    breakpoint_id: een.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: content_2xl
+    breakpoint_id: een.wide
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: content_l
+    breakpoint_id: een.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: content_xl
+    breakpoint_id: een.medium
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: content_s
+    breakpoint_id: een.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: content_l
+    breakpoint_id: een.small
+    multiplier: 2x
+breakpoint_group: een
+fallback_image_style: content_s

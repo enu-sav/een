@@ -1,0 +1,21 @@
+uuid: b7f60cf8-747b-423c-85c7-18c0971240a5
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_2xl
+label: 'Gallery 2XL'
+effects:
+  748dfe7c-3e9d-4817-a34a-3be395c20b29:
+    uuid: 748dfe7c-3e9d-4817-a34a-3be395c20b29
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 960
+      anchor: center-center
+  20cb6c3f-35ca-4721-9422-b33c775499cb:
+    uuid: 20cb6c3f-35ca-4721-9422-b33c775499cb
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

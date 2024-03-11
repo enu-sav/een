@@ -1,0 +1,21 @@
+uuid: 245636f2-8751-4ae9-9097-8510eec56916
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_l
+label: 'Gallery L'
+effects:
+  e57545a8-5cc3-4296-93c7-7919db41254e:
+    uuid: e57545a8-5cc3-4296-93c7-7919db41254e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center
+  1e1521e5-2ff1-465e-b298-05936afa2386:
+    uuid: 1e1521e5-2ff1-465e-b298-05936afa2386
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
