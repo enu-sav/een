@@ -17,14 +17,14 @@
  */
 #}
 {% if forums_defined %}
+
   {% if term.description.value %}
     <div class="forum-description">
       {{ term.description.value|raw }}
     </div>
     <div class="forum-actions">
-      <a href="/node/add/forum?forum_id={{ term.tid.value }}" aria-label="{{ 'Add new forum topic'|t }}" class="btn btn-success" data-layer="add-new-forum-topic--user-logged">
-        <i class="fa fa-comments"></i>&nbsp;{{ 'Add new forum topic'|t }}
-      </a>
+      {{ forum_add_new }}
+      {{ forum_notifications_subscription }}
     </div>
 
   {% endif %}

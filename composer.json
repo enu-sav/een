@@ -50,6 +50,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/phpmailer_smtp": "^2.2",
         "drupal/poll": "^1.6",
+        "drupal/rabbit_hole": "^2.0@alpha",
         "drupal/rdf": "^2.1",
         "drupal/recreate_block_content": "^3.0",
         "drupal/reroute_email": "^2.2",
@@ -156,6 +157,9 @@
             },
             "drupal/svg_image": {
                 "3126330 - Apply image style dimensions with HTML attributes": "https://www.drupal.org/files/issues/2024-02-29/svg_image-3126330-4-image_style_dimensions_0.patch"
+            },
+            "drupal/forum_notifications_subscription": {
+                "3353721 - Multiple Forum Subscriptions on a single page": "https://www.drupal.org/files/issues/2023-04-12/multiple-subscriptions.patch"
             }
         }
     }

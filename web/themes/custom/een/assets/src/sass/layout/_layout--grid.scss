@@ -79,7 +79,8 @@ main {
 
     > div {
       body.page-node-type-forum &,
-      body.path-forum & {
+      body.path-forum &,
+      body.path-taxonomy & {
         @media all and (min-width: em($template-desktop)) {
           padding-top: em(220);
         }
@@ -104,7 +105,8 @@ main {
       body.path-webform &,
       body.path-forum &,
       body.path-news &,
-      body.path-events & {
+      body.path-events &,
+      body.path-taxonomy & {
         padding-top: em(140);
         @media all and (min-width: em($template-desktop)) {
           padding-top: em(220);

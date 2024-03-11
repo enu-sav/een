@@ -26,6 +26,11 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  forum_notifications_subscription:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   taxonomy_forums:
     type: entity_reference_label
     label: above
@@ -36,6 +41,5 @@ content:
     region: content
 hidden:
   comment_forum: true
-  forum_notifications_subscription: true
   langcode: true
   links: true

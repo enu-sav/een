@@ -1,0 +1,13 @@
+uuid: 61c8d7dc-b599-4517-a6d1-55f4fb36f954
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.encyclopedia
+id: taxonomy_term.encyclopedia
+targetEntityType: taxonomy_term
+bundle: encyclopedia
+action: access_denied
+no_bypass: false
+bypass_message: false
+configuration: {  }

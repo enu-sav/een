@@ -12,7 +12,8 @@ header {
   body.path-forum &,
   body.not-hero &,
   body.path-news &,
-  body.path-events & {
+  body.path-events &,
+  body.path-taxonomy & {
     &:before {
       display: block;
       content: "";
