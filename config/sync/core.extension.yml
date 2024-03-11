@@ -23,7 +23,6 @@ module:
   diff: 0
   dynamic_page_cache: 0
   editor: 0
-  een_base: 0
   entity_reference_revisions: 0
   environment_indicator: 0
   field: 0
@@ -85,6 +84,7 @@ module:
   workbench: 0
   workbench_access: 0
   workflows: 0
+  een_base: 1
   forum: 1
   pathauto: 1
   forum_access: 2

@@ -33,6 +33,23 @@ function een_base_language_fallback_candidates_entity_view_alter(array &$candida
 }
 
 /**
+ * Implements hook_entity_view().
+ *
+ * Handles the 'show_in_links' and 'show_as_field' flag options.
+ */
+function een_base_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->bundle() === 'forum' || $entity->bundle() === 'forums') {
+    if ($entity->hasField('comment_forum') && $entity->comment_forum) {
+      if ($entity->getEntityTypeId() == 'node') {
+        if ($entity->comment_forum->status != 2) {
+          unset($build['forum_notifications_subscription']);
+        }
+      }
+    }
+  }
+}
+
+/**
  * Implements hook_ENTITY_TYPE_view().
  */
 function een_base_paragraph_view(array &$build, EntityInterface $paragraph, EntityViewDisplayInterface $display, $view_mode) {
