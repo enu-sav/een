@@ -39,7 +39,7 @@
     {% set url = content.field_media_image_link.0['#url'] %}
 
     {% if url %}
-      <a href="{{ url }}" aria-label="{{ content.field_media_image[0]['#item'].alt }}" title="{{ content.field_media_image[0]['#item'].alt }}" target="{{ url.external ? '_blank' : '_self' }}">
+      <a href="{{ url }}" rel="noreferrer noopener" aria-label="{{ content.field_media_image[0]['#item'].alt }}" title="{{ content.field_media_image[0]['#item'].alt }}" target="{{ url.external ? '_blank' : '_self' }}">
         {% if content.field_media_image|render is not empty %}
           {{ content.field_media_image }}
         {% endif%}
