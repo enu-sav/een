@@ -26,7 +26,6 @@ weight: -8
 is_admin: false
 permissions:
   - 'access comments'
-  - 'access content overview'
   - 'access toolbar'
   - 'access workbench'
   - 'create etherpad_document content'
@@ -55,13 +54,8 @@ permissions:
   - 'use etherpads transition promote_to_finished for own content'
   - 'use etherpads transition submit_for_comments for own content'
   - 'use workbench access'
-  - 'view all revisions'
   - 'view any unpublished content'
-  - 'view etherpad_document revisions'
-  - 'view event revisions'
-  - 'view forum revisions'
   - 'view latest version'
-  - 'view news revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
   - 'view workbench access information'
