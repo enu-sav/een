@@ -1,0 +1,29 @@
+/**
+ * Ajax progress full screen
+ */
+.ajax-progress {
+  display: block;
+  width: em(48);
+  height: em(48);
+  color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url('../../dist/svg/circle.svg');
+  background-repeat: no-repeat;
+  background-size: em(48) em(48);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+
+  > .throbber {
+    display: none !important;
+  }
+
+  @media all and (min-width: em($template-tablet)) {
+    width: em(64);
+    height: em(64);
+    background-size: em(64) em(64);
+  }
+}
