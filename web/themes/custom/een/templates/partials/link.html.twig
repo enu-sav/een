@@ -2,9 +2,10 @@
 
 {% set link_attribute = link_attribute.addClass(classes) %}
 
-{% set link_attribute = link_attribute.setAttribute('target', '_blank') %}
+{% set link_attribute = link_attribute.setAttribute('target', '_self') %}
 {% if link_field.0.url.external %}
   {% set link_attribute = link_attribute.setAttribute('href', link_field.uri ) %}
+  {% set link_attribute = link_attribute.setAttribute('target', '_blank') %}
 {% elseif link_field.0.url.routeName %}
   {% set link_attribute = link_attribute.setAttribute('href', path(link_field.0.url.routeName, link_field.0.url.routeParameters) ) %}
 {% endif %}

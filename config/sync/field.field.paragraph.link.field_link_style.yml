@@ -11,7 +11,7 @@ id: paragraph.link.field_link_style
 field_name: field_link_style
 entity_type: paragraph
 bundle: link
-label: 'View link'
+label: 'Link - View'
 description: ''
 required: true
 translatable: false
