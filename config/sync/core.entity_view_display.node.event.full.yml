@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.event.field_date
     - field.field.node.event.field_lead_text
     - field.field.node.event.field_paragraphs
     - node.type.event
   module:
+    - datetime
     - layout_paragraphs
     - user
 id: node.event.full
@@ -18,14 +20,23 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_lead_text:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_paragraphs:
     type: layout_paragraphs
@@ -34,7 +45,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   langcode: true

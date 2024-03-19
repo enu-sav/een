@@ -9,15 +9,15 @@
 {% block content %}
   <div class="content">
     <div class="date">
-      <span class="month">{{ node.getCreatedTime|date('F') }}</span>
-      <span class="date-num">{{ node.getCreatedTime|date('j') }}</span>
-      <span class="year">{{ node.getCreatedTime|date('Y') }}</span>
+      <span class="month">{{ node.field_date.value|date('F') }}</span>
+      <span class="date-num">{{ node.field_date.value|date('j') }}</span>
+      <span class="year">{{ node.field_date.value|date('Y') }}</span>
     </div>
     <div class="bottom">
       <h3>
         <a href="{{ url }}" aria-label="{{ label.0['#context'].value }}" title="{{ label.0['#context'].value }}" rel="bookmark">{{ label }}</a>
       </h3>
-      {{ content }}
+      {{ content|without('field_date') }}
     </div>
   </div>
 {% endblock %}
