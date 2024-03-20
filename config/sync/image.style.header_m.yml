@@ -1,0 +1,21 @@
+uuid: c12afa6e-2d19-4a4f-ac24-838158856012
+langcode: en
+status: true
+dependencies: {  }
+name: header_m
+label: 'Header M'
+effects:
+  3d3a20ea-a933-4d0c-8f7e-b0e340dec8bb:
+    uuid: 3d3a20ea-a933-4d0c-8f7e-b0e340dec8bb
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 960
+      height: 960
+      anchor: center-center
+  e80df8f2-3d95-4599-bb33-0e6007906dac:
+    uuid: e80df8f2-3d95-4599-bb33-0e6007906dac
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp

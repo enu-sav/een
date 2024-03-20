@@ -5,10 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.news.field_lead_text
+    - field.field.node.news.field_news_image
     - field.field.node.news.field_paragraphs
     - node.type.news
+    - responsive_image.styles.header
   module:
     - layout_paragraphs
+    - svg_image_responsive
     - user
 id: node.news.full
 targetEntityType: node
@@ -18,14 +21,29 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
     region: content
   field_lead_text:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
+    region: content
+  field_news_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: header
+      image_link: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_paragraphs:
     type: layout_paragraphs
@@ -34,7 +52,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden:
   langcode: true

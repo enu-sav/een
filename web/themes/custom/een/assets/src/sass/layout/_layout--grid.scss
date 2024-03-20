@@ -48,7 +48,6 @@ body {
     min-height: calc(100dvh - #{em(54, 16)});
   }
 
-  body.path-news &,
   body.path-forum:not(.path-403):not(.path-404) &,
   body.page-node-type-forum &,
   body.path-taxonomy & {

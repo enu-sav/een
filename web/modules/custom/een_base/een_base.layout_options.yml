@@ -24,47 +24,6 @@ layout_option_definitions:
     regions: false
     weight: -99
 
-  layout_bg_image:
-    title: 'Background image'
-    description: ''
-    default: ''
-    plugin: een_layout_background_image
-    multi: false
-    layout: true
-    regions: false
-    weight: -96
-
-  layout_bg_image_width:
-    title: 'Background image width'
-    description: ''
-    default: ''
-    plugin: layout_options_class_radios
-    multi: false
-    inline: true
-    layout: true
-    regions: false
-    weight: -95
-    options: {
-      background--full-width: 'Full Width',
-      background--contain: 'Contain',
-    }
-
-  layout_bg_image_options:
-    title: 'Background image position'
-    description: ''
-    default: ''
-    plugin: layout_options_class_radios
-    multi: false
-    inline: true
-    layout: true
-    regions: false
-    weight: -90
-    options: {
-      background--left: 'Left',
-      background--center: 'Center',
-      background--rigth: 'Right',
-    }
-
   layout_class:
     title: 'Custom classes'
     description: 'The CSS classes to use on this layout item.'
@@ -81,6 +40,7 @@ layout_option_definitions:
     plugin: layout_options_class_checkboxes
     inline: false
     options: {
+      thin-width: 'Thin width',
       fullwidth: 'Full Width',
     }
     layout: true
@@ -159,9 +119,6 @@ layout_options:
   global:
     layout_id: { }
     layout_bg_color: { }
-    layout_bg_image: { }
-    layout_bg_image_width: { }
-    layout_bg_image_options: { }
     layout_class: { }
     layout_spacing_top: { }
     layout_spacing_bottom: { }

@@ -1,7 +1,7 @@
 .layout {
   $layout: &;
 
-  &:not(.fullwidth) {
+  &:not(.fullwidth):not(.thin-width) {
 
     > .wrapper {
       @include container();
@@ -16,6 +16,13 @@
       padding-right: 0;
       padding-left: 0;
       margin: 0;
+    }
+  }
+
+  &.thin-width  {
+
+    > .wrapper {
+      @include container_thin();
     }
   }
 

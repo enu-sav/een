@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_image
     - node.type.news
   module:
     - node
@@ -160,7 +161,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser_image
       query:
         type: views_query
         options:
@@ -194,9 +195,23 @@ display:
         options:
           offset: 0
           items_per_page: 2
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       defaults:
         css_class: false
         pager: false
+        style: false
+        row: false
       css_class: 'view--news teaser'
       display_description: 'Embed: News'
       display_extenders: {  }

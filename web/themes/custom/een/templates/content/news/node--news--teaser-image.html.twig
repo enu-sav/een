@@ -1,0 +1,27 @@
+{% extends "node.html.twig" %}
+
+{% block title %}
+{% endblock %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    {% if content.field_news_image.0['#url'] %}
+      <div class="image">{{ content.field_news_image }}</div>
+    {% else %}
+      <a href="{{ url }}" title="{{ label.0['#context'].value }}"><div class="image"></div></a>
+    {% endif %}
+    <h3><a href="{{ url }}" title="{{ label.0['#context'].value }}">{{ label }}</a></h3>
+    <div class="meta">
+      <span class="prefix">{{ 'By'|t }}</span>
+      {{ author_picture }}
+      <span class="date">
+        {{ node.getCreatedTime|date("M j, Y") }}
+      </span>
+    </div>
+    {{ content.field_lead_text }}
+    <a href="{{ url }}" class="link" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
+  </div>
+{% endblock %}

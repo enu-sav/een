@@ -27,6 +27,11 @@
     grid-template-columns: repeat(1, 1fr);
     gap: em(20);
     padding: em(16) 0;
+    margin-top: em(50);
+
+    @media all and (min-width: em($template-desktop)) {
+      margin-top: em(100);
+    }
 
     > .view__content {
       display: grid;

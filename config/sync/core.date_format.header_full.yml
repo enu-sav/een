@@ -1,0 +1,8 @@
+uuid: 25a01f34-3394-43ab-beb4-a6840f3254e2
+langcode: en
+status: true
+dependencies: {  }
+id: header_full
+label: 'Header full'
+locked: false
+pattern: 'M j, Y'

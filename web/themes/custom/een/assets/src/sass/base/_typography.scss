@@ -41,6 +41,15 @@ h1 {
       font-size: rem(48);
     }
   }
+
+  body.path-news &, body.path-events &  {
+    font-size: rem(30);
+    font-weight: 400;
+    text-align: center;
+    @media all and (min-width: em($template-tablet)) {
+      font-size: rem(45);
+    }
+  }
 }
 
 h2 {
@@ -83,10 +92,9 @@ h6 {
 
 p {
   font-size: rem(16);
-  line-height: em(32, 18);
+  line-height: em(32, 16);
   font-weight: normal;
   margin: 0 0 $small-spacing;
-  color: rgb(110, 114, 123);
 
   .bg-green & {
     color: $white;

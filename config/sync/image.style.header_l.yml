@@ -1,0 +1,21 @@
+uuid: a91e6ba3-b8cc-4c2b-9112-7fec5ec5fca5
+langcode: en
+status: true
+dependencies: {  }
+name: header_l
+label: 'Header L'
+effects:
+  7cf7dc6c-2e6b-4075-9df0-cff4f75508ef:
+    uuid: 7cf7dc6c-2e6b-4075-9df0-cff4f75508ef
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp
+  d8ccad36-74df-41e7-9c96-97363893c07f:
+    uuid: d8ccad36-74df-41e7-9c96-97363893c07f
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 960
+      height: 480
+      anchor: center-center

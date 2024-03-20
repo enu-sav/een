@@ -68,6 +68,15 @@
   }
 }
 
+@mixin container_thin {
+  padding: 0 em(14);
+  margin: 0 auto;
+  @media all and (min-width: em($template-tablet)) {
+    padding: 0 em(40);
+    max-width: em(860);
+  }
+}
+
 // Line clamp
 @mixin line-clamp($numLines, $lineHeight) {
   overflow: hidden;

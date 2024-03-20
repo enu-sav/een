@@ -1,0 +1,11 @@
+uuid: fef41f0b-a8f4-45fa-a50e-fbf81b8e21e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.header
+label: Header
+description: ''
+targetEntityType: media
+cache: true

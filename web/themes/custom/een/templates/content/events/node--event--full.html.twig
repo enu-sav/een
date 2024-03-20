@@ -1,21 +1,32 @@
 {% extends "node.html.twig" %}
 
-{% block title %}
-  {% if label and page %}
-    <div class="node__header">
-      <div class="field field-page-title"><h1 class="page-title">{{ label }}</h1></div>
-    </div>
-  {% endif %}
+{% block meta %}
 {% endblock %}
 
-{% block meta %}
-  {% if display_submitted %}
-    <footer>
-      {{ content.field_date }}
-    </footer>
+{% block title %}
+  {% if label and page %}
+    <div class="node node__header">
+      <div class="node__header__bg">
+      </div>
+      <div class="node__header__content">
+        <div class="content">
+          <div class="field field-page-title">
+            <h1 class="page-title">
+              {{ label }}
+            </h1>
+          </div>
+          <div class="meta">
+            <span class="date">
+              {{ content.field_date }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   {% endif %}
 {% endblock %}
 
 {% block content %}
   {{ content|without('field_date') }}
 {% endblock %}
+

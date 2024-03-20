@@ -1,0 +1,21 @@
+uuid: b7999827-33ec-4073-a359-a6324c212602
+langcode: en
+status: true
+dependencies: {  }
+name: header_2xl
+label: 'Header 2XL'
+effects:
+  e0ddac48-9242-4c14-81ec-d1a756b9f263:
+    uuid: e0ddac48-9242-4c14-81ec-d1a756b9f263
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp
+  1e1314ed-8b64-4ccb-bfbb-e45fdef9ed0d:
+    uuid: 1e1314ed-8b64-4ccb-bfbb-e45fdef9ed0d
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 3840
+      height: 1344
+      anchor: center-center

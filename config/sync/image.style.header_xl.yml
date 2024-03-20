@@ -1,0 +1,21 @@
+uuid: 22e4045b-9e02-40aa-85fe-ce334c7c50bb
+langcode: en
+status: true
+dependencies: {  }
+name: header_xl
+label: 'Header XL'
+effects:
+  79541258-5d7f-42b8-bfdc-d72d40da4b68:
+    uuid: 79541258-5d7f-42b8-bfdc-d72d40da4b68
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp
+  ca7538d2-9d84-416c-9d52-b300e9550b9a:
+    uuid: ca7538d2-9d84-416c-9d52-b300e9550b9a
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 1920
+      height: 672
+      anchor: center-center
