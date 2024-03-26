@@ -258,6 +258,23 @@ article.node--type-news {
         }
       }
 
+      > a > .image {
+        &:before {
+          background-image: url("../../dist/svg/logo.svg");
+          background-size: em(48) auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          opacity: .5;
+          transition: opacity .3s ease-in-out;
+        }
+
+        &:hover, &:focus {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+
       h3 {
         font-size: rem(18);
         font-weight: 700;
