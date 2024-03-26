@@ -8,6 +8,7 @@
 
 {% block content %}
   <div class="content">
+    <div class="type">{{ node.type.entity.label }}</div>
     <h3>{{ label }}</h3>
     {{ content }}
     <a href="{{ url }}" class="link" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
