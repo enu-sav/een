@@ -17,6 +17,7 @@ content: {  }
 hidden:
   content_moderation_control: true
   field_date: true
+  field_date_range: true
   field_lead_text: true
   field_paragraphs: true
   langcode: true

@@ -17,7 +17,7 @@
           </div>
           <div class="meta">
             <span class="date">
-              {{ content.field_date }}
+              {{ content.field_date_range }}
             </span>
           </div>
         </div>
@@ -27,6 +27,6 @@
 {% endblock %}
 
 {% block content %}
-  {{ content|without('field_date') }}
+  {{ content|without('field_date', 'field_date_range') }}
 {% endblock %}
 

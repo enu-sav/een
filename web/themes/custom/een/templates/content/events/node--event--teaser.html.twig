@@ -9,15 +9,20 @@
 {% block content %}
   <div class="content">
     <div class="date">
-      <span class="month">{{ node.field_date.value|date('F') }}</span>
-      <span class="date-num">{{ node.field_date.value|date('j') }}</span>
-      <span class="year">{{ node.field_date.value|date('Y') }}</span>
+      <span class="month">{{ node.field_date_range.value|date('F') }}</span>
+      {% if node.field_date_range.value|date('j') == node.field_date_range.end_value|date('j') %}
+        <span class="date-num">{{ node.field_date_range.end_value|date('j') }}</span>
+      {% else %}
+        <span class="date-num">{{ node.field_date_range.value|date('j') }} - {{ node.field_date_range.end_value|date('j') }}</span>
+      {% endif %}
+
+      <span class="year">{{ node.field_date_range.value|date('Y') }}</span>
     </div>
     <div class="bottom">
       <h3>
         <a href="{{ url }}" aria-label="{{ label.0['#context'].value }}" title="{{ label.0['#context'].value }}" rel="bookmark">{{ label }}</a>
       </h3>
-      {{ content|without('field_date') }}
+      {{ content|without('field_date', 'field_date_range') }}
     </div>
   </div>
 {% endblock %}

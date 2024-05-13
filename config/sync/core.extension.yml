@@ -19,6 +19,7 @@ module:
   content_moderation_notifications: 0
   content_moderation_owner_permissions: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   diff: 0
   dynamic_page_cache: 0
