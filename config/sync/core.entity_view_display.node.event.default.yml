@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.field_date
+    - field.field.node.event.field_date_range
     - field.field.node.event.field_lead_text
     - field.field.node.event.field_paragraphs
     - node.type.event
@@ -16,7 +16,6 @@ mode: default
 content: {  }
 hidden:
   content_moderation_control: true
-  field_date: true
   field_date_range: true
   field_lead_text: true
   field_paragraphs: true

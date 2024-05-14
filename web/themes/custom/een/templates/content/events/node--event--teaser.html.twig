@@ -13,7 +13,7 @@
       {% if node.field_date_range.value|date('j') == node.field_date_range.end_value|date('j') %}
         <span class="date-num">{{ node.field_date_range.end_value|date('j') }}</span>
       {% else %}
-        <span class="date-num">{{ node.field_date_range.value|date('j') }} - {{ node.field_date_range.end_value|date('j') }}</span>
+        <span class="date-num">{{ node.field_date_range.value|date('j') }} – {{ node.field_date_range.end_value|date('j') }}</span>
       {% endif %}
 
       <span class="year">{{ node.field_date_range.value|date('Y') }}</span>

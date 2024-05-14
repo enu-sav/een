@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.event.field_date
     - field.field.node.event.field_date_range
     - field.field.node.event.field_lead_text
     - field.field.node.event.field_paragraphs
@@ -11,7 +10,6 @@ dependencies:
     - workflows.workflow.editorial
   module:
     - content_moderation
-    - datetime
     - datetime_range
     - layout_paragraphs
     - path
@@ -23,12 +21,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_date:
-    type: datetime_default
-    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
