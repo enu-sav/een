@@ -4,13 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.event.field_date
     - field.field.node.event.field_date_range
     - field.field.node.event.field_lead_text
     - field.field.node.event.field_paragraphs
     - node.type.event
   module:
-    - datetime
     - datetime_range
     - layout_paragraphs
     - user
@@ -24,22 +22,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_date:
-    type: datetime_default
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: header_full
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_date_range:
     type: daterange_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: header_full
-      separator: '-'
+      separator: –
     third_party_settings: {  }
     weight: 3
     region: content
