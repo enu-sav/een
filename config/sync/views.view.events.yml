@@ -112,10 +112,10 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
+        field_date_range_value:
+          id: field_date_range_value
+          table: node__field_date_range
+          field: field_date_range_value
           relationship: none
           group_type: group
           admin_label: ''
