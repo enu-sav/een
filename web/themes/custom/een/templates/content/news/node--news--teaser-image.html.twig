@@ -7,13 +7,14 @@
 {% endblock %}
 
 {% block content %}
+  {% set teaser_title_id = 'teaser-title-' ~ node.id|clean_id %}
   <div class="content">
     {% if content.field_news_image.0['#url'] %}
       <div class="image">{{ content.field_news_image }}</div>
     {% else %}
-      <a href="{{ url }}" title="{{ label.0['#context'].value }}"><div class="image"></div></a>
+      <a href="{{ url }}" id="{{ teaser_title_id }}" title="{{ label.0['#context'].value }}"><div class="image"></div></a>
     {% endif %}
-    <h3><a href="{{ url }}" title="{{ label.0['#context'].value }}">{{ label }}</a></h3>
+    <h2><a href="{{ url }}" title="{{ label.0['#context'].value }}">{{ label }}</a></h2>
     <div class="meta">
 {#      <span class="prefix">{{ 'By'|t }}</span>#}
 {#      {{ author_picture }}#}
@@ -22,6 +23,6 @@
       </span>
     </div>
     {{ content.field_lead_text }}
-    <a href="{{ url }}" class="link" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
+    <a href="{{ url }}" class="link" aria-labelledby="{{ teaser_title_id }}" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
   </div>
 {% endblock %}

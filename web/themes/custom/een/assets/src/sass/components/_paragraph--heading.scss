@@ -13,6 +13,7 @@
     letter-spacing: em(4.96);
     color: $dark-blue;
     margin-bottom: em(10);
+    text-transform: uppercase;
     &:before, &:after {
       background-color: $dark-blue;
     }
@@ -75,6 +76,7 @@
     color: $secondary-color;
     font-weight: 500;
     margin-bottom: .5em;
+
     &:before, &:after {
       background-color: $secondary-color;
     }
@@ -89,6 +91,7 @@
   h5, h6 {
     font-weight: 500;
     margin-bottom: .5em;
+    text-transform: uppercase;
     &:before, &:after {
       background-color: $light-green;
     }
