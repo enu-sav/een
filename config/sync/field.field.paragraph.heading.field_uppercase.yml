@@ -1,0 +1,21 @@
+uuid: c41fe91a-20cc-4f30-adcb-672aa2354cd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_uppercase
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.field_uppercase
+field_name: field_uppercase
+entity_type: paragraph
+bundle: heading
+label: Uppercase
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

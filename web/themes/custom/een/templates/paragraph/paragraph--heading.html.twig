@@ -3,6 +3,7 @@
 {% set heading_level = paragraph.field_heading_level.0.value %}
 {% set heading_text = paragraph.field_heading.0.value %}
 {% set heading_center = paragraph.field_heading_center.0.value %}
+{% set heading_uppercase = paragraph.field_uppercase.0.value %}
 {% set heading_line = paragraph.field_heading_line.0.value|clean_class %}
 {% set heading_attributes = create_attribute() %}
 
@@ -10,7 +11,14 @@
   {% if heading_level == 'additional_title' %}
     {% set heading_level = "div" %}
     {% set heading_attributes = heading_attributes.addClass('additional-title') %}
+    {% set heading_attributes = heading_attributes.setAttribute('aria-hidden', 'true') %}
+    {% set heading_attributes = heading_attributes.setAttribute('tabindex', '-1') %}
   {% endif %}
+{% endif %}
+
+{% if heading_uppercase == '1' %}
+  {% set heading_uppercase = heading_attributes.addClass('uppercase') %}
+  {% set attributes = attributes.addClass('uppercase') %}
 {% endif %}
 
 {% if heading_center == '1' %}

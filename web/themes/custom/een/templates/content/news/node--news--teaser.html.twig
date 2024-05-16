@@ -7,11 +7,12 @@
 {% endblock %}
 
 {% block content %}
+  {% set teaser_title_id = 'teaser-title-' ~ node.id|clean_id %}
   <div class="content">
     <div class="type">{{ node.type.entity.label }}</div>
-    <h3>{{ label }}</h3>
+    <h3 id="{{ teaser_title_id }}">{{ label.0['#context'].value }}</h3>
     {{ content }}
-    <a href="{{ url }}" class="link" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
+    <a href="{{ url }}" class="link" aria-labelledby="{{ teaser_title_id }}" title="Read more: {{ label.0['#context'].value }}">{{ 'Read more'|t }}</a>
     <div class="date">
       {{ node.getCreatedTime|date('F j Y') }}
     </div>

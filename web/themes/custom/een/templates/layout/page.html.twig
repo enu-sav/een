@@ -50,7 +50,7 @@
 <div class="layout-container">
 
   <!-- ______________________ HEADER _______________________ -->
-  <header class="header" role="banner" tabindex="0" aria-label="Site header">
+  <header class="header" aria-label="Site header">
     <div class="sticky-header">
       <div class="region-header-wrapper">
         <div class="region region-header">
@@ -72,7 +72,7 @@
   </header>{# /.header #}
 
   <!-- ______________________ MAIN _______________________ -->
-  <main role="main" aria-label="Site body" class="{% if page.sidebar %}has-sidebar{% else %}no-sidebar{% endif %}">
+  <main aria-label="Site body" class="{% if page.sidebar %}has-sidebar{% else %}no-sidebar{% endif %}">
     <span id="main-content" tabindex="-1"></span>{# link is in html.html.twig #}
 
     <div class="layout-content">
@@ -89,7 +89,7 @@
 
   <!-- ______________________ FOOTER _______________________ -->
   {% if page.footer %}
-    <footer role="contentinfo" aria-label="Site footer">
+    <footer aria-label="Site footer">
       <div class="layout-container__content_footer">
         {{ page.footer|without('een_copyright') }}
       </div>

@@ -22,6 +22,7 @@ settings:
       - '|'
       - bulletedList
       - numberedList
+      - alignment
       - '|'
       - blockQuote
       - drupalInsertImage
@@ -33,6 +34,12 @@ settings:
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -

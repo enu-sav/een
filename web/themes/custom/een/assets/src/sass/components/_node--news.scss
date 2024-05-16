@@ -213,14 +213,19 @@ article.node--type-news {
           margin-bottom: em(10);
           transition: text-shadow .1s linear;
 
-          &:before {
-            display: block;
-            content: "━";
-            margin-right: em(2);
+          &:after {
+            display: inline;
+            content: "\00a0→";
+            position: relative;
+            left: 0;
+            transition: left .15s linear;
           }
 
           &:hover, &:focus {
             text-shadow: em(.3) em(.3) em(.3) $action-color;
+            &:after {
+              left: em(5, 14);
+            }
           }
         }
       }
@@ -320,7 +325,7 @@ article.node--type-news {
         }
       }
 
-      h3 {
+      h2 {
         font-size: rem(18);
         font-weight: 700;
         line-height: em(27, 18);

@@ -1,5 +1,9 @@
 .paragraph--type--heading {
 
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
   &.center {
     display: flex;
     justify-content: center;
@@ -75,6 +79,7 @@
     color: $secondary-color;
     font-weight: 500;
     margin-bottom: .5em;
+
     &:before, &:after {
       background-color: $secondary-color;
     }

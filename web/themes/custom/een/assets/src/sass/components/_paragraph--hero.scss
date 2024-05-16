@@ -70,6 +70,7 @@
           letter-spacing: em(4.65);
           font-weight: 700;
           margin-bottom: em(5);
+          text-transform: uppercase;
         }
 
         > h1 {
@@ -79,6 +80,7 @@
           font-size: rem(38);
           line-height: normal;
           margin-bottom: em(5, 38);
+          text-transform: uppercase;
 
           @media all and (min-width: em($template-desktop)) {
             font-size: rem(48);
