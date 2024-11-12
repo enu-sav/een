@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e875120ae128ec451b00f60c44e32c7c",
+    "content-hash": "6e844bf6a444f32c092e8a1539cf7f7b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2601,27 +2601,27 @@
         },
         {
             "name": "drupal/forum_notifications_subscription",
-            "version": "2.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/forum_notifications_subscription.git",
-                "reference": "2.0.0-alpha2"
+                "reference": "1.0.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/forum_notifications_subscription-2.0.0-alpha2.zip",
-                "reference": "2.0.0-alpha2",
-                "shasum": "eeb29bf123ffdaa09e29b6f34195401a0884137a"
+                "url": "https://ftp.drupal.org/files/projects/forum_notifications_subscription-1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": "0bae0448d7aac439ab99b3a05e94b1d356dffdae"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/forum": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha2",
-                    "datestamp": "1729080222",
+                    "version": "1.0.0-alpha3",
+                    "datestamp": "1695840009",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -15550,7 +15550,6 @@
     "stability-flags": {
         "drupal/content_moderation_owner_permissions": 15,
         "drupal/forum_access": 20,
-        "drupal/forum_notifications_subscription": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
         "drupal/rabbit_hole": 15,

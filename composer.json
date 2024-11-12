@@ -34,7 +34,7 @@
         "drupal/environment_indicator": "^4.0",
         "drupal/form_mode_control": "^2.4",
         "drupal/forum_access": "1.x-dev@dev",
-        "drupal/forum_notifications_subscription": "^2.0@alpha",
+        "drupal/forum_notifications_subscription": "1.0.0-alpha3",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/hook_post_action": "^1.2",
@@ -159,6 +159,10 @@
             },
             "drupal/svg_image": {
                 "3126330 - Apply image style dimensions with HTML attributes": "https://www.drupal.org/files/issues/2024-02-29/svg_image-3126330-4-image_style_dimensions_0.patch"
+            },
+            "drupal/forum_notifications_subscription": {
+                "3353721 - Multiple Forum Subscriptions on a single page": "https://www.drupal.org/files/issues/2023-04-12/multiple-subscriptions.patch",
+                "3401680 - Call to a member function get() on null in getForumName()": "https://www.drupal.org/files/issues/2024-05-08/forum_notification_issue.patch"
             }
         }
     }
