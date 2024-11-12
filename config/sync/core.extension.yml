@@ -31,7 +31,6 @@ module:
   file: 0
   filter: 0
   form_mode_control: 0
-  forum_notifications_subscription: 0
   gin_toolbar: 0
   history: 0
   hook_post_action: 0
@@ -75,7 +74,6 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   twig_tweak: 0
   update: 0
   user: 0
@@ -93,6 +91,7 @@ module:
   paragraphs: 11
   paragraphs_ee: 15
   standard: 1000
+  forum_notifications_subscription: 9999
 theme:
   claro: 0
   gin: 0

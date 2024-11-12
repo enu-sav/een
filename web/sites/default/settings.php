@@ -926,3 +926,5 @@ $settings['config_sync_directory'] = '../config/sync';
 $settings['config_exclude_modules'] = explode(',', getenv('EXCLUDE_MODULES'));
 
 $config['file.settings']['make_unused_managed_files_temporary'] = TRUE;
+
+$settings['state_cache'] = getenv('STATE_CACHE') ?? FALSE;
