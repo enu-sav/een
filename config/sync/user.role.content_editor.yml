@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.etherpad_document
     - node.type.event
     - node.type.forum
     - node.type.news
@@ -28,17 +27,14 @@ permissions:
   - 'access comments'
   - 'access toolbar'
   - 'access workbench'
-  - 'create etherpad_document content'
   - 'create event content'
   - 'create forum content'
   - 'create news content'
-  - 'delete own etherpad_document content'
   - 'delete own event content'
   - 'delete own files'
   - 'delete own forum content'
   - 'delete own news content'
   - 'edit own comments'
-  - 'edit own etherpad_document content'
   - 'edit own event content'
   - 'edit own forum content'
   - 'edit own news content'
@@ -50,9 +46,6 @@ permissions:
   - 'use editorial transition create_new_draft for own content'
   - 'use editorial transition needs_review for own content'
   - 'use editorial transition submit for own content'
-  - 'use etherpads transition create_new_draft for own content'
-  - 'use etherpads transition promote_to_finished for own content'
-  - 'use etherpads transition submit_for_comments for own content'
   - 'use workbench access'
   - 'view any unpublished content'
   - 'view latest version'
