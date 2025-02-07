@@ -928,3 +928,8 @@ $settings['config_exclude_modules'] = explode(',', getenv('EXCLUDE_MODULES'));
 $config['file.settings']['make_unused_managed_files_temporary'] = TRUE;
 
 $settings['state_cache'] = getenv('STATE_CACHE') ?? FALSE;
+
+/**
+ * Stage file proxy
+ */
+$config['stage_file_proxy.settings']['origin'] = getenv('STAGE_FILE_PROXY_URL') ?? '';
