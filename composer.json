@@ -33,7 +33,7 @@
         "drupal/config_ignore": "^3.3",
         "drupal/content_moderation_notifications": "^3.7",
         "drupal/content_moderation_owner_permissions": "^1.0@alpha",
-        "drupal/core": "10.3.7",
+        "drupal/core": "10.4.2",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-recommended": "^10",
         "drupal/diff": "^1.8",
@@ -148,8 +148,7 @@
         },
         "patches": {
             "drupal/core": {
-                "2010132 - Canonical taxonomy term link for forum vocabulary is broken": "https://www.drupal.org/files/issues/2022-12-30/2010132-154.patch",
-                "3358586 - RuntimeException: Adding non-existent permissions to a role is not allowed": "https://www.drupal.org/files/issues/2023-09-14/3358586-11.patch"
+                "2010132 - Canonical taxonomy term link for forum vocabulary is broken": "https://www.drupal.org/files/issues/2022-12-30/2010132-154.patch"
             },
             "drupal/poll": {
                 "3007808 - Fine grain control over results display": "https://www.drupal.org/files/issues/2021-05-06/display_results_option--3007808-8.patch"
