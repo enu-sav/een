@@ -1,6 +1,6 @@
 import { createRequire } from 'module'
 import gulp from 'gulp';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import uglify from 'gulp-uglify';
