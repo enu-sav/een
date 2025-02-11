@@ -62,7 +62,9 @@ module:
   rabbit_hole: 0
   recreate_block_content: 0
   responsive_image: 0
+  sdc: 0
   search: 0
+  serialization: 0
   simple_sitemap: 0
   statistics: 0
   svg_image: 0
