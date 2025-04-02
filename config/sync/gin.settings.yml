@@ -20,7 +20,6 @@ secondary_toolbar_frontend: false
 high_contrast_mode: false
 accent_color: ''
 focus_color: ''
-layout_density: small
+layout_density: default
 show_description_toggle: false
 show_user_theme_settings: false
-sticky_action_buttons: true
