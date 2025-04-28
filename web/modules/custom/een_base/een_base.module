@@ -32,22 +32,6 @@ function een_base_language_fallback_candidates_entity_view_alter(array &$candida
   }
 }
 
-/**
- * Implements hook_entity_view().
- *
- * Handles the 'show_in_links' and 'show_as_field' flag options.
- */
-function een_base_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  if ($entity->bundle() === 'forum' || $entity->bundle() === 'forums') {
-    if ($entity->hasField('comment_forum') && $entity->comment_forum) {
-      if ($entity->getEntityTypeId() == 'node') {
-        if ($entity->comment_forum->status != 2) {
-          unset($build['forum_notifications_subscription']);
-        }
-      }
-    }
-  }
-}
 
 /**
  * Implements hook_ENTITY_TYPE_view().
@@ -92,56 +76,6 @@ function _allowed_formats_remove_textarea_help($form_element, FormStateInterface
   }
 
   return $form_element;
-}
-
-/**
- * @param $alias
- * @param array $context
- *
- * @return void
- * @throws \Drupal\Core\Entity\EntityStorageException
- */
-function een_base_pathauto_alias_alter(&$alias, array &$context): void {
-
-  if (!empty($context['data']['term']) && $context['data']['term']->bundle() == 'forums') {
-
-    $alias_bk = $alias;
-    $alias = preg_replace('~^/forum/~', '/forum_term/', $alias);
-
-    $tid = $context['data']['term']->id();
-
-    $pids = Drupal::entityQuery('path_alias')
-      ->condition('path', '/forum/' . $tid)
-      ->accessCheck(FALSE)
-      ->execute();
-
-    if ($pids) {
-      $pids = array_values($pids);
-      $pid_main = $pids[0];
-
-      unset($pids[0]);
-
-      foreach ($pids as $pid) {
-        $alias_to_del = PathAlias::load($pid);
-        if ($alias_to_del) {
-          $alias_to_del->delete();
-        }
-      }
-
-      $alias_to_change = PathAlias::load($pid_main);
-      if ($alias_to_change) {
-        $alias_to_change->set('alias', $alias_bk)->save();
-      }
-    }
-    else {
-      $path_alias = PathAlias::create([
-        'path'  => '/forum/' . $tid,
-        'alias' => $alias_bk,
-      ]);
-
-      $path_alias->save();
-    }
-  }
 }
 
 /**

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.event
-    - node.type.forum
     - node.type.news
   module:
     - comment
@@ -28,15 +27,12 @@ permissions:
   - 'access toolbar'
   - 'access workbench'
   - 'create event content'
-  - 'create forum content'
   - 'create news content'
   - 'delete own event content'
   - 'delete own files'
-  - 'delete own forum content'
   - 'delete own news content'
   - 'edit own comments'
   - 'edit own event content'
-  - 'edit own forum content'
   - 'edit own news content'
   - 'post comments'
   - 'skip comment approval'

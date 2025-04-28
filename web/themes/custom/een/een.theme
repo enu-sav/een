@@ -52,99 +52,6 @@ function een_preprocess_html(&$variables): void {
   }
 }
 
-/**
- * @param $variables
- *
- * @return void
- */
-function een_preprocess_forums(&$variables): void {
-  if (!empty($variables['topics'])) {
-    $rows = [];
-
-    $variables['forum_add_new'] = Link::fromTextAndUrl(t('Add new forum topic'), Url::fromRoute('node.add', ['node_type' => 'forum', 'forum_id' => $variables['term']->id()], ['attributes' => ['class' => ['btn', 'btn-success'], 'aria-label' => t('Add new forum topic')]]))->toRenderable();
-
-    $config = \Drupal::config('forum_notifications_subscription.settings');
-    $settings = $config->get('settings');
-    $frequency = \Drupal::service('forum_notifications_subscription.frequency')
-      ->checkNotificationFrequencyByEntity($variables['term'], 'forum');
-
-    if ($frequency) {
-      $url = Url::fromUserInput('/forum/unsubscription/' . $variables['term']->getEntityTypeId() . '/' . $variables['term']->id());
-      $label = $settings['forum_label_off'];
-    }
-    else {
-      $url = Url::fromUserInput('/forum/subscription/' . $variables['term']->getEntityTypeId() . '/' . $variables['term']->id());
-      $label = $settings['forum_label_on'];
-    }
-    $subscription_link = Link::fromTextAndUrl($label, $url)->toRenderable();
-
-    $subscription_link['#attributes'] = [
-      'id' => 'forum-main-subscription-'.$variables['term']->id(),
-      'class' => ['use-ajax', 'btn', 'btn-primary'],
-    ];
-    $variables['forum_notifications_subscription']['subscription_link'] = $subscription_link;
-
-    /** @var Node $node */
-    foreach ($variables['topics_original'] as $nid => $node) {
-      $topic_views = '0';
-
-      /** @var \Drupal\statistics\StatisticsViewsResult $statistics */
-      $statistics = Drupal::service('statistics.storage.node')->fetchView($node->id());
-
-      if ($statistics !== FALSE) {
-        $topic_views = Drupal::translation()->formatPlural($statistics->getTotalCount(), '1', '@count');
-      }
-
-      $comment_count = $node->comment_count;
-
-      if ($comment_count == 1) {
-        $topic_comment_count = $comment_count . ' ' . t(' answer');
-      } else {
-        $topic_comment_count = $comment_count . ' ' . t(' answers');
-      }
-
-      $last_reaction = getHumanLastComment($node->last_comment_timestamp);
-
-      $view_builder = Drupal::entityTypeManager()->getViewBuilder('user');
-      $build_owner = $view_builder->view($node->getOwner(), 'compact');
-      $user = Drupal::service('renderer')->renderRoot($build_owner);
-
-      $row = [
-        [
-          'data' => Link::fromTextAndUrl($node->getTitle(), Url::fromRoute('entity.node.canonical', ['node' => $nid])),
-          'class' => ['forum-topics__row__topic-name'],
-        ],
-        [
-          'data' => [
-            '#markup' => '<div class="forum-topics__row__count__views">' . $topic_views . '</div><div class="forum-topics__row__count__comments">' . $topic_comment_count . '</div>',
-          ],
-          'class' => ['forum-topics__row__count'],
-        ],
-        [
-          'data' => [
-            '#markup' => '<div class="forum-topics__row__meta__author">' . $user->__toString() . ' / ' . date('d.m.Y - h:i', $node->getCreatedTime()) . '</div><div class="forum-topics__row__meta__reply">The last post: ' . $last_reaction . '</div>',
-          ],
-          'class' => ['forum-topics__row__meta'],
-        ],
-      ];
-      $rows[] = $row;
-    }
-
-    $variables['topics']['#rows'] = $rows;
-  }
-}
-
-/**
- * Implements hook_preprocess_menu_local_action().
- */
-function een_preprocess_menu_local_action(&$variables): void {
-  if (!empty($variables['link']['#title'])) {
-    $route_name = \Drupal::routeMatch()->getRouteName();
-    if ($route_name == 'forum.index' || $route_name == 'forum.page') {
-      unset($variables['link']);
-    }
-  }
-}
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
@@ -158,29 +65,6 @@ function een_theme_suggestions_user_alter(array &$suggestions, array &$variables
   // Create a theme hook suggestion which has the view mode name in it.
   $suggestions[] = 'user__' . $mode;
   $variables['view_mode'] = $mode;
-}
-
-/**
- * @param int $last_reaction
- *
- * @return string
- */
-function getHumanLastComment($last_reaction) {
-  if (($diff = (time() - $last_reaction)) > 2592000) {
-    $last_reaction = date("d. M Y", $last_reaction);
-  }
-  else {
-    if ($diff >= 86400) {
-      $last_reaction = round($diff / 86400) . 'd';
-    }
-    elseif ($diff >= 3600) {
-      $last_reaction = round($diff / 3600) . 'h';
-    }
-    else {
-      $last_reaction = round($diff / 60) . 'm';
-    }
-  }
-  return $last_reaction;
 }
 
 /**
