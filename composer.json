@@ -33,16 +33,16 @@
         "drupal/config_ignore": "^3.3",
         "drupal/content_moderation_notifications": "^3.7",
         "drupal/content_moderation_owner_permissions": "^1.0@alpha",
-        "drupal/core": "10.4.5",
-        "drupal/core-composer-scaffold": "^10",
-        "drupal/core-recommended": "^10",
+        "drupal/core-composer-scaffold": "10.5.4",
+        "drupal/core-project-message": "10.5.4",
+        "drupal/core-recommended": "10.5.4",
         "drupal/diff": "^1.8",
         "drupal/environment_indicator": "^4.0",
         "drupal/form_mode_control": "^2.4",
         "drupal/forum_access": "dev-3410468-24",
         "drupal/forum_notifications_subscription": "^2.1",
-        "drupal/gin": "4.0.2",
-        "drupal/gin_toolbar": "^2.0",
+        "drupal/gin": "^4.1",
+        "drupal/gin_toolbar": "^2.1",
         "drupal/hook_post_action": "^1.2",
         "drupal/layout_options": "^1.7",
         "drupal/layout_paragraphs": "^2.1",
@@ -93,11 +93,12 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
             "mglaman/composer-drupal-lenient": true,
-            "phpstan/extension-installer": true,
             "php-http/discovery": true,
+            "phpstan/extension-installer": true,
             "tbachert/spi": true
         }
     },
@@ -158,10 +159,6 @@
             },
             "drupal/acl": {
                 "D10 compatibility": "https://www.drupal.org/files/issues/2023-12-21/acl_beta_1_drupal_10.patch"
-            },
-            "drupal/forum_notifications_subscription": {
-                "3501543 - ActionLinkController::getSubscriptionLink() should attach the core/drupal.ajax library": "https://www.drupal.org/files/issues/2025-01-22/forum_notifications_subscription-attach_ajax_lib-3501543-2.patch",
-                "3491272 - Empty legend tag": "https://git.drupalcode.org/project/forum_notifications_subscription/-/merge_requests/9.diff"
             }
         }
     }
