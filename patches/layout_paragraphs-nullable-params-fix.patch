@@ -1,0 +1,61 @@
+diff --git a/modules/layout_paragraphs_permissions/src/Access/LayoutParagraphsPermissionsBuilderAccess.php b/modules/layout_paragraphs_permissions/src/Access/LayoutParagraphsPermissionsBuilderAccess.php
+index 1234567..abcdefg 100644
+--- a/modules/layout_paragraphs_permissions/src/Access/LayoutParagraphsPermissionsBuilderAccess.php
++++ b/modules/layout_paragraphs_permissions/src/Access/LayoutParagraphsPermissionsBuilderAccess.php
+@@ -19,9 +19,9 @@ class LayoutParagraphsPermissionsBuilderAccess extends LayoutParagraphsBuilderA
+   public function access(
+     AccountInterface $account,
+     LayoutParagraphsLayout $layout_paragraphs_layout,
+-    string $operation = NULL,
+-    string $component_uuid = NULL,
+-    ParagraphsTypeInterface $paragraph_type = NULL
++    ?string $operation = NULL,
++    ?string $component_uuid = NULL,
++    ?ParagraphsTypeInterface $paragraph_type = NULL
+   ) {
+     $access = parent::access($account, $layout_paragraphs_layout, $operation, $component_uuid, $paragraph_type);
+     if ($operation == 'reorder') {
+diff --git a/src/Access/LayoutParagraphsBuilderAccess.php b/src/Access/LayoutParagraphsBuilderAccess.php
+index 1234567..abcdefg 100644
+--- a/src/Access/LayoutParagraphsBuilderAccess.php
++++ b/src/Access/LayoutParagraphsBuilderAccess.php
+@@ -52,9 +52,9 @@ class LayoutParagraphsBuilderAccess implements AccessInterface {
+   public function access(
+     AccountInterface $account,
+     LayoutParagraphsLayout $layout_paragraphs_layout,
+-    string $operation = NULL,
+-    string $component_uuid = NULL,
+-    ParagraphsTypeInterface $paragraph_type = NULL
++    ?string $operation = NULL,
++    ?string $component_uuid = NULL,
++    ?ParagraphsTypeInterface $paragraph_type = NULL
+   ) {
+
+     // Check field access.
+diff --git a/src/Utility/Dialog.php b/src/Utility/Dialog.php
+index 1234567..abcdefg 100644
+--- a/src/Utility/Dialog.php
++++ b/src/Utility/Dialog.php
+@@ -59,7 +59,7 @@ class Dialog {
+    *
+    * @return array
+    *   The modal settings.
+    */
+-  public static function dialogSettings(LayoutParagraphsLayout $layout = NULL) {
++  public static function dialogSettings(?LayoutParagraphsLayout $layout = NULL) {
+     $config = \Drupal::config('layout_paragraphs.modal_settings');
+
+     $modal_settings = [
+diff --git a/src/LayoutParagraphsLayout.php b/src/LayoutParagraphsLayout.php
+index 1234567..abcdefg 100644
+--- a/src/LayoutParagraphsLayout.php
++++ b/src/LayoutParagraphsLayout.php
+@@ -363,7 +363,7 @@ class LayoutParagraphsLayout implements LayoutParagraphsLayoutInterface {
+    * @return \Drupal\layout_paragraphs\LayoutParagraphsComponent
+    *   The duplicated component.
+    */
+-  public function duplicateComponent(string $source_uuid, string $target_section_uuid = NULL) {
++  public function duplicateComponent(string $source_uuid, ?string $target_section_uuid = NULL) {
+     $source_component = $this->getComponentByUuid($source_uuid);
+     $cloned_paragraph = $source_component->getEntity()->createDuplicate();
+     if ($target_section_uuid) {

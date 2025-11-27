@@ -23,7 +23,7 @@
     },
     "require": {
         "php": ">=8.0",
-        "composer/installers": "^1.12",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/acl": "^1.1",
         "drupal/admin_local_tasks": "^1.1",
@@ -148,17 +148,20 @@
             "allowed-list": ["drupal/advpoll", "drupal/acl", "drupal/forum_access"]
         },
         "patches": {
-            "drupal/core": {
-                "2010132 - Canonical taxonomy term link for forum vocabulary is broken": "https://www.drupal.org/files/issues/2022-12-30/2010132-154.patch"
-            },
-            "drupal/poll": {
-                "3007808 - Fine grain control over results display": "https://www.drupal.org/files/issues/2021-05-06/display_results_option--3007808-8.patch"
+            "drupal/acl": {
+                "D10 compatibility": "https://www.drupal.org/files/issues/2023-12-21/acl_beta_1_drupal_10.patch"
             },
             "drupal/advpoll": {
                 "3296549 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-04-20/advpoll.1.x-dev-3296549%233.patch"
             },
-            "drupal/acl": {
-                "D10 compatibility": "https://www.drupal.org/files/issues/2023-12-21/acl_beta_1_drupal_10.patch"
+            "drupal/core": {
+                "2010132 - Canonical taxonomy term link for forum vocabulary is broken": "https://www.drupal.org/files/issues/2022-12-30/2010132-154.patch"
+            },
+            "drupal/layout_paragraphs": {
+                "Fix deprecated implicit nullable parameters": "patches/layout_paragraphs-nullable-params-fix.patch"
+            },
+            "drupal/poll": {
+                "3007808 - Fine grain control over results display": "https://www.drupal.org/files/issues/2021-05-06/display_results_option--3007808-8.patch"
             }
         }
     }

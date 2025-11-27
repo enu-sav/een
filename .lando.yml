@@ -1,7 +1,7 @@
 name: een
-recipe: drupal9
+recipe: drupal10
 config:
-  php: '8.1'
+  php: '8.4'
   via: apache
   webroot: web
   database: mariadb
@@ -13,6 +13,8 @@ services:
     overrides:
       environment:
         XDEBUG_MODE:
+  database:
+    type: mariadb:11.8
   phpmyadmin:
     type: phpmyadmin
     hosts:
