@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "870c205f0c6fab1212fac334ef1c5514",
+    "content-hash": "d192713f54d039f3978fcf78c3791d34",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4509,16 +4509,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "14.x-dev",
+            "version": "13.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "3d87af373f20a9ec19374fe2f07e8dc19b1791e9"
+                "reference": "70de523716de1125233de17e172a38c4ecdde397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/3d87af373f20a9ec19374fe2f07e8dc19b1791e9",
-                "reference": "3d87af373f20a9ec19374fe2f07e8dc19b1791e9",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/70de523716de1125233de17e172a38c4ecdde397",
+                "reference": "70de523716de1125233de17e172a38c4ecdde397",
                 "shasum": ""
             },
             "require": {
@@ -4534,7 +4534,7 @@
                 "consolidation/site-process": "^5.4.2",
                 "dflydev/dot-access-data": "^3.0.2",
                 "ext-dom": "*",
-                "grasmash/yaml-cli": "^3.2.1",
+                "grasmash/yaml-cli": "^3.2",
                 "guzzlehttp/guzzle": "^7.0",
                 "laravel/prompts": "^0.3.5",
                 "league/container": "^4.2",
@@ -4554,15 +4554,14 @@
             "require-dev": {
                 "composer/installers": "^2",
                 "cweagans/composer-patches": "~1.7.3",
-                "drupal/core-recommended": "11.x-dev",
+                "drupal/core-recommended": "^10.4.0 || 11.x-dev",
                 "drupal/semver_example": "2.3.0",
                 "jetbrains/phpstorm-attributes": "^1.0",
                 "mglaman/phpstan-drupal": "^2",
-                "phpunit/phpunit": "^10.5 || ^11",
+                "phpunit/phpunit": "^9 || ^10 || ^11",
                 "rector/rector": "^2",
                 "squizlabs/php_codesniffer": "^3.7"
             },
-            "default-branch": true,
             "bin": [
                 "drush",
                 "drush.php"
@@ -4647,7 +4646,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/14.x"
+                "source": "https://github.com/drush-ops/drush/tree/13.7.0"
             },
             "funding": [
                 {
@@ -4655,7 +4654,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-07T20:03:58+00:00"
+            "time": "2025-11-25T18:23:02+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -15759,8 +15758,7 @@
         "drupal/rdf": 10,
         "drupal/reroute_email": 5,
         "drupal/viewsreference": 10,
-        "drupal/webp": 5,
-        "drush/drush": 20
+        "drupal/webp": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
