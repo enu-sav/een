@@ -1,62 +1,18 @@
-'use  The form mode default linked to  block_content entity( basic )': block_content.basic.default
-'use  The form mode default linked to  comment entity( comment )': comment.comment.default
-'use  The form mode default linked to  comment entity( comment_forum )': comment.comment_forum.default
-'use  The form mode default linked to  media entity( audio )': media.audio.default
-'use  The form mode media_library linked to  media entity( audio )': media.audio.media_library
-'use  The form mode default linked to  media entity( document )': media.document.default
-'use  The form mode media_library linked to  media entity( document )': media.document.media_library
-'use  The form mode default linked to  media entity( image )': media.image.default
-'use  The form mode media_library linked to  media entity( image )': media.image.media_library
-'use  The form mode default linked to  media entity( image_link )': media.image_link.default
-'use  The form mode media_library linked to  media entity( image_link )': media.image_link.media_library
-'use  The form mode default linked to  media entity( remote_video )': media.remote_video.default
-'use  The form mode media_library linked to  media entity( remote_video )': media.remote_video.media_library
-'use  The form mode default linked to  media entity( video )': media.video.default
-'use  The form mode media_library linked to  media entity( video )': media.video.media_library
-'use  The form mode default linked to  node entity( etherpad_document )': node.etherpad_document.default
-'use  The form mode default linked to  node entity( event )': node.event.default
-'use  The form mode default linked to  node entity( forum )': node.forum.default
-'use  The form mode default linked to  node entity( news )': node.news.default
-'use  The form mode default linked to  node entity( page )': node.page.default
-'use  The form mode default linked to  paragraph entity( attached_document )': paragraph.attached_document.default
-'use  The form mode default linked to  paragraph entity( gallery )': paragraph.gallery.default
-'use  The form mode default linked to  paragraph entity( heading )': paragraph.heading.default
-'use  The form mode default linked to  paragraph entity( hero )': paragraph.hero.default
-'use  The form mode default linked to  paragraph entity( image )': paragraph.image.default
-'use  The form mode default linked to  paragraph entity( link )': paragraph.link.default
-'use  The form mode default linked to  paragraph entity( logo_wall )': paragraph.logo_wall.default
-'use  The form mode default linked to  paragraph entity( text )': paragraph.text.default
-'use  The form mode default linked to  paragraph entity( views )': paragraph.views.default
-'use  The form mode default linked to  poll entity( poll )': poll.poll.default
-'use  The form mode default linked to  taxonomy_term entity( forums )': taxonomy_term.forums.default
-'use  The form mode default linked to  user entity( user )': user.user.default
-'use  The form mode authenticated_user linked to  node entity( forum )': node.forum.authenticated_user
-'use  The form mode authenticated_user linked to  user entity( user )': user.user.authenticated_user
-creation+administrator+media+audio: media.audio.default
-modification+administrator+media+audio: media.audio.default
-creation+administrator+media+document: media.document.default
-modification+administrator+media+document: media.document.default
-creation+administrator+media+image: media.image.default
-modification+administrator+media+image: media.image.default
-creation+administrator+media+image_link: media.image_link.default
-modification+administrator+media+image_link: media.image_link.default
-creation+administrator+media+remote_video: media.remote_video.default
-modification+administrator+media+remote_video: media.remote_video.default
-creation+administrator+media+video: media.video.default
-modification+administrator+media+video: media.video.default
-creation+authenticated+node+forum: node.forum.authenticated_user
-creation+content_editor+node+forum: node.forum.authenticated_user
-creation+senior_editor+node+forum: node.forum.authenticated_user
-creation+administrator+node+forum: node.forum.default
-modification+authenticated+node+forum: node.forum.default
-modification+content_editor+node+forum: node.forum.default
-modification+senior_editor+node+forum: node.forum.authenticated_user
-modification+administrator+node+forum: node.forum.default
-creation+authenticated+user+user: user.user.authenticated_user
-creation+content_editor+user+user: user.user.authenticated_user
-creation+senior_editor+user+user: user.user.authenticated_user
-creation+administrator+user+user: user.user.default
-modification+authenticated+user+user: user.user.authenticated_user
-modification+content_editor+user+user: user.user.authenticated_user
-modification+senior_editor+user+user: user.user.default
-modification+administrator+user+user: user.user.default
+defaults:
+  node:
+    forum:
+      create:
+        authenticated: authenticated_user
+        content_editor: authenticated_user
+        senior_editor: authenticated_user
+      edit:
+        senior_editor: authenticated_user
+  user:
+    user:
+      create:
+        authenticated: authenticated_user
+        content_editor: authenticated_user
+        senior_editor: authenticated_user
+      edit:
+        authenticated: authenticated_user
+        content_editor: authenticated_user

@@ -6,6 +6,6 @@ dependencies:
     - node
 id: node.authenticated_user
 label: 'Authenticated user'
-description: ''
+description: null
 targetEntityType: node
 cache: true

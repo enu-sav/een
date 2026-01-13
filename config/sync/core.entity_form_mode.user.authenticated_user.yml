@@ -6,6 +6,6 @@ dependencies:
     - user
 id: user.authenticated_user
 label: 'Authenticated user'
-description: ''
+description: null
 targetEntityType: user
 cache: true
